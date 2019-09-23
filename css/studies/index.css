@@ -1,6 +1,7 @@
 /*************** STUDIES PAGE STYLE BEGINES HERE ***************/
 
 #main-content .section-1 {
+  background-color: #004379;
   background-color: var(--primary-color);
   padding-top: 102px;
 }
@@ -68,6 +69,7 @@
   margin-top: 20px;
   text-align: center;
   display: block;
+  color: #004379;
   color: var(--primary-color);
   padding: 10px 20px;
   border-radius: 50px;
@@ -75,6 +77,7 @@
 }
 
 #main-content .section-1 .study .read-more:hover {
+  background: #00BDF1;
   background: var(--lt-blue);
   color: white;
 }

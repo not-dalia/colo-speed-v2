@@ -1,5 +1,6 @@
 /*************** ABOUT PAGE STYLE BEGINES HERE ***************/
 #main-content .section-1 {
+  background: #E6E6E6;
   background: var(--lt-grey);
   display: flex;
   flex-direction: row;
@@ -55,11 +56,13 @@
 }
 
 #main-content .section-1 .contact-us .left-col a {
+  color: #00BDF1;
   color: var(--lt-blue);
   font-weight: 400;
 }
 
 #main-content .section-1 .contact-us .left-col iframe {
+  border: 1px solid #E6E6E6;
   border: 1px solid var(--lt-grey);
 }
 
@@ -106,6 +109,7 @@
 #main-content .section-1 .contact-us .right-col input[type="submit"] {
   width: 100%;
   border: none;
+  background: #003571;
   background: var(--dk-blue);
   color: white;
   font-weight: 500;
