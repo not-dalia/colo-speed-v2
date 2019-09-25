@@ -1,0 +1,96 @@
+@media only screen and (max-width: 570px) {
+
+  /*************** ABOUT PAGE STYLE BEGINES HERE ***************/
+  #main-content .section-1 {
+    background: #E6E6E6;
+    background: var(--lt-grey);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-top: 90px;
+    box-sizing: border-box;
+  }
+
+  #main-content .section-1 .right-col,
+  #main-content .section-2 .right-col {
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 40vh;
+  }
+
+  #main-content .section-1 .right-col {
+    background-image: url("/assets/images/studies/p1.png");
+  }
+
+  #main-content .section-2 .right-col {
+    background-image: url("/assets/images/studies/study2.png");
+  }
+
+  #main-content .section-1 .left-col,
+  #main-content .section-2 .left-col {
+    width: 100vw;
+    min-width: 300px;
+    background: white;
+    padding: 3rem 10vw;
+    box-sizing: border-box;
+  }
+
+  #main-content .section-1 .left-col .title,
+  #main-content .section-2 .left-col .title {
+    color: #313131;
+    color: var(--dk-grey);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  #main-content .section-1 .left-col p,
+  #main-content .section-2 .left-col p {
+    color: #313131;
+    color: var(--dk-grey);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  #main-content .section-2 {
+    background: #E6E6E6;
+    background: var(--lt-grey);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-right: 15vw;
+    box-sizing: border-box;
+  }
+
+  #main-content .decor-row {
+    display: none;
+    flex-direction: row;
+    padding-right: 0;
+  }
+
+  #main-content .decor-row .decor {
+    height: 100px;
+    box-sizing: border-box;
+  }
+
+  #main-content .decor-row .right-decor {
+    width: 70vw;
+    min-width: auto;
+    background: #003571;
+    background: var(--dk-blue);
+    box-sizing: border-box;
+  }
+
+  #main-content .decor-row .left-decor {
+    width: 30vw;
+    background: #00BDF1;
+    background: var(--lt-blue);
+    box-sizing: border-box;
+  }
+
+
+
+  /****************** END OF ABOUT PAGE STYLEE *****************/
+}

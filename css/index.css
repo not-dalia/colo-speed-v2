@@ -121,6 +121,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
+  width: auto;
 }
 
 #main-content .section-2 .section-inner .colospeed {

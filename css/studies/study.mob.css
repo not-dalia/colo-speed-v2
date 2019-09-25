@@ -1,0 +1,218 @@
+@media only screen and (max-width: 570px) {
+  /*************** STUDIES PAGE STYLE BEGINES HERE ***************/
+
+  #main-content .section-1 {
+    background-color: #004379;
+    background-color: var(--primary-color);
+    padding-top: 90px;
+  }
+
+  #main-content .section-1 .study {
+    display: flex;
+    justify-content: center;
+  }
+
+  #main-content .section-1 .study .col {
+    flex: 1;
+    color: white;
+    padding: 70px 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 45vh;
+    box-sizing: border-box;
+  }
+
+  .study:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .study:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .study:nth-child(even) .col {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .study:nth-child(odd) .col {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .study:nth-child(even) .study-info {
+    text-align: center;
+  }
+
+  .study:nth-child(odd) .study-info {
+    text-align: center;
+  }
+
+  #main-content .section-1 .study .right-col {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+
+  #main-content .section-1 .study .title {
+    font-size: 2.4rem;
+  }
+
+  #main-content .section-1 .study .date {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  #main-content .section-1 .study .read-more {
+    font-size: 1rem;
+    font-weight: 500;
+    background: white;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all ease-in 0.1s;
+  }
+
+  #main-content .section-1 .study .read-more:hover {
+    background: #00BDF1;
+    background: var(--lt-blue);
+    color: white;
+  }
+
+
+  #main-content .section-2 {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  #main-content .section-2 .study-details {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #main-content .section-2 .study-details .study-info {
+    padding: 30px 10vw;
+  }
+
+  #main-content .section-2 .study-details .study-info .paragraph {
+    margin: 40px 0;
+  }
+
+  #main-content .section-2 .study-details .study-info .paragraph .title {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  #main-content .section-2 .study-details .study-info .paragraph p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+
+  #main-content .section-2 .study-details .study-registration {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  #main-content .section-2 .study-details .study-registration .left-col {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col {
+    min-width: 300px;
+    flex: 1;
+    padding: 15px 30px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col .title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    color: #00BDF1;
+    color: var(--lt-blue);
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+
+  #main-content .section-2 .study-details .study-registration .right-col .subtitle {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin: 40px 0 15px 0;
+  }
+
+
+  #main-content .section-2 .study-details .study-registration .right-col input[type=text],
+  #main-content .section-2 .study-details .study-registration .right-col input[type=date],
+  #main-content .section-2 .study-details .study-registration .right-col input[type=email] {
+    display: block;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1rem;
+    background: #f8f8f8;
+    border: none;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col .form-row {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col input[type=checkbox] {
+    width: auto;
+    margin: 0.5rem 10px;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col label {
+    flex: 1;
+    margin: 0 10px;
+    font-size: 1.1rem;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col input[type="submit"] {
+    width: 100%;
+    border: none;
+    background: #00BDF1;
+    background: var(--lt-blue);
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 40px 0;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #757575;
+    margin-right: 0.5em;
+  }
+
+  #main-content .section-2 .study-details .study-registration .right-col input[type="date"]:focus:before,
+  #main-content .section-2 .study-details .study-registration .right-col input[type="date"]:valid:before {
+    content: "";
+  }
+
+  /****************** END OF STUDIES PAGE STYLEE *****************/
+}
