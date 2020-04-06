@@ -4,8 +4,8 @@
   email: john@doe.com
   image: /assets/images/people/1.jpg
 
-- name: Prof Jane Smith
-  affiliation: Professor of Something at a Certain University
+- name: Dr Jane Smith
+  affiliation: Afilliation goes here
   bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. mollis euismod. 
   email: jane@smith.com
   image: /assets/images/people/2.jpg
@@ -15,4 +15,10 @@
   bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
   email: John@smith.com
   image: /assets/images/people/3.jpg
+
+- name: Mr John Smith
+  affiliation: Afilliation goes here
+  bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+  email: John@smith.com
+  image: /assets/images/studies/p1.png
 

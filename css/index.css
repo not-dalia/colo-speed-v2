@@ -305,6 +305,10 @@
   box-sizing: border-box;
 }
 
+#main-content .section-4 .latest-studies .col .paragraph p{
+  line-height: 1.6rem;
+}
+
 #main-content .section-4 .latest-studies .study-image {
   width: 300px;
   height: 100%;
