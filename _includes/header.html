@@ -1,0 +1,26 @@
+<div id="header" {% if include.type == "transparent" %} class="transparent" {% else %} class="blue" {% endif %}>
+  <div id="logo">
+    <div class="title din-black condensed"><a href="/">COLO-SPEED</a></div>
+    <div class="desc din-black">
+      Be part of the world's largest colorectal cancer research group
+    </div>
+  </div>
+  <button id="nav-menu-button">☰</button>
+  <div class="nav">
+    <ul class="nav-items gibson-medium">
+      <li {% if page.title == "Home" %} id="selected" {% endif %}><a href="/">Home</a></li>
+      <li {% if page.title == "Studies" %} id="selected" {% endif %}><a href="/studies/">Our Studies</a></li>
+      <li {% if page.title == "Participants" %} id="selected" {% endif %}><a href="/participants/">Participants</a></li>
+      <li {% if page.title == "About Bowel Cancer" %} id="selected" {% endif %} class="inner"><a href="/participants/bowel-cancer/">About Bowel Cancer</a></li>
+      <li {% if page.title == "About Health Research" %} id="selected" {% endif %} class="inner"><a href="/participants/health-research/">About Health Research</a></li>
+      <li {% if page.title == "How can I get involved?" %} id="selected" {% endif %} class="inner"><a href="/participants/how-to-get-involved/">How Can I Get Involved?</a></li>
+      <li {% if page.title == "Participant FAQs" %} id="selected" {% endif %} class="inner"><a href="/participants/participant-faqs/">Participant FAQs</a></li>
+      <li {% if page.title == "Researchers" %} id="selected" {% endif %}><a href="/researchers/">Researchers</a></li>
+      <li {% if page.title == "Researchers FAQs" %} id="selected" {% endif %} class="inner"><a href="/researchers/researcher-faqs/">Researchers FAQs</a></li>
+      <li {% if page.title == "News & Media" %} id="selected" {% endif %}><a href="/news/">News & Media</a></li>
+      <li {% if page.title == "About" %} id="selected" {% endif %}><a href="/about/">About</a></li>
+      <li {% if page.title == "Contact Us" %} id="selected" {% endif %}><a href="/contact-us/">Contact us</a></li>
+      <li><a href="#">Register</a></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+---
+title: About
+permalink: /about/
+---
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>COLO-SPEED - Studies</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#004379">
+  <link rel="stylesheet" href="/css/styles.1569346102824.css">
+  <link rel="stylesheet" href="/css/styles.1569346102824.mob.css">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/about.mob.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {% include header.html %}
+
+  <div id="main-content">
+    <div class="section section-1 gibson-book">
+      <div class="left-col col">
+        <div class="title">About</div>
+        <p>
+          COLO-SPEED was devised by a group of keen bowel cancer researchers and aims to be the world largest research platform developing and delivering bowel cancer research, within bowel cancer screening, prevention, and early diagnosis.
+        </p>
+        <br><br>
+        <div class="title">Our mission statement</div>
+        <p>
+          COLO-SPEED will transform endoscopy units into colorectal cancer research recruitment centres, building the world’s largest ‘experimental platform’ for colorectal cancer prevention and research. Patients attending endoscopy will be invited to participate in colorectal research, either by directly entering a specific research study and/or consenting to be contacted in the future about suitable research studies. This unique resource will enable efficient delivery of cutting-edge research.   
+          <br><br>
+          This experimental platform will provide a resource for clinicians (doctors and nurses), researchers, industry and (we hope, in due course) patients, to propose research studies and for these to be conducted rapidly. We are working with Open Lab, a world-leading group with a strong track record in developing user-friendly applications of new technology, to design an IT platform to host the information from patients who agree to take part in COLO-SPEED. 
+        </p>
+      </div>
+      <div class="right-col col">
+
+      </div>
+    </div>
+    <div class="decor-row">
+      <div class="left-decor decor"></div>
+      <div class="right-decor decor"></div>
+    </div>
+    <!-- <div class="section section-2 gibson-book">
+      <div class="left-col col">
+        <div class="title">Who are we & people involved</div>
+        <p>
+          Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+          mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        </p>
+      </div>
+      <div class="right-col col">
+      </div>
+    </div> -->
+    <div class="section section-2 gibson-book">
+      <div class="main-col col">
+        <div class="title">Who are we</div>
+        <div class="members">
+          {% for member in site.data.members %}
+            <div class="member">
+              <div class="image" style="background-image: url('{{ member.image }}');"></div>
+              <div class="member-info">
+                <div class="name"> {{member.name}} </div>
+                <div class="affiliation"> {{member.affiliation}} </div>
+                <div class="bio"> {{member.bio}} </div>
+                <div class="contact"> <a href="mailto:{{member.email}}">{{member.email}}</a> </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+  <script src="/js/script.js" async defer></script>
+</body>
+
+</html>

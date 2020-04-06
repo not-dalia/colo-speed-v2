@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>COLO-SPEED - {{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#004379">
+  <link rel="stylesheet" href="/css/styles.1569346102824.css">
+  <link rel="stylesheet" href="/css/styles.1569346102824.mob.css">
+  <link rel="stylesheet" href="/css/news.css">
+  <link rel="stylesheet" href="/css/news.mob.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {% include header.html %}
+
+  <div id="main-content">
+    <div class="section section-1 gibson-book">
+      <div class="news-media">
+        <div class="main-col">
+          <div class="title">
+            {{ page.title }}
+          </div>
+
+          {% assign news = site.news | sort: 'date' | reverse %}
+
+          {% for article in news %}
+          <div class="article">
+            <div class="left-col col" style="background-image: url('{{ article.image }}');">
+
+            </div>
+            <div class="right-col col">
+              <div class="date">
+                <a href="{{article.url}}">{{ article.date | date_to_rfc822 }}</a>
+              </div>
+              <div class="newstitle">
+                <a href="{{article.url}}">{{ article.title }}</a>
+              </div>
+              <div class="subtitle">
+                {{ article.subtitle }}
+              </div>
+              
+              <div class="paragraph">
+                <p>
+                  {{ article.content | markdownify | truncate: 255 }} <a href="{{article.url}}" class="read-more">Read more</a>
+                </p>
+              </div>
+
+              <div class="tags">
+                {% for tag in article.tags %}
+                <a class="tag">
+                  {{ tag }}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+  <script src="/js/script.js" async defer></script>
+</body>
+
+</html>
