@@ -1,45 +1,9 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+---
+title: Home
+layout: parent
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>COLO-SPEED - Overview</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#004379">
-  <link rel="stylesheet" href="/css/styles.1569346102824.css">
-  <link rel="stylesheet" href="/css/index.css">
-  <link rel="stylesheet" href="/css/index.mob.css">
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <div id="header" class="transparent">
-    <div id="logo">
-      <div class="title din-black condensed"><a href="/">COLO-SPEED</a></div>
-      <div class="desc din-black">
-        Be part of the world's largest colorectal cancer research group
-      </div>
-    </div>
-    <button id="nav-menu-button">☰</button>
-    <div class="nav">
-      <ul class="nav-items gibson-medium">
-        <li id="selected"><a href="#">Overview</a></li>
-        <li><a href="/studies/">Studies</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact-us/">Contact us</a></li>
-      </ul>
-    </div>
-  </div>
+  {% include header.html type="transparent" %}
 
   <div id="main-content">
     <div class="section section-1">
@@ -50,10 +14,7 @@
       <div class="overview-box">
         <div class="title gibson-medium">Overview</div>
         <p class="gibson-book">
-          Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo,
-          tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-          mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+          Our aim is to stop people dying of bowel cancer. Bowel cancer, also called colorectal cancer (CRC), is the fourth most common cancer and the second most common cancer death in the UK. COLOSPEED (Colorectal Cancer Screening Prevention Endoscopy and Early Diagnosis) is building the world’s largest platform for research in prevention and early diagnosis of bowel cancer.
         </p>
       </div>
     </div>
@@ -104,7 +65,7 @@
     </div>
     <div class="section section-3">
       <div class="blue-decor"></div>
-      <div class="latest-studies gibson-book">
+      <div class="featured-articles gibson-book">
         <div class="row">
           <div class="col">
             <div class="video video-2">
@@ -112,24 +73,25 @@
             </div>
           </div>
           <div class="col paragraph">
-            <div class="title gibson-medium">Video / Animation</div>
+            <div class="title gibson-medium">Featured Article</div>
             <p>
               Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus
               commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
               malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor
               sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
             </p>
+            <div class="register-btn gibson-medium"><a href="/studies/">Read more</a></div>
           </div>
         </div>
         <div class="row">
           <div class="col paragraph">
-            <div class="title gibson-medium">Latest Studies</div>
+            <div class="title gibson-medium">Featured Study</div>
             <p>
               Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus
               commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
               malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
             </p>
-            <div class="register-btn gibson-medium"><a href="/studies/">Register now</a></div>
+            <div class="register-btn gibson-medium"><a href="/studies/">Read more</a></div>
           </div>
           <div class="col">
             <div class="video video-3"></div>
@@ -138,6 +100,43 @@
       </div>
     </div>
     <div class="section section-4">
+      <div class="title gibson-medium">Latest Studies</div>
+      <div class="latest-studies">
+        <div class="row">
+          <div class="col">
+            <div class="study-image" style="background-image: url('/assets/images/overview/p1.png');"></div>
+          </div>
+          <div class="col">
+            <div class="paragraph gibson-book">
+              <div class="study-title gibson-medium">Colo Cohort</div>
+              <p>
+                Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus
+                commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
+              </p>
+              <div class="register-btn gibson-medium"><a href="/studies/">Find out more</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="study-image" style="background-image: url('/assets/images/overview/v1.png');"></div>
+          </div>
+          <div class="col">
+            <div class="paragraph gibson-book">
+              <div class="study-title gibson-medium">Colo Cohort</div>
+              <p>
+                Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus
+                commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
+                malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
+              </p>
+              <div class="register-btn gibson-medium"><a href="/studies/">Find out more</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-5">
       <div class="partners">
         <div class="title gibson-book">Our Partners</div>
         <div class="partner-logos">
@@ -155,77 +154,4 @@
     </div>
   </div>
 
-  <div id="footer">
-    <div class="left-section">
-      <div class="section-inner">
-        <div class="col">
-          <div class="title gibson-medium">
-            COLO-SPEED
-          </div>
-          <ul class="links gibson-book">
-            <li>
-              <a href="/">Overview</a>
-            </li>
-            <li>
-              <a href="/studies/">Studies</a>
-            </li>
-            <li>
-              <a href="/about/">About</a>
-            </li>
-            <li>
-              <a href="/contact-us/">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <div class="title gibson-medium">
-            Legal
-          </div>
-          <ul class="links gibson-book">
-            <li>
-              <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Cookies</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="middle-section">
-      <ul class="social-links">
-        <li><a href="#">
-            <div class="social-img" id="fb" alt="Facebook"></div>
-          </a></li>
-        <li><a href="#">
-            <div class="social-img" id="tw" alt="Twitter"></div>
-          </a></li>
-        <li><a href="#">
-            <div class="social-img" id="ln" alt="LinkedIn"></div>
-          </a></li>
-        <li><a href="#">
-            <div class="social-img" id="in" alt="Instagram"></div>
-          </a></li>
-      </ul>
-    </div>
-    <div class="right-section gibson-book">
-      <div class="newsletter">
-        <div>Sign up to receive news and updates</div>
-        <div class="email-field">
-          <input type="email" placeholder="Your email">
-          <div id="email-submit"><a href="#"><img src="/assets/images/submit-arrow.svg" alt="Submit"></a></div>
-        </div>
-        <div>
-          By submitting your email, you agree to receive COLO-SPEED’s emails. You can withdraw your consent at any time.
-          Please refer to our <a href="#">Privacy Policy</a> or <a href="#">Contact Us</a> for more details.
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="/js/script.js" async defer></script>
-</body>
-
-</html>
+  {% include footer.html %}

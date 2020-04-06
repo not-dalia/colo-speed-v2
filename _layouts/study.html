@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>COLO-SPEED - {{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#004379">
+  <link rel="stylesheet" href="/css/styles.1569346102824.css">
+  <link rel="stylesheet" href="/css/styles.1569346102824.mob.css">
+  <link rel="stylesheet" href="/css/studies/study.css">
+  <link rel="stylesheet" href="/css/studies/study.mob.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {% include header.html %}
+
+  <div id="main-content">
+    <div class="section section-1 studies gibson-book">
+      <div class="study">
+        <div class="left-col col">
+          <div class="study-info">
+            <div class="title gibson-medium">
+              {{ page.title }}
+            </div>
+            <div class="subtitle gibson-medium">
+              {{ page.subtitle }}
+            </div>
+            <div class="paragraph">
+              {{ page.aim }}
+            </div>
+            <div class="status">
+              <span class="strong">Status:</span> {{ page.status }}  
+            </div>
+            <a href="#register" class="read-more">
+              Register now
+            </a>
+          </div>
+        </div>
+        <div class="right-col col" style="background-image: url('{{ page.image }}')">
+        </div>
+      </div>
+    </div>
+    <div class="section section-2 gibson-book">
+      <div class="study-details">
+        <div class="study-info">
+          <div class="paragraph">
+            <div class="title">About</div>
+            <p>
+              {{ content}}
+            </p>
+          </div>
+          <div class="paragraph">
+            <div class="title">How</div>
+            <div class="subtitle">Information for Patients:</div>
+            <p>
+              {{ page.patientinfo | markdownify | remove: '<p>' | remove: '</p>' }}
+            </p>
+            <div class="subtitle">Information for Researchers:</div>
+            <p>
+              {{ page.researcherinfo | markdownify | remove: '<p>' | remove: '</p>' }}
+            </p>
+          </div>
+          <div class="paragraph">
+            <div class="title">Where</div>
+            <div class="subtitle">Opened sites:</div>
+            <ul>
+              {% for site in page.openedsites %}
+                <li>{{site.name}}</li>
+              {% endfor %}
+            </ul>
+            {% if page.openingsites %}
+              <div class="subtitle">
+                {% if page.openingsitestitle %}
+                  {{ page.openingsitestitle }}:
+                {% else %}
+                  Opening sites:
+                {% endif %}
+              </div>
+            {% endif %}
+            <ul>
+              {% for site in page.openingsites %}
+                <li>{{site.name}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="paragraph">
+            <div class="title">Who</div>
+            <div class="subtitle">Researchers:</div>
+            <ul>
+              {% for researcher in page.researchers %}
+                <li>{{researcher.name}}</li>
+              {% endfor %}
+            </ul>
+            <div class="subtitle">Study Sponsor:</div>
+            <ul>
+              <li> {{ page.sponsor }} </li>
+            </ul>
+          </div>
+        </div>
+        <div class="study-registration"  id="register">
+          <div class="left-col" style="background-image: url('/assets/images/studies/p1.png')">
+
+          </div>
+          <div class="right-col">
+            <div class="title">Apply now</div>
+            <form action="#" id="registration-form">
+              <input type="text" placeholder="First Name*" aria-label="First Name" aria-required="true" required>
+              <input type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" required>
+              <input type="date" placeholder="Date of birth*" aria-label="Date of birth (DD/MM/YYYY)"
+                aria-required="true" required>
+              <input type="email" placeholder="Email*" aria-label="Email" aria-required="true" required>
+              <input type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required>
+              <div class="subtitle">
+                Consent
+              </div>
+              <div class="form-row">
+                <input type="checkbox" name="consent-1" id="consent-1" aria-required="true" required>
+                <label for="consent-1">I hereby consent to morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                  Vestibulum id ligula porta felis euismod semper.</label>
+              </div>
+              <div class="form-row">
+                <input type="checkbox" name="consent-2" id="consent-2" aria-required="true" required>
+                <label for="consent-2">I hereby consent to morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                  Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.
+                  Etiam porta sem malesuada magna mollis euismod.</label>
+              </div>
+              <div class="form-row">
+                <input type="submit" value="Register Now" aria-label="Register Now">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+  <script src="/js/script.js" async defer></script>
+</body>
+
+</html>
