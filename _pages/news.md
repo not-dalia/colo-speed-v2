@@ -1,5 +1,5 @@
 ---
-title: News & Media
+title: News
 permalink: /news/
 layout: news
 ---
