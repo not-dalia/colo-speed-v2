@@ -3,8 +3,8 @@
 #main-content .section-1 {
   background-color: #004379;
   background-color: var(--primary-color);
-  /* padding-top: 102px; */
-  padding-top: 30px;
+  padding-top: 102px;
+  /* padding-top: 30px; */
 }
 
 #main-content .section-1 .study{
