@@ -14,6 +14,13 @@ function registerUser(form) {
   $.each($(form).serializeArray(), function(i, field) {
     values[field.name] = field.value;
   });
+
+  $(form).find(':input').prop('disabled',true)
+  $(form).addClass('loading');
+  $(form).removeClass('success');
+  $(form).removeClass('fail');
+  $(form).removeClass('submitted');
+
   api.register({
     firstname: values.firstname,
     lastname: values.lastname,
@@ -23,7 +30,20 @@ function registerUser(form) {
     consent: values['consent-1'] == 'on' && values['consent-2'] == 'on',
     interest: values.interest
   }, function(success, data) {
-    console.log(data)
+    setTimeout(function () {
+      $(form).find(':input').prop('disabled', false);
+      $(form).removeClass('loading');
+      $(form).addClass('submitted');
+      if (!success || !data.success) {
+        $(form).addClass('fail');
+        $(form).find('.info-message .message').text('Sorry, something went wrong.')
+      } else {
+        $(form).trigger("reset");
+        $(form).addClass('success');
+        $(form).find('.info-message .message').text('Thank you for registering your interest.')
+      }
+    }, 1000)
+    
   });
   return false;
 }
@@ -33,6 +53,14 @@ function contact(form) {
   $.each($(form).serializeArray(), function(i, field) {
     values[field.name] = field.value;
   });
+
+  $(form).find(':input').prop('disabled',true)
+  $(form).addClass('loading');
+  $(form).removeClass('success');
+  $(form).removeClass('fail');
+  $(form).removeClass('submitted');
+
+  
   api.contact({
     firstname: values.firstname,
     lastname: values.lastname,
@@ -40,7 +68,19 @@ function contact(form) {
     postcode: values.postcode,
     message: values.message,
   }, function(success, data) {
-    console.log(data)
+    setTimeout(function () {
+      $(form).find(':input').prop('disabled', false);
+      $(form).removeClass('loading');
+      $(form).addClass('submitted');
+      if (!success || !data.success) {
+        $(form).addClass('fail');
+        $(form).find('.info-message .message').text('Sorry, something went wrong.')
+      } else {
+        $(form).trigger("reset");
+        $(form).addClass('success');
+        $(form).find('.info-message .message').text('Thank you for contacting us.')
+      }
+    }, 1000)
   });
   return false;
 }
@@ -49,14 +89,15 @@ var api = {
   register: function (data, callback) {
     $.ajax({
       type: "POST",
-      url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/users/register",
+      // url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/users/register",
+      url: "http://localhost:3000//users/register",
       data: JSON.stringify(data),
       contentType: "application/json; charset=utf-8",
       dataType: "json",
       success: function(data){
         callback(true, data)
       },
-      failure: function(error) {
+      error: function(error) {
         callback(false, error)
       }
     });
@@ -64,14 +105,15 @@ var api = {
   contact: function (data, callback) {
     $.ajax({
       type: "POST",
-      url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/contact",
+      // url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/contact",
+      url: "http://localhost:3000//contact",
       data: JSON.stringify(data),
       contentType: "application/json; charset=utf-8",
       dataType: "json",
       success: function(data){
         callback(true, data)
       },
-      failure: function(error) {
+      error: function(error) {
         callback(false, error)
       }
     });

@@ -124,6 +124,7 @@
 
 #main-content .section-1 .contact-us .right-col form {
   width: 100%;
+  position: relative;
 }
 
 #main-content .section-1 .contact-us .right-col input[type=text],
@@ -175,6 +176,16 @@
   border-radius: 50px;
   padding: 10px;
   margin: 20px 0;
+}
+
+#main-content .section-1 .contact-us .right-col .loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: url('/assets/images/people/mark.jpg'); */
+  background: rgba(0,0,0,0.3);
 }
 
 .contents-table {
