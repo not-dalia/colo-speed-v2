@@ -9,18 +9,18 @@ layout: page
 </div>
 <div class="right-col">
   <div class="title">Register</div>
-  <form action="#" id="registration-form">
+  <form onsubmit="return registerUser(this);" id="registration-form">
     <label for="first-name" class="small">First Name</label>
-    <input type="text" placeholder="First Name*" aria-label="First Name" aria-required="true" id="first-name" required>
+    <input name="firstname" type="text" placeholder="First Name*" aria-label="First Name" aria-required="true" id="first-name" required>
     <label for="last-name" class="small">Last Name</label>
-    <input type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" id="last-name" required>
+    <input name="lastname" type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" id="last-name" required>
     <label for="dob" class="small">Date of Birth</label>
-    <input type="date" placeholder="Date of birth*" aria-label="Date of birth (DD/MM/YYYY)"
+    <input name="birthdate" type="date" placeholder="Date of birth*" aria-label="Date of birth (DD/MM/YYYY)"
       aria-required="true" id="dob" required>
     <label for="email" class="small">Email Address</label>
-    <input type="email" placeholder="Email*" aria-label="Email" aria-required="true" id="email" required>
+    <input name="email" type="email" placeholder="Email*" aria-label="Email" aria-required="true" id="email" required>
     <label for="postcode" class="small">Postcode</label>
-    <input type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" id="postcode" required>
+    <input name="postcode" type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" id="postcode" required>
     <div class="subtitle">
       Consent
     </div>

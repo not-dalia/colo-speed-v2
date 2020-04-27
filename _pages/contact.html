@@ -28,11 +28,11 @@ layout: page
       Many thanks on your interest in COLO-SPEED. We are still developing this website and will update this section in due course. If you are interested in this participating in COLO-SPEED studies, please contact your local research team. Thank you.  
     </p>
   </div>
-  <form action="/" id="getintouch">
-    <input type="text" placeholder="First Name*" aria-label="First Name" aria-required="true" required>
-    <input type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" required>
-    <input type="email" placeholder="Email*" aria-label="Email" aria-required="true" required>
-    <input type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required>
+  <form onsubmit="return contact(this);" id="getintouch">
+    <input name="firstname" type="text" placeholder="First Name*" aria-label="First Name" aria-required="true" required>
+    <input name="lastname" type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" required>
+    <input name="email" type="email" placeholder="Email*" aria-label="Email" aria-required="true" required>
+    <input name="postcode" type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required>
     <textarea name="message" placeholder="Message*" id="message" rows="10" aria-label="Message"
       aria-required="true" required></textarea>
     <div class="form-row">

@@ -375,6 +375,11 @@
   #main-content .section-5 .partners .partner-logos {
     margin-top: 50px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   #main-content .section-5 .partners .partner-logo {
@@ -384,6 +389,7 @@
 
   #main-content .section-5 .partners .partner-logo img {
     width: 200px;
+    cursor: pointer;
   }
 
   /****************** END OF OVERVIEW PAGE STYLEE *****************/

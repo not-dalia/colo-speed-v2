@@ -356,15 +356,21 @@
 #main-content .section-5 .partners .partner-logos{ 
   margin-top: 50px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-content .section-5 .partners .partner-logo{ 
-  display: inline-block;
-  margin: 0 20px;
+  cursor: pointer;
 }
 
 #main-content .section-5 .partners .partner-logo img{ 
   width: 200px;
+  cursor: pointer;
+  margin: 10px 20px;
 }
  
 /****************** END OF OVERVIEW PAGE STYLEE *****************/
