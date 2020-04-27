@@ -89,8 +89,8 @@ var api = {
   register: function (data, callback) {
     $.ajax({
       type: "POST",
-      // url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/users/register",
-      url: "http://localhost:3000//users/register",
+      url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/users/register",
+      // url: "http://localhost:3000//users/register",
       data: JSON.stringify(data),
       contentType: "application/json; charset=utf-8",
       dataType: "json",
@@ -105,8 +105,8 @@ var api = {
   contact: function (data, callback) {
     $.ajax({
       type: "POST",
-      // url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/contact",
-      url: "http://localhost:3000//contact",
+      url: "https://openlab.ncl.ac.uk/dokku/colospeed-api/contact",
+      // url: "http://localhost:3000//contact",
       data: JSON.stringify(data),
       contentType: "application/json; charset=utf-8",
       dataType: "json",
