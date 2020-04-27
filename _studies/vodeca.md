@@ -5,15 +5,11 @@ image: /assets/images/studies/study2.png
 status: Recruitment active
 sponsor: University of Liverpool
 subtitle: Volatile Organic compounds for DEtection of Colorectal cAncer
-contactperson: Colin Rees – Newcastle University & South Tyneside and Sunderland NHS Trust
+contactperson: Professor Chris Probert – University of Liverpool
+
 researchers: 
-  - name: Professor Colin Rees
-  - name: Professor Linda Sharp
-  - name: Professor Mark Hull
-  - name: Dr Suparna Mitra
-  - name: Dr Laura Neilson
-  - name: Dr Kyle Montague
-  - name: Mr John Whelpton 
+  - name: Professor Chris Probert
+   
 openedsites: 
   - name: Liverpool Hospitals
   - name: sites in the North East includes South Tyneside and Sunderland NHS Foundation Trust
