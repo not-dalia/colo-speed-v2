@@ -4,17 +4,17 @@
   email: Colin.Rees@newcastle.ac.uk
   image: /assets/images/people/colin.jpg
 
-- name: Dr Jane Smith
-  affiliation: Afilliation goes here
+- name: Professor Linda Sharp
+  affiliation: Professor of Cancer Epidemiology, Newcastle University
   bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. mollis euismod. 
-  email: jane@smith.com
-  image: /assets/images/people/2.jpg
+  email: linda.sharp@ncl.ac.uk
+  image: /assets/images/people/linda.jpg
 
-- name: Mr John Smith
-  affiliation: Afilliation goes here
+- name: Dr Kyle Montague
+  affiliation: Lecturer in Human-Computer Interaction, Newcastle University
   bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
-  email: John@smith.com
-  image: /assets/images/people/3.jpg
+  email: kyle.montague@newcastle.ac.uk
+  image: /assets/images/people/kyle.jpg
 
 - name: Mr John Smith
   affiliation: Afilliation goes here
