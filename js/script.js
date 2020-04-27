@@ -23,7 +23,6 @@ function registerUser(form) {
     consent: values['consent-1'] == 'on' && values['consent-2'] == 'on',
     interest: values.interest
   }, function(success, data) {
-    alert('success: ' + success);
     console.log(data)
   });
   return false;
@@ -41,7 +40,6 @@ function contact(form) {
     postcode: values.postcode,
     message: values.message,
   }, function(success, data) {
-    alert('success: ' + success);
     console.log(data)
   });
   return false;
