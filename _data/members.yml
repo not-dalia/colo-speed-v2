@@ -1,8 +1,8 @@
-- name: Prof John Doe
-  affiliation: Professor of Something at a Certain University
+- name: Prof Colin Rees
+  affiliation: Professor of Gastroenterology, Newcastle University
   bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna.
-  email: john@doe.com
-  image: /assets/images/people/1.jpg
+  email: Colin.Rees@newcastle.ac.uk
+  image: /assets/images/people/colin.jpg
 
 - name: Dr Jane Smith
   affiliation: Afilliation goes here
