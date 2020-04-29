@@ -1,7 +1,7 @@
 ---
 title: Colo-Cohort
 layout: study
-image: /assets/images/studies/study1.png
+image: /assets/images/studies/study1.jpg
 status: Recruitment commenced December 2019
 sponsor: South Tyneside and Sunderland NHS Foundation Trust 
 subtitle: Colorectal Cancer Cohort Study
