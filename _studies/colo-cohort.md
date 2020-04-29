@@ -33,7 +33,7 @@ researcherinfo: If you are interested in participating as a study site, please c
 
 We aim to recruit 10000 patients undergoing colonoscopy as part of BCSP or due to symptoms. Participants will be asked to fill in a health questionnaire and have their height, weight and waist circumference measured. They will also receive blood tests and stool tests, depending on the indication for their colonoscopy. The results of the colonoscopy and any samples taken will be collated. Patients will receive a patient experience questionnaire or food frequency questionnaire.   
 
-![Sample photo](/assets/images/studies/samples2.jpg)
- 
+<!-- ![Sample photo](/assets/images/studies/samples2.jpg)
+  -->
 
 Additionally 10000 patients from the North of England will also be consented to be contacted for future studies with some of the information above collected. 
