@@ -1,24 +1,29 @@
-- name: Prof Colin Rees
+- name: Professor Colin Rees
   affiliation: Professor of Gastroenterology, Newcastle University
-  bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna.
+  bio: 
   email: Colin.Rees@newcastle.ac.uk
   image: /assets/images/people/colin.jpg
 
 - name: Professor Linda Sharp
   affiliation: Professor of Cancer Epidemiology, Newcastle University
-  bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. mollis euismod. 
+  bio: 
   email: linda.sharp@newcastle.ac.uk
   image: /assets/images/people/linda.jpg
 
 - name: Dr Kyle Montague
   affiliation: Lecturer in Human-Computer Interaction, Newcastle University
-  bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+  bio: 
   email: kyle.montague@newcastle.ac.uk
   image: /assets/images/people/kyle.jpg
 
 - name: Professor Mark Hull
   affiliation: Professor of Molecular Gastroenterology, University of Leeds
-  bio: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+  bio: 
   email: M.A.Hull@leeds.ac.uk
   image: /assets/images/people/mark.jpg
 
+- name: Dr Barry Sandywell
+  affiliation: Honorary fellow, University of York
+  bio: Dr. Sandywell comes from a social/human sciences background and is the author of a number of books and essays. He is currently Honorary Fellow in Social Theory at the University of York. Over recent years he has been concerned with the public reception of science, preventative medicine, and support for the NHS. He has been an active member of the Bowel Cancer Screening Programme for seven years (since 2013)
+  email: bs5@york.ac.uk
+  image: /assets/images/people/barry.jpg
