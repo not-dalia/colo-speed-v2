@@ -24,6 +24,6 @@
 
 - name: Dr Barry Sandywell
   affiliation: Honorary fellow, University of York
-  bio: Dr. Sandywell comes from a social/human sciences background and is the author of a number of books and essays. He is currently Honorary Fellow in Social Theory at the University of York. Over recent years he has been concerned with the public reception of science, preventative medicine, and support for the NHS. He has been an active member of the Bowel Cancer Screening Programme for seven years (since 2013)
+  # bio: Dr. Sandywell comes from a social/human sciences background and is the author of a number of books and essays. He is currently Honorary Fellow in Social Theory at the University of York. Over recent years he has been concerned with the public reception of science, preventative medicine, and support for the NHS. He has been an active member of the Bowel Cancer Screening Programme for seven years (since 2013)
   email: bs5@york.ac.uk
   image: /assets/images/people/barry.jpg
