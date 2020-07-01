@@ -142,7 +142,7 @@ collections:
       - label: Article type
         name: type
         widget: select
-        options: ["article", "event", "news"]
+        options: ["article", "event", "news", "publication"]
       - label: Body
         name: body
         widget: markdown
