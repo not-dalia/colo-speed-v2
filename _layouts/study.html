@@ -116,13 +116,13 @@
           <div class="right-col">
             <div class="title">Apply now</div>
             <form onsubmit="return registerUser(this);" id="registration-form">
-              <input name="interest" type="hidden" value="{{ page.url }}">
-              <input name="firstname" type="text" placeholder="First Name*" aria-label="First Name" aria-required="true" required>
-              <input name="lastname" type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" required>
-              <input name="birthdate" type="date" placeholder="Date of birth*" aria-label="Date of birth (DD/MM/YYYY)"
-                aria-required="true" required>
+              <input name="interest" type="hidden" value="{{ page.ref }}">
+              <input name="name" type="text" placeholder="Name*" aria-label="Name" aria-required="true" required>
+              <!-- <input name="lastname" type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" required> -->
+              <!-- <input name="birthdate" type="date" placeholder="Date of birth*" aria-label="Date of birth (DD/MM/YYYY)"
+                aria-required="true" required> -->
               <input name="email" type="email" placeholder="Email*" aria-label="Email" aria-required="true" required>
-              <input name="postcode" type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required>
+              <!-- <input name="postcode" type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required> -->
               <div class="subtitle">
                 Consent
               </div>

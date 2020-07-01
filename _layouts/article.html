@@ -40,7 +40,8 @@
             <div class="right-col col">
               <!-- <img src="{{ article.image }}" class="main-image"> -->
               <div class="date">
-                Written by <a class="author-link" href="mailto:{{article.author.email}}">{{ article.author.name }}</a> at <a href="{{article.url}}">{{ article.date | date_to_rfc822 }}</a>
+                <!-- Written by <a class="author-link" href="mailto:{{article.author.email}}">{{ article.author.name }}</a> at <a href="{{article.url}}">{{ article.date | date_to_rfc822 }}</a> -->
+                <a href="{{article.url}}">{{ article.date | date: "%-d %B %Y, %R" }}</a>
               </div>
               <div class="newstitle">
                 <a href="{{article.url}}">{{ article.title }}</a>
@@ -61,15 +62,30 @@
                 </div>
                 <ul>
                   {% for link in article.externallinks %}
-                    <li><a class="link" href="link.link">
+                    <li><a class="link" href="{{link.link}}">
                       {{ link.title }}
                     </a></li>
                   {% endfor %}
                 </ul>
               </div>
-
               
-
+              {% if article.study and article.study != "" and article.study != nil %}
+                <div class="external-links">
+                  <div class="small-title">
+                    Related Studies:
+                  </div>
+                  <ul>
+                    {% for study in site.studies %}
+                      {% if study.ref == article.study %}
+                        <li><a class="link" href="{{study.url}}">
+                          {{ study.title }}
+                        </a></li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+              
               <div class="tags">
                 {% for tag in article.tags %}
                 <a class="tag">

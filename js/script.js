@@ -22,8 +22,7 @@ function registerUser(form) {
   $(form).removeClass('submitted');
 
   api.register({
-    firstname: values.firstname,
-    lastname: values.lastname,
+    name: values.name,
     email: values.email,
     birthdate: values.birthdate,
     postcode: values.postcode,
@@ -62,8 +61,7 @@ function contact(form) {
 
   
   api.contact({
-    firstname: values.firstname,
-    lastname: values.lastname,
+    name: values.name,
     email: values.email,
     postcode: values.postcode,
     message: values.message,

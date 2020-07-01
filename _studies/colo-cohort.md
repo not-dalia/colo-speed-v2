@@ -1,5 +1,6 @@
 ---
 title: Colo-Cohort
+ref: colo-cohort
 layout: study
 image: /assets/images/studies/study1.jpg
 status: Recruitment commenced December 2019
@@ -29,6 +30,7 @@ shortoverview: COLO-COHORT aims to develop a “risk stratification tool” to h
 aim: Our main study aim is to develop a risk tool to help identify which patients are at highest risk of having adenomas or bowel cancer. We will also explore the significance of the gut bacteria composition in patients with adenomas or cancer to help inform this risk model. Additionally we will develop a large platform of patients who consent to be contacted for future research. 
 patientinfo: This study will be rolled out to sites within the North East by Spring 2020.  If you are interested in participating in this study, and if the study is open at your local hospital, please contact a member of your local research team.   
 researcherinfo: If you are interested in participating as a study site, please contact a member of the study team (information within EoI documents). If you are a site from the North of England please [click here](#), if you are from a site outside the North of England please [click here](#).  
+featured: true
 ---
 
 We aim to recruit 10000 patients undergoing colonoscopy as part of BCSP or due to symptoms. Participants will be asked to fill in a health questionnaire and have their height, weight and waist circumference measured. They will also receive blood tests and stool tests, depending on the indication for their colonoscopy. The results of the colonoscopy and any samples taken will be collated. Patients will receive a patient experience questionnaire or food frequency questionnaire.   

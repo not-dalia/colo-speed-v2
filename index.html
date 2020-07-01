@@ -9,7 +9,7 @@ layout: parent
     <div class="section section-1">
       <div class="video video-1">
         <div class="video-image" alt="Video"></div>
-        <a class="video-play-btn"></a>
+        <!-- <a class="video-play-btn"></a> -->
       </div>
       <div class="overview-box">
         <div class="title gibson-medium">Overview</div>
@@ -66,35 +66,48 @@ layout: parent
     <div class="section section-3">
       <div class="blue-decor"></div>
       <div class="featured-articles gibson-book">
-        <div class="row">
-          <div class="col">
-            <div class="video video-2">
-              <a class="video-play-btn"></a>
+        {% assign articles = site.articles | sort: 'date' | reverse %}
+        {% for article in articles %}
+          {% if article.featured == true %}
+            <div class="row">
+              <div class="col">
+                <div class="video video-2" style="background-image: url('{{ article.image }}');">
+                  <!-- <a class="video-play-btn"></a> -->
+                </div>
+              </div>
+              <div class="col paragraph">
+                <div class="subtitle gibson-medium">Featured Article</div>
+                <h3 class="title gibson-medium">
+                  <a href="{{article.url}}">{{ article.title }}</a>
+                </h3>
+                {{ article.content | markdownify | truncate: 300 }}
+                <div class="register-btn gibson-medium"><a href="{{article.url}}">Read more</a></div>
+              </div>
             </div>
-          </div>
-          <div class="col paragraph">
-            <div class="title gibson-medium">Featured Article</div>
-            <p>
-              Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus
-              commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem
-              malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-            </p>
-            <div class="register-btn gibson-medium"><a href="/studies/">Read more</a></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col paragraph">
-            <div class="title gibson-medium">COLO-COHORT</div>
-            <p>
-              COLO-COHORT aims to develop a “risk stratification tool” to help determine which patients are at highest risk of having polyps or cancer; this tool will be able to be used in the future to work out which patients need to be referred to endoscopy for investigation.
-            </p>
-            <div class="register-btn gibson-medium"><a href="/studies/colo-cohort/">Read more</a></div>
-          </div>
-          <div class="col">
-            <div class="video video-3"></div>
-          </div>
-        </div>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% assign studies = site.studies | sort: 'date' | reverse %}
+        {% for study in studies %}
+          {% if study.featured == true %}
+            <div class="row">
+              <div class="col paragraph">
+                <div class="subtitle gibson-medium">Featured Study</div>
+                <h3 class="title gibson-medium">
+                  <a href="{{study.url}}">{{ study.title }}</a>
+                </h3>
+                {{ study.shortoverview | markdownify | truncate: 300 }}
+                <div class="register-btn gibson-medium"><a href="{{study.url}}">Read more</a></div>
+              </div>
+              <div class="col">
+                <div class="video video-2" style="background-image: url('{{ study.image }}');">
+                  <!-- <a class="video-play-btn"></a> -->
+                </div>
+              </div>
+            </div>
+            {% break %}
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
     <div class="section section-4">
@@ -116,6 +129,7 @@ layout: parent
             </div>
           </div>
         {% endfor %}
+        <div class="register-btn gibson-medium" style="width: 100%;"><a href="/studies/" style="margin-top: 20px; font-size: 1.2rem; border-radius: 50px;">More Studies</a></div>
       </div>
     </div>
     <div class="section section-5">

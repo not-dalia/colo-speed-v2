@@ -1,5 +1,6 @@
 ---
 title: VODECA Study
+ref: vodeca
 layout: study
 image: /assets/images/studies/study2.png
 status: Recruitment active

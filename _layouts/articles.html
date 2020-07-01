@@ -34,16 +34,16 @@
             {{ page.title }}
           </div>
 
-          {% assign news = site.news | sort: 'date' | reverse %}
+          {% assign articles = site.articles | sort: 'date' | reverse %}
 
-          {% for article in news %}
+          {% for article in articles %}
           <div class="article">
             <div class="left-col col" style="background-image: url('{{ article.image }}');">
 
             </div>
             <div class="right-col col">
               <div class="date">
-                <a href="{{article.url}}">{{ article.date | date_to_rfc822 }}</a>
+                <a href="{{article.url}}">{{ article.date | date: "%-d %B %Y, %R" }}</a>
               </div>
               <div class="newstitle">
                 <a href="{{article.url}}">{{ article.title }}</a>
