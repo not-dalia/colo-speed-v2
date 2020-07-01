@@ -25,7 +25,8 @@ twitter_username:  colospeed_ncl
 github_username:  colo-speed
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
+markdown: gfm
 # theme: minima
 plugins:
   - jekyll-feed
