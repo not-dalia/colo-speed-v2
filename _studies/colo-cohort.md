@@ -7,7 +7,10 @@ image: /assets/images/studies/study1.jpg
 status: Recruitment commenced December 2019
 sponsor: South Tyneside and Sunderland NHS Foundation Trust 
 subtitle: Colorectal Cancer Cohort Study
-contactperson: Colin Rees – Newcastle University & South Tyneside and Sunderland NHS Trust
+contactperson: 
+  name: Colin Rees
+  institution: Newcastle University & South Tyneside and Sunderland NHS Trust
+  email: Colin.rees@ncl.ac.uk
 researchers: 
   - name: Professor Colin Rees
   - name: Professor Linda Sharp

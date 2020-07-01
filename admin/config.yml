@@ -36,12 +36,22 @@ collections:
       - label: Status
         name: status
         widget: string
+        required: false
       - label: Sponsor
         name: sponsor
         widget: string
+        required: false
       - label: Contact person
         name: contactperson
-        widget: string
+        widget: object
+        fields:
+          - label: Name
+            name: name
+            widget: string
+          - label: Email
+            name: email
+            widget: string
+            required: false
       - label: Researchers
         name: researchers
         widget: list
@@ -76,12 +86,15 @@ collections:
       - label: Study aim
         name: aim
         widget: text
+        required: false
       - label: Patient info
         name: patientinfo
         widget: markdown
+        required: false
       - label: Researcher info
         name: researcherinfo
         widget: markdown
+        required: false
       - label: Body
         name: body
         widget: markdown
@@ -104,12 +117,14 @@ collections:
       - label: Subtitle
         name: subtitle
         widget: string
+        required: false
       - label: Publish Date
         name: date
         widget: datetime
       - label: "Tags"
         name: "tags"
         widget: "list"
+        required: false
       - label: Featured Image
         name: image
         widget: image
@@ -142,6 +157,7 @@ collections:
         searchFields: ['title']
         valueField: "{{slug}}"
         displayFields: ["title"]
+        required: false
   - name: "people"
     label: "People"
     editor:

@@ -37,6 +37,13 @@
             <div class="subtitle gibson-medium">
               {{ page.subtitle }}
             </div>
+            <div class="contact-person">
+              {% if page.contactperson.email%}
+                <a href="mailto:{{page.contactperson.email}}">{{ page.contactperson.name }} – {{ page.contactperson.institution }}</a>
+              {% else %}
+                {{ page.contactperson.name}} – {{ page.contactperson.institution }}
+              {% endif %}
+            </div>
             <div class="paragraph">
               {{ page.aim }}
             </div>

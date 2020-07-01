@@ -73,6 +73,14 @@
     color: var(--lt-blue);
     text-align: left;
   }
+
+  #main-content .section-1 .study .contact-person a{
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--lt-blue);
+    text-align: left;
+  }
   
   #main-content .section-1 .study .paragraph {
     margin: 15px 0;

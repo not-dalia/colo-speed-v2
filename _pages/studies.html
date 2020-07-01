@@ -42,7 +42,11 @@ permalink: /studies/
                 {{ study.subtitle }}
               </div>
               <div class="contact-person">
-                {{ study.contactperson}}
+                {% if study.contactperson.email%}
+                  <a href="mailto:{{study.contactperson.email}}">{{ study.contactperson.name }} – {{ study.contactperson.institution }}</a>
+                {% else %}
+                  {{ study.contactperson.name}} – {{ study.contactperson.institution }}
+                {% endif %}
               </div>
               <div class="paragraph gibson-book">
                 {{ study.shortoverview }}

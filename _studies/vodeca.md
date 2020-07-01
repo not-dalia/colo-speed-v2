@@ -7,7 +7,9 @@ image: /assets/images/studies/study2.png
 status: Recruitment active
 sponsor: University of Liverpool
 subtitle: Volatile Organic compounds for DEtection of Colorectal cAncer
-contactperson: Professor Chris Probert – University of Liverpool
+contactperson:
+  name: Professor Chris Probert
+  institution: University of Liverpool
 
 researchers: 
   - name: Professor Chris Probert
