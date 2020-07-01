@@ -6,8 +6,10 @@ date: 2020-07-01T12:50:07.229Z
 image: /assets/images/uploads/blue-and-silver-stetoscope-40568.jpg
 status: Data Analysis / Reporting
 sponsor: Norgine
-contactperson: Colin Rees – South Tyneside and Sunderland NHS Foundation Trust
-  (colin.rees@ncl.ac.uk)
+contactperson: 
+  name: Colin Rees
+  institution: South Tyneside and Sunderland NHS Foundation Trust
+  email: colin.rees@ncl.ac.uk
 openedsites:
   - South Tyneside District Hospital
   - Sunderland Royal Hospital
