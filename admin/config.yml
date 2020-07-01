@@ -168,8 +168,8 @@ collections:
         name: "participantfaq"
         file: "_data/participantfaq.yml"
         fields:
-          - label: "FAQs"
-            name: "faqs"
+          - label: "Participant FAQ"
+            name: "faq"
             widget: "list"
             fields:
               - {label: Question, name: question, widget: text}
@@ -178,10 +178,54 @@ collections:
         name: "researcherfaq"
         file: "_data/researcherfaq.yml"
         fields:
-          - label: "FAQs"
+          - label: "Researcher FAQ"
             name: "faq"
             widget: "list"
             fields:
               - {label: Question, name: question, widget: text}
               - {label: Answer, name: answer, widget: markdown}
+  - name: "contact"
+    label: "Contact Details"
+    editor:
+      preview: false
+    files:
+      - label: "Contact Us"
+        name: "contactus"
+        file: "_data/contactdeatils.yml"
+        fields:
+          - label: "Address"
+            name: "address"
+            widget: "markdown"
+          - label: "Email"
+            name: "email"
+            widget: "string"
+          - label: "Map Location"
+            hint: "Should be a link from Google maps"
+            name: "maplocation"
+            widget: "string"
+      - label: "Social Media Links"
+        name: "socialmedia"
+        file: "_data/socialmedia.yml"
+        fields:
+          - label: "Twitter"
+            name: "twitter"
+            widget: "string"
+            required: false
+            default: "#"
+          - label: "Facebook"
+            name: "facebook"
+            widget: "string"
+            required: false
+            default: "#"
+          - label: "LinkedIn"
+            name: "linkedin"
+            widget: "string"
+            required: false
+            default: "#"
+          - label: "Instragram"
+            name: "instagram"
+            widget: "string"
+            required: false
+            default: "#"
+
 

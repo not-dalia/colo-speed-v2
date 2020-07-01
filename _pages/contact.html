@@ -6,19 +6,12 @@ layout: page
 
 <div class="left-col">
   <div class="title">Our Address</div>
+  {{ site.data.contactdetails.address | markdownify | newline_to_br }}
   <p>
-    Open Lab<br>
-    Floor 1<br>
-    Urban Sciences Building<br>
-    Newcastle Helix<br>
-    NE4 5TG<br>
-    <br><br>
-    Email: <a href="mailto:openlab-admin@newcastle.ac.uk" target="_blank">openlab-admin@newcastle.ac.uk</a>
-    <br><br>
-    Tel: <a href="tel:+44 (0) 191 20 84630" target="_blank">+44 (0) 191 20 84630</a>
+    Email: <a href="mailto:{{site.data.contactdetails.email}}" target="_blank">{{site.data.contactdetails.email}}</a>
   </p>
   <iframe width="300" height="450"
-    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJD6zWBMxwfkgRacU5GCntShQ&key=AIzaSyA5YW2qFVDDW_DNCgMDcB2MbDUFhOjiT7s"
+    src="{{site.data.contactdetails.maplocation}}"
     allowfullscreen></iframe>
 </div>
 <div class="right-col">
@@ -35,6 +28,9 @@ layout: page
     <!-- <input name="postcode" type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required> -->
     <textarea name="message" placeholder="Message*" id="message" rows="10" aria-label="Message"
       aria-required="true" required></textarea>
+    <input type="checkbox" name="consent-1" id="consent-1" aria-required="true" required>
+    <label for="consent-1">I hereby consent to morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      Vestibulum id ligula porta felis euismod semper.</label>
     <div class="form-row info-message">
       <div class="message">
         Thank you for contacting us.

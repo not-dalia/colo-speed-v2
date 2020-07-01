@@ -7,14 +7,35 @@ layout: page
   <div class="title">
     Researchers
   </div>
-  <div class="paragraph">
-    <p>
-      If you are interested in being a recruiting site for our research studies, please contact the study teams to express interest in participation.  
-    </p>
-    <p>
-      If you would like to collaborate with our study teams, please contact the main study team.  
-    </p>
-  </div>  
+  <div class="row">
+    <div class="contents-table">
+      <ul>
+        <li><a href="#researchers">Researchers</a></li>
+        {% if site.data.researcherfaq.faq.size > 0%}
+        <li><a href="#faq">FAQs</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    <a id="researchers" class="anchor"></a>
+    <div class="paragraph">
+      <p>
+        If you are interested in being a recruiting site for our research studies, please contact the study teams to express interest in participation.  
+      </p>
+      <p>
+        If you would like to collaborate with our study teams, please contact the main study team.  
+      </p>
+    </div> 
+  </div>
+  
+  {% if site.data.researcherfaq.faq.size > 0%}
+  <div class="row">
+    <a id="faq" class="anchor"></a>
+    <div class="subtitle">
+      FAQs
+    </div>
+    {% include faq.html faq=site.data.researcherfaq.faq %}
+  </div>
+  {% endif %}
 </div>
 
 <!-- <div class="main-col">
