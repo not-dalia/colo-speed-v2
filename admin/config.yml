@@ -141,36 +141,47 @@ collections:
         searchFields: ['title']
         valueField: "{{slug}}"
         displayFields: ["title"]
-  - name: "config"
-    label: "Config"
+  - name: "people"
+    label: "People"
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "navigation"
-        file: "_data/navigation.yml"
+      - label: "People"
+        name: "members"
+        file: "_data/members.yml"
         fields:
-          - label: "Navigation Items"
-            name: "items"
+          - label: "People"
+            name: "members"
             widget: "list"
             fields:
               - {label: Name, name: name, widget: string}
-              - {label: Link, name: link, widget: string}
-  # - name: "config"
-  #   label: "Config"
-  #   editor:
-  #     preview: false
-  #   files:
-  #     - label: "People"
-  #       name: "members"
-  #       file: "_data/members.yml"
-  #       fields:
-  #         - label: "People"
-  #           name: "members"
-  #           widget: "list"
-  #           fields:
-  #             - {label: Name, name: name, widget: string}
-  #             - {label: Affiliation, name: affiliation, widget: string}
-  #             - {label: Bio, name: bio, widget: text}
-  #             - {label: Email, name: email, widget: string}
-  #             - {label: Image, name: image, widget: image}
+              - {label: Affiliation, name: affiliation, widget: string, required: false}
+              - {label: Bio, name: bio, widget: text, required: false}
+              - {label: Email, name: email, widget: string}
+              - {label: Image, name: image, widget: image}
+  - name: "faq"
+    label: "FAQs"
+    editor:
+      preview: false
+    files:
+      - label: "Participant FAQs"
+        name: "participantfaq"
+        file: "_data/participantfaq.yml"
+        fields:
+          - label: "FAQs"
+            name: "faqs"
+            widget: "list"
+            fields:
+              - {label: Question, name: question, widget: text}
+              - {label: Answer, name: answer, widget: markdown}
+      - label: "Researcher FAQs"
+        name: "researcherfaq"
+        file: "_data/researcherfaq.yml"
+        fields:
+          - label: "FAQs"
+            name: "faq"
+            widget: "list"
+            fields:
+              - {label: Question, name: question, widget: text}
+              - {label: Answer, name: answer, widget: markdown}
+
