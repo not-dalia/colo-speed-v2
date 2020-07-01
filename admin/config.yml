@@ -29,6 +29,10 @@ collections:
         widget: string
       - label: Publish Date
         name: date
+      - label: Feature this study
+        name: featured
+        widget: boolean
+        default: false
         widget: datetime
       - label: Featured Image
         name: image
