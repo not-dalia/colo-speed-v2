@@ -1,6 +1,7 @@
 ---
 title: VODECA Study
 ref: vodeca
+date: 2020-05-01T11:04:16.980Z
 layout: study
 image: /assets/images/studies/study2.png
 status: Recruitment active

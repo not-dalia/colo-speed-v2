@@ -84,7 +84,7 @@ permalink: /about/
       <div class="main-col col">
         <div class="title">Who are we</div>
         <div class="members">
-          {% for member in site.data.members %}
+          {% for member in site.data.members.members %}
             <div class="member">
               <div class="image" style="background-image: url('{{ member.image }}');"></div>
               <div class="member-info">

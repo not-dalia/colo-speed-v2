@@ -1,6 +1,5 @@
 ---
 layout: study
-ref: colo-cohort
 title: Colo-Cohort
 subtitle: Colorectal Cancer Cohort Study
 date: 2020-07-01T11:04:16.980Z

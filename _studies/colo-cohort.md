@@ -2,6 +2,7 @@
 title: Colo-Cohort
 ref: colo-cohort
 layout: study
+date: 2020-06-01T11:04:16.980Z
 image: /assets/images/studies/study1.jpg
 status: Recruitment commenced December 2019
 sponsor: South Tyneside and Sunderland NHS Foundation Trust 

@@ -76,7 +76,7 @@
                   </div>
                   <ul>
                     {% for study in site.studies %}
-                      {% if study.ref == article.study %}
+                      {% if study.slug == article.study %}
                         <li><a class="link" href="{{study.url}}">
                           {{ study.title }}
                         </a></li>
