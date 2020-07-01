@@ -2,7 +2,8 @@ backend:
   name: github
   repo: not-dalia/colo-speed-v2
   branch: master
-  site_domain: cms.netlify.com
+  site_domain: v2.colospeed.uk
+  # site_domain: cms.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: assets/images/uploads
@@ -191,7 +192,7 @@ collections:
     files:
       - label: "Contact Us"
         name: "contactus"
-        file: "_data/contactdeatils.yml"
+        file: "_data/contactdetails.yml"
         fields:
           - label: "Address"
             name: "address"
@@ -210,22 +211,18 @@ collections:
           - label: "Twitter"
             name: "twitter"
             widget: "string"
-            required: false
             default: "#"
           - label: "Facebook"
             name: "facebook"
             widget: "string"
-            required: false
             default: "#"
           - label: "LinkedIn"
             name: "linkedin"
             widget: "string"
-            required: false
             default: "#"
           - label: "Instragram"
             name: "instagram"
             widget: "string"
-            required: false
             default: "#"
 
 
