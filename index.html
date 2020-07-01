@@ -122,7 +122,7 @@ layout: parent
               <div class="paragraph gibson-book">
                 <div class="study-title gibson-medium">{{ study.title }}</div>
                 <p>
-                  {{ study.shortoverview }}
+                  {{ study.shortoverview | markdownify }}
                 </p>
                 <div class="register-btn gibson-medium"><a href="{{ study.url }}">Find out more</a></div>
               </div>

@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: not-dalia/colo-speed-v2 # Path to your GitHub repository
+  branch: master
+  # base_url: https://api.netlify.com
+  site_domain: v2.colospeed.uk
+  # site_domain: cms.netlify.com
+  # auth_endpoint: auth
+  # api_root: https://api.github.com
+
+publish_mode: editorial_workflow
+media_folder: "assets/images/uploads"
+collections:
+  - name: "studies" # Used in routes, e.g., /admin/collections/blog
+    label: "Studies" # Used in the UI
+    folder: "_studies/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "study"}
+      - {label: "Refernce", name: "ref", widget: "hidden", default: "{{slug}}"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Status", name: "status", widget: "string"}
+      - {label: "Sponsor", name: "sponsor", widget: "string"}
+      - {label: "Contact person", name: "contactperson", widget: "string"}
+      - {label: "Opening sites", name: "openingsitestitle", widget: "string"}
+      - {label: "Short overview", name: "shortoverview", widget: "markdown"}
+      - {label: "Study aim", name: "aim", widget: "text"}
+      - {label: "Patient info", name: "patientinfo", widget: "text"}
+      - {label: "Researcher info", name: "researcherinfo", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
