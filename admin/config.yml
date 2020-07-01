@@ -143,6 +143,9 @@ collections:
         name: type
         widget: select
         options: ["article", "event", "news"]
+      - label: Body
+        name: body
+        widget: markdown
       - label: Target audience
         name: audience
         widget: select
