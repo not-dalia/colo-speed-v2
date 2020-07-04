@@ -12,9 +12,9 @@ members:
     image: /assets/images/people/linda2.jpg
 
   - name: Dr Kyle Montague
-    affiliation: Lecturer in Human-Computer Interaction, Newcastle University
+    affiliation: Associate Professor of Human-Computer Interaction, Northumbria University
     bio: 
-    email: kyle.montague@newcastle.ac.uk
+    email: kyle.montague@northumbria.ac.uk
     image: /assets/images/people/kyle.jpg
 
   - name: Professor Mark Hull
