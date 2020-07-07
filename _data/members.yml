@@ -1,36 +1,30 @@
 members:
   - name: Professor Colin Rees
     affiliation: Professor of Gastroenterology, Newcastle University
-    bio: 
+    bio: null
     email: Colin.Rees@newcastle.ac.uk
     image: /assets/images/people/colin.jpg
-
   - name: Professor Linda Sharp
     affiliation: Professor of Cancer Epidemiology, Newcastle University
-    bio: 
+    bio: null
     email: linda.sharp@newcastle.ac.uk
     image: /assets/images/people/linda2.jpg
-
   - name: Dr Kyle Montague
     affiliation: Associate Professor of Human-Computer Interaction, Northumbria University
-    bio: 
+    bio: null
     email: kyle.montague@northumbria.ac.uk
     image: /assets/images/people/kyle.jpg
-
   - name: Professor Mark Hull
     affiliation: Professor of Molecular Gastroenterology, University of Leeds
-    # bio: Professor Mark Hull is a Consultant Gastroenterologist and NIHR Senior Investigator at St James's University Hospital and the University in Leeds. His research addresses many aspects of bowel cancer prevention including the use of medicines like aspirin and omega-3s, as well as the link between obesity and cancer risk.
     email: M.A.Hull@leeds.ac.uk
     image: /assets/images/people/mark.jpg
-
+  - name: Nathania Bestwick
+    affiliation: Newcastle University
+    email: Nathania.Bestwick@newcastle.ac.uk
+    image: /assets/images/uploads/nathania.jpg
   - name: Dr Barry Sandywell
     affiliation: Patient and Public Involvement Lead
-    # bio: Dr. Sandywell comes from a social/human sciences background and is the author of a number of books and essays. He is currently Honorary Fellow in Social Theory at the University of York. Over recent years he has been concerned with the public reception of science, preventative medicine, and support for the NHS. He has been an active member of the Bowel Cancer Screening Programme for seven years (since 2013)
-    # email: bs5@york.ac.uk
     image: /assets/images/people/barry.jpg
-
   - name: John Whelpton
     affiliation: Patient and Public Involvement Lead
-    # bio: Having survived my Bowel cancer in 2009, my Ileostomy was reversed in 2010, leaving me to live my “new normal” life. The support I received from Bowel Cancer UK during this time led me to volunteer for them as an Awareness Talk giver, and subsequently a member of their Research Network. I am a Research Champion within NIHR and Mid Yorks NHS Trust, as well as being a member of their Cancer Partnership Group. I now serve as a Co-Applicant, or Steering Group member, on several trials and studies, as well as running our local Support Group for Colorectal and Urology patients. Working with Macmillan Engagement Leads and a team of fellow Cancer survivors, we have recently finished writing and filming 2 educational videos to promote PPI.
-    # email: john.whelpton1@outlook.com
     image: /assets/images/people/john.jpg
