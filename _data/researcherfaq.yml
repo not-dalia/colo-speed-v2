@@ -1,1 +1,3 @@
 faq:
+  - question: This is a test question
+    answer: This is a test answer
