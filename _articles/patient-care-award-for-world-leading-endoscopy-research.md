@@ -2,6 +2,9 @@
 layout: article
 title: Patient care award for world-leading endoscopy research
 date: 2020-07-01T13:31:58.280Z
+tags:
+  - award
+  - colospeed
 image: /assets/images/uploads/image001.jpg
 featured: true
 type: news
