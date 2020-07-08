@@ -1,6 +1,6 @@
 ---
 layout: study
-title: Test Study
+title: Edited Test Study
 subtitle: study subtitle
 date: 2020-07-08T09:09:38.104Z
 featured: false
