@@ -3,12 +3,12 @@ layout: article
 title: Patient care award for world-leading endoscopy research
 date: 2020-07-01T13:31:58.280Z
 tags:
-  - award
-  - colospeed
+  - ""
 image: /assets/images/uploads/image001.jpg
 featured: true
 type: news
 audience: everyone
+externallinks: []
 study: colo-cohort
 ---
 The COLO-SPEED (Colorectal Cancer Screening, Prevention, Endoscopy and Early Diagnosis) team recently won a prestigious patient care award for its world-leading endoscopy research.\
@@ -18,8 +18,6 @@ The team won the ‘Research’ category in the Royal College of Physicians (RCP
 The collaboration has transformed the way endoscopy research is delivered in the UK and internationally by moving away from single-centre to multi-centre studies. As a result, it is now delivering the world’s largest endoscopy studies - changing practice and improving patient outcomes in the process.\
 \
 Over 12,000 patients have been recruited for studies addressing multiple priorities, such as patient experience of endoscopy (a procedure where organs inside the body are looked at using an instrument called an endoscope to diagnose conditions, including bowel cancer.)
-
-![award](/assets/images/uploads/image001.jpg "award")
 
 \
 Last summer COLO-SPEED received £985,000 funding from the Sir Bobby Robson Foundation. The project established a permanent infrastructure to deliver large scale endoscopy research nationwide and is currently conducting four studies which will involve 20,000 patients over five years.\
