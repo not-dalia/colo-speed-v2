@@ -18,20 +18,20 @@ members:
     affiliation: Professor of Molecular Gastroenterology, University of Leeds
     email: M.A.Hull@leeds.ac.uk
     image: /assets/images/people/mark.jpg
+  - name: Dr James Hampton
+    affiliation: Clinical Research Fellow, South Tyneside and Sunderland NHS
+      Foundation Trust
+    image: /assets/images/uploads/james-hampton.jpeg
+  - name: Ingrid Emmerson
+    affiliation: Lead Research Nurse
+    image: /assets/images/uploads/ingrid.jpg
   - name: Nathania Bestwick
     affiliation: Research Administrator, Newcastle University
     email: Nathania.Bestwick@newcastle.ac.uk
     image: /assets/images/uploads/nathania.jpg
-  - name: Ingrid Emmerson
-    affiliation: Lead Research Nurse
-    image: /assets/images/uploads/ingrid.jpg
   - name: Dr Barry Sandywell
     affiliation: Patient and Public Involvement Lead
     image: /assets/images/people/barry.jpg
   - name: John Whelpton
     affiliation: Patient and Public Involvement Lead
     image: /assets/images/people/john.jpg
-  - name: Dr James Hampton
-    affiliation: Clinical Research Fellow, South Tyneside and Sunderland NHS
-      Foundation Trust
-    image: /assets/images/uploads/james-hampton.jpeg
