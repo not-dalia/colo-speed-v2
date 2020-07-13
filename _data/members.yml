@@ -9,15 +9,15 @@ members:
     bio: null
     email: linda.sharp@newcastle.ac.uk
     image: /assets/images/people/linda2.jpg
+  - name: Professor Mark Hull
+    affiliation: Professor of Molecular Gastroenterology, University of Leeds
+    email: M.A.Hull@leeds.ac.uk
+    image: /assets/images/people/mark.jpg
   - name: Dr Kyle Montague
     affiliation: Associate Professor of Human-Computer Interaction, Northumbria University
     bio: null
     email: kyle.montague@northumbria.ac.uk
     image: /assets/images/people/kyle.jpg
-  - name: Professor Mark Hull
-    affiliation: Professor of Molecular Gastroenterology, University of Leeds
-    email: M.A.Hull@leeds.ac.uk
-    image: /assets/images/people/mark.jpg
   - name: Dr Laura Neilson
     affiliation: Consultant Gastroenterologist, South Tyneside Hospital
     image: /assets/images/uploads/ljn-bio-pic.png
