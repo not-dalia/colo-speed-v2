@@ -7,7 +7,7 @@ members:
   - name: Professor Linda Sharp
     affiliation: Professor of Cancer Epidemiology, Newcastle University
     bio: null
-    email: linda.sharp@newcastle.ac.uk
+    email: Linda.Sharp@newcastle.ac.uk
     image: /assets/images/people/linda2.jpg
   - name: Professor Mark Hull
     affiliation: Professor of Molecular Gastroenterology, University of Leeds
@@ -16,17 +16,20 @@ members:
   - name: Dr Kyle Montague
     affiliation: Associate Professor of Human-Computer Interaction, Northumbria University
     bio: null
-    email: kyle.montague@northumbria.ac.uk
+    email: Kyle.Montague@northumbria.ac.uk
     image: /assets/images/people/kyle.jpg
   - name: Dr Laura Neilson
     affiliation: Consultant Gastroenterologist, South Tyneside Hospital
     image: /assets/images/uploads/ljn-bio-pic.png
+    email: Laura.Neilson@stft.nhs.uk
   - name: Dr James Hampton
     affiliation: Clinical Research Fellow, South Tyneside Hospital
     image: /assets/images/uploads/james-hampton.jpeg
+    email: James.Hampton@stft.nhs.uk
   - name: Ingrid Emmerson
     affiliation: Lead Research Nurse, South Tyneside Hospital
     image: /assets/images/uploads/ingrid.jpg
+    email: Ingrid.Emmerson@stft.nhs.uk
   - name: Nathania Bestwick
     affiliation: Research Administrator, Newcastle University
     email: Nathania.Bestwick@newcastle.ac.uk
