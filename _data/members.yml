@@ -19,15 +19,13 @@ members:
     email: M.A.Hull@leeds.ac.uk
     image: /assets/images/people/mark.jpg
   - name: Dr Laura Neilson
-    affiliation: Consultant Gastroenterologist, South Tyneside and Sunderland NHS
-      Foundation Trust
+    affiliation: Consultant Gastroenterologist, South Tyneside Hospital
     image: /assets/images/uploads/ljn-bio-pic.png
   - name: Dr James Hampton
-    affiliation: Clinical Research Fellow, South Tyneside and Sunderland NHS
-      Foundation Trust
+    affiliation: Clinical Research Fellow, South Tyneside Hospital
     image: /assets/images/uploads/james-hampton.jpeg
   - name: Ingrid Emmerson
-    affiliation: Lead Research Nurse
+    affiliation: Lead Research Nurse, South Tyneside Hospital
     image: /assets/images/uploads/ingrid.jpg
   - name: Nathania Bestwick
     affiliation: Research Administrator, Newcastle University
