@@ -22,6 +22,9 @@ members:
     affiliation: Consultant Gastroenterologist, South Tyneside Hospital
     image: /assets/images/uploads/ljn-bio-pic.png
     email: Laura.Neilson@stft.nhs.uk
+  - name: Dr Sara Koo
+    affiliation: Clinical Research Fellow, South Tyneside Hospital
+    image: /assets/images/uploads/sara.jpg
   - name: Dr James Hampton
     affiliation: Clinical Research Fellow, South Tyneside Hospital
     image: /assets/images/uploads/james-hampton.jpeg
@@ -40,6 +43,3 @@ members:
   - name: John Whelpton
     affiliation: Patient and Public Involvement Lead
     image: /assets/images/people/john.jpg
-  - name: Dr Sara Koo
-    affiliation: Clinical Research Fellow, South Tyneside Hospital
-    image: /assets/images/uploads/sara.jpg
