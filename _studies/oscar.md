@@ -24,7 +24,6 @@ openedsites:
   - Lancashire Teaching Hospitals
   - Mid Cheshire Hospitals
   - Blackpool Teaching Hospitals
-  - test
 openingsitestitle: Sites to be opened
 shortoverview: The OSCAR study is a prospective multi-centre cross sectional
   study looking at the association between obesity, Non-alcoholic Fatty Liver
