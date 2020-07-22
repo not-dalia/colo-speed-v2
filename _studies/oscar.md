@@ -3,10 +3,11 @@ layout: study
 title: OSCAR
 subtitle: Obesity Related Colorectal Adenoma Risk Study
 date: 2020-07-01T12:50:07.229Z
+featured: false
 image: /assets/images/uploads/blue-and-silver-stetoscope-40568.jpg
 status: Data Analysis / Reporting
 sponsor: Norgine
-contactperson: 
+contactperson:
   name: Colin Rees
   institution: South Tyneside and Sunderland NHS Foundation Trust
   email: colin.rees@ncl.ac.uk
@@ -23,6 +24,7 @@ openedsites:
   - Lancashire Teaching Hospitals
   - Mid Cheshire Hospitals
   - Blackpool Teaching Hospitals
+  - test
 openingsitestitle: Sites to be opened
 shortoverview: The OSCAR study is a prospective multi-centre cross sectional
   study looking at the association between obesity, Non-alcoholic Fatty Liver
