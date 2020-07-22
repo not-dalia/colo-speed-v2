@@ -147,6 +147,18 @@
   color: var(--lt-blue);
 }
 
+#main-content .section-1 .contact-us .right-col .subtitle {
+  font-weight: 500;
+  color: #2c2c2c;
+  margin: 40px 0 15px 0;
+}
+
+
+#main-content .section-1 .contact-us .right-col label {
+  flex: 1;
+  margin: 0 10px;
+}
+
 #main-content .section-1 .contact-us .right-col textarea {
   display: block;
   box-sizing: border-box;

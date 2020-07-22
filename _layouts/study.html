@@ -69,22 +69,33 @@
             </p>
           </div>
           <div class="paragraph">
-            <div class="title">How</div>
-            <div class="subtitle">Information for Patients:</div>
-            <p>
-              {{ page.patientinfo | markdownify | remove: '<p>' | remove: '</p>' }}
-            </p>
-            <div class="subtitle">Information for Researchers:</div>
-            <p>
-              {{ page.researcherinfo | markdownify | remove: '<p>' | remove: '</p>' }}
-            </p>
+            {% if page.patientinfo != "" or page.researcherinfo != "" %}  
+              <div class="title">How</div>
+            {% endif %}
+            {% if page.patientinfo != "" and page.patientinfo != nil %}  
+              <div class="subtitle">Information for Patients:</div>
+              <p>
+                {{ page.patientinfo | markdownify | remove: '<p>' | remove: '</p>' }}
+              </p>
+            {% endif %}
+            
+            {% if page.researcherinfo != "" and page.researcherinfo != nil %}  
+              <div class="subtitle">Information for Researchers:</div>
+              <p>
+                {{ page.researcherinfo | markdownify | remove: '<p>' | remove: '</p>' }}
+              </p>
+            {% endif %}
           </div>
           <div class="paragraph">
             <div class="title">Where</div>
             <div class="subtitle">Opened sites:</div>
             <ul>
               {% for site in page.openedsites %}
-                <li>{{site.name}}</li>
+                {% if site.name == "" or site.name == nil %}  
+                  <li>{{site}}</li>
+                {% else %}
+                  <li>{{site.name}}</li>
+                {% endif %}
               {% endfor %}
             </ul>
             {% if page.openingsites %}
@@ -98,22 +109,36 @@
             {% endif %}
             <ul>
               {% for site in page.openingsites %}
-                <li>{{site.name}}</li>
+                {% if site.name == "" or site.name == nil %}  
+                  <li>{{site}}</li>
+                {% else %}
+                  <li>{{site.name}}</li>
+                {% endif %}
               {% endfor %}
             </ul>
           </div>
           <div class="paragraph">
-            <div class="title">Who</div>
-            <div class="subtitle">Researchers:</div>
-            <ul>
-              {% for researcher in page.researchers %}
-                <li>{{researcher.name}}</li>
-              {% endfor %}
-            </ul>
-            <div class="subtitle">Study Sponsor:</div>
-            <ul>
-              <li> {{ page.sponsor }} </li>
-            </ul>
+            {% if page.researchers.size > 0 or page.sponsor != nil %}
+              <div class="title">Who</div>
+            {% endif %}
+            {% if page.researchers and page.researchers.size > 0 %}
+              <div class="subtitle">Researchers:</div>
+              <ul>
+                {% for researcher in page.researchers %}
+                  {% if researcher.name == "" or researcher.name == nil %}  
+                    <li>{{researcher}}</li>
+                  {% else %}
+                    <li>{{researcher.name}}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+            {% if page.sponsor != "" and page.sponsor != nil  %}
+              <div class="subtitle">Study Sponsor:</div>
+              <ul>
+                <li> {{ page.sponsor }} </li>
+              </ul>
+            {% endif %}
           </div>
         </div>
         <div class="study-registration" id="register">
@@ -135,15 +160,14 @@
               </div>
               <div class="form-row">
                 <input type="checkbox" name="consent-1" id="consent-1" aria-required="true" required>
-                <label for="consent-1">I hereby consent to morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                  Vestibulum id ligula porta felis euismod semper.</label>
+                <label for="consent-1">I hereby consent to the COLO-SPEED <a href="/privacy" target=”_blank”>Privacy Policy</a>.</label>
               </div>
-              <div class="form-row">
-                <input type="checkbox" name="consent-2" id="consent-2" aria-required="true" required>
+              <!-- <div class="form-row">
+                <input type="checkbox" name="consent-2" id="consent-2" aria-required="true" value="on" required>
                 <label for="consent-2">I hereby consent to morbi leo risus, porta ac consectetur ac, vestibulum at eros.
                   Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.
                   Etiam porta sem malesuada magna mollis euismod.</label>
-              </div>
+              </div> -->
               <div class="form-row info-message">
                 <div class="message">
                   Thank you for contacting us.

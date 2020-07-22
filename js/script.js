@@ -26,7 +26,7 @@ function registerUser(form) {
     email: values.email,
     birthdate: values.birthdate,
     postcode: values.postcode,
-    consent: values['consent-1'] == 'on' && values['consent-2'] == 'on',
+    consent: values['consent-1'] == 'on',
     interest: values.interest
   }, function(success, data) {
     setTimeout(function () {

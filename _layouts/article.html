@@ -88,13 +88,17 @@
                 </div>
               {% endif %}
               
-              <div class="tags">
-                {% for tag in article.tags %}
-                <a class="tag">
-                  {{ tag }}
-                </a>
-                {% endfor %}
-              </div>
+              {% if article.tags and article.tags.size > 0 %}
+                <div class="tags">
+                  {% for tag in article.tags %}
+                    {% if tag != "" and tag != blank and tag != nil %}
+                      <a class="tag">
+                        {{ tag }}
+                      </a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
             </div>
           </div>
 

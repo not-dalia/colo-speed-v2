@@ -33,6 +33,7 @@ collections:
       - label: Feature this study
         name: featured
         widget: boolean
+        required: false
         default: false
       - label: Featured Image
         name: image
