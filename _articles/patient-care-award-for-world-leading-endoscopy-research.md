@@ -8,7 +8,9 @@ image: /assets/images/uploads/image001.jpg
 featured: true
 type: news
 audience: everyone
-externallinks: []
+externallinks:
+  - title: Google
+    link: https://google.com
 study: colo-cohort
 ---
 The COLO-SPEED (Colorectal Cancer Screening, Prevention, Endoscopy and Early Diagnosis) team recently won a prestigious patient care award for its world-leading endoscopy research.\
