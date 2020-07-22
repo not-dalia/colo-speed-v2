@@ -16,6 +16,7 @@ openedsites:
   - name: sites in the North East includes South Tyneside and Sunderland NHS
       Foundation Trust
   - name: North Tees and Hartlepool NHS Foundation Trust 
+  - test
 aim: This study aims to investigate Volatile Organic Compounds (VOCs) which are
   associated with adenomas (pre-cancerous polyps) and early bowel cancer to
   improve detection of adenomas and bowel cancer.
