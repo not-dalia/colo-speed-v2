@@ -4,7 +4,7 @@ title: OSCAR
 subtitle: Obesity Related Colorectal Adenoma Risk Study
 date: 2020-07-01T12:50:07.229Z
 featured: false
-image: /assets/images/uploads/blue-and-silver-stetoscope-40568.jpg
+image: /assets/images/uploads/img_3165.jpg
 status: Data Analysis / Reporting
 sponsor: Norgine
 contactperson:
