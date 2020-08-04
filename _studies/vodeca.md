@@ -3,7 +3,7 @@ layout: study
 title: VODECA Study
 subtitle: Volatile Organic compounds for DEtection of Colorectal cAncer
 date: 2020-05-01T11:05:16.980Z
-image: /assets/images/studies/study2.png
+image: /assets/images/uploads/image.jpg
 status: Recruitment active
 sponsor: University of Liverpool
 contactperson:
