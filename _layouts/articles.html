@@ -38,12 +38,16 @@
 
           {% for article in articles %}
           <div class="article">
-            <div class="left-col col" style="background-image: url('{{ article.image }}');">
-
+            <div class="left-col col" style="background-image: url('{{ article.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{article.url}}'">
+              <!-- <div style="height: 100%; background: rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; padding: 0 20px;">
+                <div class="newstitle" style="margin: 0; text-align: center; color: white;">
+                  <a href="{{article.url}}" style="color: white;">{{ article.title }}</a>
+                </div>
+              </div> -->
             </div>
             <div class="right-col col">
               <div class="date">
-                <a href="{{article.url}}">{{ article.date | date: "%-d %B %Y, %R" }}</a>
+                <a href="{{article.url}}">{{ article.date | date: "%-d %B %Y" }}</a>
               </div>
               <div class="newstitle">
                 <a href="{{article.url}}">{{ article.title }}</a>
@@ -54,17 +58,22 @@
               
               <div class="paragraph">
                 <p>
-                  {{ article.content | markdownify | truncate: 255 }} <a href="{{article.url}}" class="read-more">Read more</a>
+                  {{ article.content | markdownify | truncate: 255 }}
+                  <!-- <a href="{{article.url}}" class="read-more">Read more</a> -->
                 </p>
               </div>
 
-              <div class="tags">
-                {% for tag in article.tags %}
-                <a class="tag">
-                  {{ tag }}
-                </a>
-                {% endfor %}
-              </div>
+              {% if article.tags and article.tags.size > 0 %}
+                <div class="tags">
+                  {% for tag in article.tags %}
+                    {% if tag != "" and tag != blank and tag != nil %}
+                      <a class="tag">
+                        {{ tag }}
+                      </a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
             </div>
           </div>
           {% endfor %}

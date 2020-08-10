@@ -41,7 +41,7 @@
               <!-- <img src="{{ article.image }}" class="main-image"> -->
               <div class="date">
                 <!-- Written by <a class="author-link" href="mailto:{{article.author.email}}">{{ article.author.name }}</a> at <a href="{{article.url}}">{{ article.date | date_to_rfc822 }}</a> -->
-                <a href="{{article.url}}">{{ article.date | date: "%-d %B %Y, %R" }}</a>
+                <a href="{{article.url}}">{{ article.date | date: "%-d %B %Y" }}</a>
               </div>
               <div class="newstitle">
                 <a href="{{article.url}}">{{ article.title }}</a>
