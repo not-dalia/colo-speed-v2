@@ -18,6 +18,10 @@ members:
     bio: null
     email: Kyle.Montague@northumbria.ac.uk
     image: /assets/images/people/kyle.jpg
+  - name: Dr Suparna Mitra
+    affiliation: Academic Fellow, University of Leeds
+    image: /assets/images/uploads/suparna.jpg
+    email: S.Mitra@leeds.ac.uk
   - name: Dr Laura Neilson
     affiliation: Consultant Gastroenterologist, South Tyneside Hospital
     image: /assets/images/uploads/ljn-bio-pic.png
