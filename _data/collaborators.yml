@@ -26,7 +26,7 @@ groups:
       - name: Tim Bishop
       - name: Jonathan Sheffield (NIHR)
       - name: Nick West
-      - name: Anne Mackie (BCSP and PHE) 
+      - name: Anne Mackie (BCSP and PHE)
   - name: North East Hub
     collaborators:
       - name: Sir John Burn
@@ -37,14 +37,13 @@ groups:
       - name: Luke Vale
       - name: Dawn Craig
       - name: Michael Trenell
-      - name: Kyle Montague
       - name: Falko Sniehotta
       - name: James Wasson
       - name: John Saxton
   - name: London Hub
     collaborators:
       - name: Amanda Cross
-      - name: Kevin Monahan 
+      - name: Kevin Monahan
       - name: Christian Von Wagner
       - name: Ruth Langley
       - name: Richard Houlston
@@ -55,8 +54,8 @@ groups:
     collaborators:
       - name: Willie Hamilton
       - name: Sunil Dolwani
-      - name: Ian Tomlinson 
-      - name: Karen Brown 
+      - name: Ian Tomlinson
+      - name: Karen Brown
       - name: Simon Leedham
       - name: Roger Blanks
   - name: Netherlands Hub
@@ -64,5 +63,4 @@ groups:
       - name: Paul Fockens
       - name: Patrick Bossuyt
       - name: Monique Van Leerdam
-      - name: Hans Clevers 
-      
+      - name: Hans Clevers
