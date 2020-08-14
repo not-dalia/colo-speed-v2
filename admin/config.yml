@@ -202,7 +202,11 @@ collections:
             widget: "list"
             fields:
               - {label: Name, name: name, widget: string}
-              - {label: Collaborators, name: collaborators, widget: list}
+              - label: Collaborators
+                name: collaborators
+                widget: list
+                fields: 
+                  - { label: Name, name: name, widget: string}
   - name: "faq"
     label: "FAQs"
     editor:

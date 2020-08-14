@@ -1,5 +1,5 @@
 groups:
-  - name: group
+  - name: Steering Group
     collaborators:
-      - someone
-      - another one
+      - name: Colin Rees
+      - name: Linda Sharp
