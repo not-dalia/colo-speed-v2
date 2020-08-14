@@ -3,21 +3,21 @@ members:
     affiliation: Professor of Gastroenterology, Newcastle University
     bio: null
     email: Colin.Rees@newcastle.ac.uk
-    image: /assets/images/people/colin.jpg
+    image: /assets/images/uploads/screenshot-2020-08-14-at-02.39.05.png
   - name: Professor Linda Sharp
     affiliation: Professor of Cancer Epidemiology, Newcastle University
     bio: null
     email: Linda.Sharp@newcastle.ac.uk
-    image: /assets/images/people/linda2.jpg
+    image: /assets/images/uploads/linda2.jpg
   - name: Professor Mark Hull
     affiliation: Professor of Molecular Gastroenterology, University of Leeds
     email: M.A.Hull@leeds.ac.uk
-    image: /assets/images/people/mark.jpg
+    image: /assets/images/uploads/mark.jpg
   - name: Dr Kyle Montague
     affiliation: Associate Professor of Human-Computer Interaction, Northumbria University
     bio: null
     email: Kyle.Montague@northumbria.ac.uk
-    image: /assets/images/people/kyle.jpg
+    image: /assets/images/uploads/kyle.jpg
   - name: Dr Suparna Mitra
     affiliation: Academic Fellow, University of Leeds
     image: /assets/images/uploads/suparna.jpg
@@ -44,7 +44,11 @@ members:
     image: /assets/images/uploads/nathania.jpg
   - name: Dr Barry Sandywell
     affiliation: Patient and Public Involvement Lead
-    image: /assets/images/people/barry.jpg
+    image: /assets/images/uploads/barry.jpg
   - name: John Whelpton
     affiliation: Patient and Public Involvement Lead
-    image: /assets/images/people/john.jpg
+    image: /assets/images/uploads/john.jpg
+  - name: Dalya Al-Shahrabi
+    email: dalya.ali@newcastle.ac.uk
+    affiliation: Research Software Engineer, Newcastle University
+    image: /assets/images/uploads/2020-05-24-19-42-52-165.jpg
