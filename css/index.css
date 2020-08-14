@@ -175,24 +175,35 @@
   z-index: 10;
   position: relative;
   display: block;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 #main-content .section-3 .featured-articles .row{
   display: flex;
   flex-direction: row;
+  transition: 0.3s;
+}
+
+#main-content .section-3 .featured-articles .row:hover {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+#main-content .section-3 .featured-articles .row:hover a{
+  text-decoration: underline;
 }
 
 #main-content .section-3 .featured-articles .col{
-  width: 50%;
+  /* width: 50%; */
   color: #313131;
   color: var(--dk-grey);
   box-sizing: border-box;
 }
 
 #main-content .section-3 .featured-articles .paragraph {
-  padding: 70px 70px;
+  padding: 50px;
+  padding-bottom: 20px;
   min-width: 300px;
 }
 
@@ -300,7 +311,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto; 
   padding: 20px 0 50px 0;
   align-items: center;
@@ -321,26 +332,56 @@
 }
 
 #main-content .section-4 .latest-studies .col .paragraph {
-  padding: 60px 60px;
+  padding: 40px;
   min-width: 200px;
   box-sizing: border-box;
 }
 
 #main-content .section-4 .latest-studies .col .paragraph p{
-  line-height: 1.6rem;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+
+#main-content .section-4 .latest-studies .study-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+#main-content .section-4 .latest-studies .latest-study {
+  transition: 0.3s;
+}
+
+#main-content .section-4 .latest-studies .latest-study:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+#main-content .section-4 .latest-studies .latest-study:hover a{
+  text-decoration: underline;
 }
 
 #main-content .section-4 .latest-studies .study-image {
-  width: 300px;
-  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  float: left;
+  width: 40%;
+  padding-bottom: 22.25%; /* 16:9 */
+  position: relative;
+  margin: 40px 40px 30px 30px;
 }
 
-#main-content .section-4 .latest-studies .study-title{
-  font-size: 1.5rem;
+#main-content .section-4 .latest-studies .study-title a{
+  font-size: 1.6rem;
   font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#main-content .section-4 .latest-studies .study-title a:hover{
+  text-decoration: underline;
 }
 
 #main-content .section-4 .latest-studies .register-btn>a{

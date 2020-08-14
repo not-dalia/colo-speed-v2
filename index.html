@@ -69,19 +69,17 @@ layout: parent
         {% assign articles = site.articles | sort: 'date' | reverse %}
         {% for article in articles %}
           {% if article.featured == true %}
-            <div class="row">
-              <div class="col">
-                <div class="video video-2" style="background-image: url('{{ article.image }}');">
-                  <!-- <a class="video-play-btn"></a> -->
-                </div>
-              </div>
+            <div class="row" style="border-bottom: 20px solid var(--primary-color)" onclick="window.location='{{article.url}}'">
               <div class="col paragraph">
+                <div class="video video-2" style="background-image: url('{{ article.image }}'); float: left; width: 50%; padding: 0; padding-bottom: 28%; height: 0; margin: 0 30px 30px 0">
+                </div>
                 <div class="subtitle gibson-medium">Featured Article</div>
                 <h3 class="title gibson-medium">
                   <a href="{{article.url}}">{{ article.title }}</a>
                 </h3>
-                {{ article.content | markdownify | truncate: 300 }}
-                <div class="register-btn gibson-medium"><a href="{{article.url}}">Read more</a></div>
+                <div class="content"  style="margin-bottom: 30px;" >
+                  {{ article.content | markdownify | truncate: 300 }}
+                </div>
               </div>
             </div>
             {% break %}
@@ -90,19 +88,16 @@ layout: parent
         {% assign studies = site.studies | sort: 'date' | reverse %}
         {% for study in studies %}
           {% if study.featured == true %}
-            <div class="row">
+            <div class="row" onclick="window.location='{{study.url}}'">
               <div class="col paragraph">
+                <div class="video video-2" style="background-image: url('{{ study.image }}'); float: right; width: 50%; padding: 0; padding-bottom: 28%; height: 0; margin: 0 0px 30px 30px;">
+                  <!-- <a class="video-play-btn"></a> -->
+                </div>
                 <div class="subtitle gibson-medium">Featured Study</div>
                 <h3 class="title gibson-medium">
                   <a href="{{study.url}}">{{ study.title }}</a>
                 </h3>
-                {{ study.shortoverview | markdownify | truncate: 300 }}
-                <div class="register-btn gibson-medium"><a href="{{study.url}}">Read more</a></div>
-              </div>
-              <div class="col">
-                <div class="video video-2" style="background-image: url('{{ study.image }}');">
-                  <!-- <a class="video-play-btn"></a> -->
-                </div>
+                <div style="margin-bottom: 30px;" class="content">{{ study.shortoverview | markdownify | truncate: 300 }}</div>
               </div>
             </div>
             {% break %}
@@ -115,17 +110,15 @@ layout: parent
       <div class="latest-studies">
         {% assign studies = site.studies | sort: 'date' | reverse %}
         {% for study in studies limit:2 %}
-          <div class="row">
+          <div class="row latest-study" onclick="window.location='{{study.url}}'">
             <div class="col">
               <div class="study-image" style="background-image: url('{{ study.image }}');"></div>
-            </div>
-            <div class="col">
               <div class="paragraph gibson-book">
-                <div class="study-title gibson-medium">{{ study.title }}</div>
+                <div class="study-title gibson-medium"><a href="{{study.url}}">{{ study.title }}</a></div>
+                <div class="study-subtitle gibson-medium">{{ study.subtitle }}</div>
                 <p>
                   {{ study.shortoverview | markdownify }}
                 </p>
-                <div class="register-btn gibson-medium"><a href="{{ study.url }}">Find out more</a></div>
               </div>
             </div>
           </div>
