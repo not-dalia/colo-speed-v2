@@ -98,6 +98,27 @@ permalink: /about/
         </div>
       </div>
     </div>
+    <div class="decor-row inverted">
+      <div class="right-decor decor"></div>
+      <div class="left-decor decor"></div>
+    </div>
+    <div class="section section-2 gibson-book">
+      <div class="main-col col">
+        <div class="title">Collaborators</div>
+        <div class="collaborators">
+          {% for group in site.data.collaborators.groups %}
+            <div class="collaborator-list-container">
+              <div class="title">{{ group.name }}</div>
+              <ul class="collaborator-list">
+                {% for collaborator in group.collaborators %}
+                  <li class="collaborator">{{ collaborator }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 
   {% include footer.html %}

@@ -144,16 +144,18 @@
 }
 
 #main-content .section-1 .news-media .main-col .article .left-col {
-  width: 100%;
-  padding: 50px;
   box-sizing: border-box;
   min-width: 240px;
-  height: 500px;
   background: var(--dk-blue);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   /* display: none; */
+
+  width: 100%;
+  /* padding-bottom: 56.25%; */
+  padding-bottom: 46.25%; /* 16:9 */
+  position: relative;
 }
 
 #main-content .section-1 .news-media .main-col .article .right-col {

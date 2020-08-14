@@ -1,0 +1,5 @@
+groups:
+  - name: group
+    collaborators:
+      - someone
+      - another one

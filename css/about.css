@@ -134,8 +134,15 @@
 #main-content .decor-row {
   display: flex;
   flex-direction: row;
-  padding-right: 10vw;
-  
+  padding-left: 0;  
+  padding-right: 10vw;  
+}
+
+#main-content .decor-row.inverted{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10vw;  
+  padding-right: 0;  
 }
 
 #main-content .decor-row .decor{

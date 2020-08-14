@@ -138,6 +138,13 @@
     flex-direction: row;
     padding-right: 0;
   }
+  
+  #main-content .decor-row.inverted{
+    display: none;
+    flex-direction: row;
+    padding-left: 10vw;  
+    padding-right: 0;  
+  }
 
   #main-content .decor-row .decor {
     height: 100px;

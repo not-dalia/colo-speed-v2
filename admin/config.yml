@@ -2,8 +2,8 @@ backend:
   name: github
   repo: not-dalia/colo-speed-v2
   branch: master
-  site_domain: v2.colospeed.uk
-  # site_domain: cms.netlify.com
+  # site_domain: v2.colospeed.uk
+  site_domain: cms.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: assets/images/uploads
@@ -186,7 +186,23 @@ collections:
               - {label: Affiliation, name: affiliation, widget: string, required: false}
               - {label: Bio, name: bio, widget: text, required: false}
               - {label: Email, name: email, widget: string, required: false}
-              - {label: Image, name: image, widget: image}
+              # - {label: Image, name: image, widget: image}
+              - {label: Image, name: image, widget: image_dimensions, min_width: 300, min_height: 300, validation: "Image must be 300x300px"}
+  - name: "collaborator"
+    label: "Collaborators"
+    editor:
+      preview: false
+    files:
+      - label: "Collaborators"
+        name: "collaboratos"
+        file: "_data/collaborators.yml"
+        fields:
+          - label: "Collaborator Groups"
+            name: "groups"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Collaborators, name: collaborators, widget: list}
   - name: "faq"
     label: "FAQs"
     editor:
