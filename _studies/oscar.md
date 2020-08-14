@@ -8,7 +8,7 @@ image: /assets/images/uploads/image.jpg
 status: Data Analysis / Reporting
 sponsor: Norgine
 contactperson:
-  name: Colin Rees
+  name: Professor Colin Rees
   institution: South Tyneside and Sunderland NHS Foundation Trust
   email: colin.rees@ncl.ac.uk
 openedsites:
