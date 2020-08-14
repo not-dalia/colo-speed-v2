@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Microbes, Microbiome and Metagenomics
-date: 2020-08-14T16:42:22.858Z
+date: 2020-06-12T16:42:22.858Z
 image: /assets/images/uploads/suparna-in-the-lab.jpg
 featured: false
 type: article
