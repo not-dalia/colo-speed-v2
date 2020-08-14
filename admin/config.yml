@@ -186,8 +186,8 @@ collections:
               - {label: Affiliation, name: affiliation, widget: string, required: false}
               - {label: Bio, name: bio, widget: text, required: false}
               - {label: Email, name: email, widget: string, required: false}
-              # - {label: Image, name: image, widget: image}
-              - {label: Image, name: image, widget: image_dimensions, min_width: 300, min_height: 300, validation: "Image must be 300x300px"}
+              - {label: Image, name: image, widget: image}
+              # - {label: Image, name: image, widget: image_dimensions, min_width: 300, min_height: 300, validation: "Image must be 300x300px"}
   - name: "collaborator"
     label: "Collaborators"
     editor:

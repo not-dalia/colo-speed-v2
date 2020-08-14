@@ -69,8 +69,10 @@
             </p>
           </div>
           <div class="paragraph">
-            {% if page.patientinfo != "" or page.researcherinfo != "" %}  
-              <div class="title">How</div>
+            {% if page.patientinfo or page.researcherinfo %} 
+              {% if page.patientinfo != "" or page.researcherinfo != "" %}  
+                <div class="title">How</div>
+              {% endif %}
             {% endif %}
             {% if page.patientinfo != "" and page.patientinfo != nil %}  
               <div class="subtitle">Information for Patients:</div>
@@ -86,37 +88,40 @@
               </p>
             {% endif %}
           </div>
-          <div class="paragraph">
-            <div class="title">Where</div>
-            <div class="subtitle">Opened sites:</div>
-            <ul>
-              {% for site in page.openedsites %}
-                {% if site.name == "" or site.name == nil %}  
-                  <li>{{site}}</li>
-                {% else %}
-                  <li>{{site.name}}</li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-            {% if page.openingsites %}
-              <div class="subtitle">
-                {% if page.openingsitestitle %}
-                  {{ page.openingsitestitle }}:
-                {% else %}
-                  Opening sites:
-                {% endif %}
-              </div>
-            {% endif %}
-            <ul>
-              {% for site in page.openingsites %}
-                {% if site.name == "" or site.name == nil %}  
-                  <li>{{site}}</li>
-                {% else %}
-                  <li>{{site.name}}</li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
+          {% if page.openingsites or page.openingsites %}
+            <div class="paragraph">
+              <div class="title">Where</div>
+              <div class="subtitle">Opened sites:</div>
+              <ul>
+                {% for site in page.openedsites %}
+                  {% if site.name == "" or site.name == nil %}  
+                    <li>{{site}}</li>
+                  {% else %}
+                    <li>{{site.name}}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              {% if page.openingsites %}
+                <div class="subtitle">
+                  {% if page.openingsitestitle %}
+                    {{ page.openingsitestitle }}:
+                  {% else %}
+                    Opening sites:
+                  {% endif %}
+                </div>
+              {% endif %}
+              <ul>
+                {% for site in page.openingsites %}
+                  {% if site.name == "" or site.name == nil %}  
+                    <li>{{site}}</li>
+                  {% else %}
+                    <li>{{site.name}}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
           <div class="paragraph">
             {% if page.researchers.size > 0 or page.sponsor != nil %}
               <div class="title">Who</div>

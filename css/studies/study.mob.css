@@ -1,4 +1,4 @@
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 1000px) {
   /*************** STUDIES PAGE STYLE BEGINES HERE ***************/
 
   #main-content .section-1 {
@@ -15,7 +15,7 @@
   #main-content .section-1 .study .col {
     flex: 1;
     color: white;
-    padding: 70px 5vw;
+    padding: 40px 5vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    padding-bottom: 51%;
   }
 
   #main-content .section-1 .study .title {

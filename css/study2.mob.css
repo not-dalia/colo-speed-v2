@@ -13,7 +13,7 @@
     position: relative;
   }
 
-  #main-content .section-1 .news-media {
+  #main-content .section-1 .studies {
     flex: 1;
     min-height: 300px;
     background: #E6E6E6;
@@ -26,7 +26,7 @@
     justify-content: center;
   }
 
-  #main-content .section-1 .news-media .main-col {
+  #main-content .section-1 .studies .main-col {
     flex: 1;
     /* padding: 3rem 0; */
     padding: 2rem 0;
@@ -35,16 +35,16 @@
     align-items: flex-start;
   }
 
-  #main-content .section-1 .news-media .title {
+  #main-content .section-1 .studies .title {
     text-align: left;
     font-size: 1.8em;
   }
 
-  #main-content .section-1 .news-media .left-col .title {
+  #main-content .section-1 .studies .left-col .title {
     width: 100%;
   }
 
-  #main-content .section-1 .news-media .main-col .title {
+  #main-content .section-1 .studies .main-col .title {
     color: #313131;
     color: var(--dk-grey);
     font-size: 2rem;
@@ -53,38 +53,37 @@
     padding: 0 20px 20px 20px;
   }
   
-  #main-content .section-1 .news-media .main-col a {
+  #main-content .section-1 .studies .main-col a {
     text-decoration: none;
     color: currentColor;
   }
   
-  #main-content .section-1 .news-media .main-col a:hover {
+  #main-content .section-1 .studies .main-col a:hover {
     color: var(--primary-color);
     text-decoration: underline;
   }
   
-  #main-content .section-1 .news-media .main-col .newstitle {
+  #main-content .section-1 .studies .main-col .newstitle {
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--primary-color);
-    margin-top: 10px;
   }
 
-  #main-content .article:hover {
+  #main-content .study:hover {
     cursor: pointer;
   }
   
-  #main-content .article:hover .newstitle a {
+  #main-content .study:hover .newstitle a {
     color: var(--primary-color) !important;
     text-decoration: underline ;
   }
 
-  #main-content .section-1 .news-media .main-col .subtitle {
-    font-size: 1.3rem;
+  #main-content .section-1 .studies .main-col .subtitle {
+    font-size: 1.2rem;
     font-weight: 500;
   }
 
-  #main-content .section-1 .news-media .main-col .date {
+  #main-content .section-1 .studies .main-col .date {
     /* color: var(--lt-blue);
     font-weight: 500;
     font-size: 0.9rem; */
@@ -98,7 +97,7 @@
     text-align: center;
   }
   
-  #main-content .section-1 .news-media .main-col .tag {
+  #main-content .section-1 .studies .main-col .tag {
     color: white;
     font-weight: 500;
     font-size: 0.9rem;
@@ -110,24 +109,24 @@
     margin-right: 5px;
   }
 
-  #main-content .section-1 .news-media .main-col .tag:hover {
+  #main-content .section-1 .studies .main-col .tag:hover {
     background: var(--lt-grey);
   }
 
-  #main-content .section-1 .news-media .main-col .paragraph {
+  #main-content .section-1 .studies .main-col .paragraph {
     font-size: 1.1rem;
     line-height: 1.8rem;
     word-break: break-word;
   }
 
-  #main-content .section-1 .news-media .main-col .article {
+  #main-content .section-1 .studies .main-col .study {
     background: white;
     margin: 10px 0;
     display: flex;
     flex-direction: column;
   }
 
-  #main-content .section-1 .news-media .main-col .article .left-col {
+  #main-content .section-1 .studies .main-col .study .left-col {
     width: 100%;
     padding-bottom: 56%;
     box-sizing: border-box;
@@ -139,7 +138,7 @@
     margin: 0;
   }
   
-  #main-content .section-1 .news-media .main-col .article .right-col {
+  #main-content .section-1 .studies .main-col .study .right-col {
     flex: 1;
     padding: 30px;
   }

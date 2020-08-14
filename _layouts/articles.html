@@ -45,7 +45,7 @@
             </div>
             <div class="right-col col">
               <div class="date">
-                <a href="{{article.url}}">{{ article.date | date: "%-d %B %Y" }}</a>
+                {{ article.date | date: "%-d %B %Y" }}
               </div>
               <div class="type gibson-medium">
                 {{ article.type }}

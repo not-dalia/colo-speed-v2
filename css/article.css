@@ -92,14 +92,14 @@
 }
 
 #main-content .section-1 .news-media .main-col .date {
-  color: #999;
+  color: var(--lt-blue);
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 #main-content .section-1 .news-media .main-col .date a{
-  /* color: var(--lt-blue); */
-  color: #bbb;
+  color: var(--lt-blue);
+  /* color: #6d6d6d; */
 }
 
 #main-content .section-1 .news-media .main-col .tag {
@@ -201,6 +201,8 @@
   max-width: 350px;
   border: 1px solid #ddd;
   transition: 0.3s;
+  background: var(--primary-color)
+
 }
 
 #main-content .section-1 .news-media .main-col .article .related-study:hover {
@@ -208,22 +210,30 @@
   cursor: pointer;
 }
 
-#main-content .section-1 .news-media .main-col .article .related-study:hover .card-title{
+#main-content .section-1 .news-media .main-col .article .related-study:hover .card-title a{
   text-decoration: underline;
+  color: var(--lt-blue) !important;
+}
+
+#main-content .section-1 .news-media .main-col .article  .card-title a:hover {
+  text-decoration: underline;
+  color: var(--lt-blue) !important;
 }
 
 #main-content .article .related-study .feature-image {
   width: 100%; 
   padding-bottom: 56%;
+  background-position: center;
+  background-size: cover;
 }
 
 #main-content .article .related-study .card-content {
   padding: 10px 10px 20px 10px;
 }
 
-#main-content .article .related-study .card-title, #main-content .article .related-study .card-title a{
-  color: var(--primary-color);
-  font-size: 1.6rem;
+#main-content .article .related-study .card-title, #main-content .article .related-study .card-title a {
+  color: white;
+  font-size: 1.8rem;
   text-align: center;
   line-height: 3rem;
   font-weight: 500;
@@ -232,6 +242,7 @@
 #main-content .article .related-study .paragraph {
   font-size: 1rem !important;
   text-align: center !important;
+  color: white !important;
 }
 
 /****************** END OF ABOUT PAGE STYLEE *****************/

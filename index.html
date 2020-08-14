@@ -113,7 +113,8 @@ layout: parent
     <div class="section section-4">
       <div class="title gibson-medium">Latest Studies</div>
       <div class="latest-studies">
-        {% for study in site.studies limit:2 %}
+        {% assign studies = site.studies | sort: 'date' | reverse %}
+        {% for study in studies limit:2 %}
           <div class="row">
             <div class="col">
               <div class="study-image" style="background-image: url('{{ study.image }}');"></div>

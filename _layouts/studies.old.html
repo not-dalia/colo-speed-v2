@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>COLO-SPEED - Studies</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#004379">
+  <link rel="stylesheet" href="/css/styles.1569346102824.css?t=10">
+  <link rel="stylesheet" href="/css/styles.1569346102824.mob.css?t=10">
+  <link rel="stylesheet" href="/css/studies/index.css?t=10">
+  <link rel="stylesheet" href="/css/studies/index.mob.css?t=10">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {% include header.html %}
+
+  <div id="main-content">
+    <div class="section section-1 studies gibson-book">
+      {% assign studies = site.studies | sort: 'date' | reverse %}
+      {% for study in studies %}
+        <div class="study">
+          <div class="left-col col">
+            <div class="study-info">
+              <div class="title gibson-medium">
+                {{ study.title }}
+              </div>
+              <div class="subtitle gibson-medium">
+                {{ study.subtitle }}
+              </div>
+              <div class="contact-person">
+                {% if study.contactperson.email%}
+                  <a href="mailto:{{study.contactperson.email}}">{{ study.contactperson.name }} – {{ study.contactperson.institution }}</a>
+                {% else %}
+                  {{ study.contactperson.name}} – {{ study.contactperson.institution }}
+                {% endif %}
+              </div>
+              <div class="paragraph gibson-book">
+                {{ study.shortoverview }}
+              </div>
+              {% if study.status and study.status != "" %}
+                <div class="status">
+                  <span class="strong">Status:</span> {{ study.status }}
+                </div>
+              {% endif %}
+              <a href="{{ study.url }}" class="read-more">
+                Find out more
+              </a>
+            </div>
+          </div>
+          <div class="right-col col" style="background-image: url('{{ study.image }}')">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% include footer.html %}
+  <script src="/js/script.js" async defer></script>
+</body>
+
+</html>

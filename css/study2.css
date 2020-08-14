@@ -39,7 +39,7 @@
   color: white !important;
 }
 
-#main-content .section-1 .news-media {
+#main-content .section-1 .studies {
   flex: 1;
   min-height: 300px;
   background: #E6E6E6;
@@ -54,7 +54,7 @@
   max-width: 1300px;
 }
 
-#main-content .section-1 .news-media .main-col {
+#main-content .section-1 .studies .main-col {
   flex: 1;
   padding: 1rem 0;
   display: flex;
@@ -62,16 +62,16 @@
   align-items: flex-start;
 }
 
-#main-content .section-1 .news-media .title {
+#main-content .section-1 .studies .title {
   text-align: left;
   font-size: 1.8em;
 }
 
-#main-content .section-1 .news-media .left-col .title {
+#main-content .section-1 .studies .left-col .title {
   width: 300px;
 }
 
-#main-content .section-1 .news-media .main-col .title {
+#main-content .section-1 .studies .main-col .title {
   color: #313131;
   color: var(--dk-grey);
   font-size: 2rem;
@@ -80,29 +80,37 @@
   padding: 20px 0;
 }
 
-#main-content .section-1 .news-media .main-col a {
+#main-content .section-1 .studies .main-col a {
   text-decoration: none;
   color: currentColor;
 }
 
-#main-content .section-1 .news-media .main-col a:hover {
+#main-content .section-1 .studies .main-col a:hover {
   color: var(--primary-color);
   text-decoration: underline;
 }
 
-#main-content .section-1 .news-media .main-col .newstitle {
+#main-content .section-1 .studies .main-col .newstitle {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--primary-color);
-  margin-top: 10px;
 }
 
-#main-content .section-1 .news-media .main-col .subtitle {
-  font-size: 1.3rem;
+#main-content .section-1 .studies .main-col .subtitle {
+  font-size: 1.1rem;
   font-weight: 500;
+  margin-top: 5px;
 }
 
-#main-content .section-1 .news-media .main-col .date {
+#main-content .section-1 .studies .main-col .contact-person {
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--lt-blue);
+  text-align: left;
+}
+
+#main-content .section-1 .studies .main-col .date {
   /* color: var(--lt-blue);
   font-weight: 500;
   font-size: 0.9rem; */
@@ -116,11 +124,11 @@
   text-align: center;
 }
 
-#main-content .section-1 .news-media .main-col .date a{
+#main-content .section-1 .studies .main-col .date a{
   display: block;
 }
 
-#main-content .section-1 .news-media .main-col .tag {
+#main-content .section-1 .studies .main-col .tag {
   color: white;
   font-weight: 500;
   font-size: 0.9rem;
@@ -133,11 +141,19 @@
   margin-top: 2px;
 }
 
-#main-content .section-1 .news-media .main-col .tag:hover {
-  background: var(--lt-grey);
+#main-content .section-1 .study .location, #main-content .section-1 .study .status  {
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: left;
 }
 
-#main-content .section-1 .news-media .main-col .type {
+#main-content .section-1 .study .location .strong, #main-content .section-1 .study .status .strong {
+  font-weight: 500;
+  color: var(--lt-blue);
+  font-size: 1rem;
+}
+
+#main-content .section-1 .studies .main-col .type {
   font-size: 1rem;
   color: white;
   background: var(--primary-color);
@@ -147,37 +163,37 @@
   text-transform: capitalize;
 }
 
-#main-content .section-1 .news-media .main-col .read-more {
+#main-content .section-1 .studies .main-col .read-more {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--lt-blue);
   text-decoration: underline;
 }
 
-#main-content .section-1 .news-media .main-col .paragraph {
+#main-content .section-1 .studies .main-col .paragraph {
   font-size: 1.1rem;
   line-height: 1.8rem;
   word-break: break-word;
 }
 
-#main-content .section-1 .news-media .main-col .paragraph img {
+#main-content .section-1 .studies .main-col .paragraph img {
   max-width: 500px;
   display: block;
   margin-bottom: 5px;
 }
 
-#main-content .section-1 .news-media .main-col .paragraph table {
+#main-content .section-1 .studies .main-col .paragraph table {
   margin: 20px auto;
   display: block;
   max-width: 505px;
 }
 
-#main-content .section-1 .news-media .main-col .paragraph table td{
+#main-content .section-1 .studies .main-col .paragraph table td{
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-#main-content .section-1 .news-media .main-col .article {
+#main-content .section-1 .studies .main-col .study {
   background: white;
   margin: 10px 0;
   /* display: flex; */
@@ -186,16 +202,16 @@
   transition: 0.3s;
 }
 
-#main-content .section-1 .news-media .main-col .article:hover {
+#main-content .section-1 .studies .main-col .study:hover {
   box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
   cursor: pointer;
 }
 
-#main-content .section-1 .news-media .main-col .article:hover .newstitle {
+#main-content .section-1 .studies .main-col .study:hover .newstitle {
   text-decoration: underline;
 }
 
-#main-content .section-1 .news-media .main-col .article .left-col {
+#main-content .section-1 .studies .main-col .study .left-col {
   float: left;
   /* width: 10vw; */
   /* padding: 50px; */
@@ -211,7 +227,7 @@
   margin: 40px 40px 30px 30px;
 }
 
-#main-content .section-1 .news-media .main-col .article .right-col {
+#main-content .section-1 .studies .main-col .study .right-col {
   flex: 1;
   padding: 40px;
   padding-right: 30px;
