@@ -30,14 +30,17 @@
     <div class="section section-1 gibson-book">
       <div class="news-media">
         <div class="main-col">
-          <div class="title">
-            {{ page.title }}
+          <div class="decor">
+            <div class="main-title">
+              {{ page.title }}
+            </div>
           </div>
+          
 
           {% assign articles = site.articles | sort: 'date' | reverse %}
 
           {% for article in articles %}
-          <div class="article" style="cursor: pointer;" onclick="window.location='{{article.url}}'">
+          <div class="article" onclick="window.location='{{article.url}}'">
             <div class="left-col col" style="background-image: url('{{ article.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{article.url}}'">
             </div>
             <div class="right-col col">

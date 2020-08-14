@@ -8,8 +8,9 @@
     flex-direction: column;
     justify-content: center;
     padding: 90px 0 0 0;
-    padding-top: 90px;
+    padding-top: 140px;
     box-sizing: border-box;
+    position: relative;
   }
 
   #main-content .section-1 .news-media {
@@ -31,7 +32,7 @@
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
   }
 
   #main-content .section-1 .news-media .title {
@@ -63,10 +64,19 @@
   }
   
   #main-content .section-1 .news-media .main-col .newstitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--primary-color);
     margin-top: 10px;
+  }
+
+  #main-content .article:hover {
+    cursor: pointer;
+  }
+  
+  #main-content .article:hover .newstitle a {
+    color: var(--primary-color) !important;
+    text-decoration: underline ;
   }
 
   #main-content .section-1 .news-media .main-col .subtitle {
@@ -75,9 +85,16 @@
   }
 
   #main-content .section-1 .news-media .main-col .date {
-    color: var(--lt-blue);
+    /* color: var(--lt-blue);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.9rem; */
+    color: #bbb;
+    font-weight: 500;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: center;
   }
   
   #main-content .section-1 .news-media .main-col .tag {
@@ -97,7 +114,7 @@
   }
 
   #main-content .section-1 .news-media .main-col .paragraph {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.8rem;
     word-break: break-word;
   }
@@ -127,4 +144,31 @@
   }
 
   /****************** END OF ABOUT PAGE STYLEE *****************/
+}
+
+@media only screen and (max-width: 1000px){
+  #main-content .section-1 .decor{
+    position: absolute;
+    height: 60px;
+    background: var(--primary-color);
+    top: 88px !important;
+    right: 0;
+    left: 0;
+    margin-bottom: 50px;
+    padding: 0px 10vw 0px 10vw;
+  }
+  
+  #main-content .section-1 .main-title {
+    z-index: 1;
+    background-color: var(--lt-blue);
+    padding: 1rem 4vw 1rem 25vw;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white !important;
+  }
 }
