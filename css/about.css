@@ -216,5 +216,40 @@
   color: white;
 }
 
+#main-content .main-col .collaborators {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+#main-content .main-col .collaborator-list-container {
+  background: #f4f4f4;
+  box-sizing: border-box;
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 20px;
+}
+
+#main-content .main-col .collaborator-list-container .group-title {
+  font-weight: 500;
+  color: var(--lt-blue);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+
+#main-content .main-col .collaborator-list-container ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+
 
 /****************** END OF ABOUT PAGE STYLEE *****************/

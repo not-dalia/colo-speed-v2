@@ -23,6 +23,7 @@
   flex-wrap: wrap;
   padding: 50px;
   justify-content: center;
+  max-width: 1200px;
 }
 
 #main-content .section-1 .news-media .main-col {

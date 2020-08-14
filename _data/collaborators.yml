@@ -3,3 +3,66 @@ groups:
     collaborators:
       - name: Colin Rees
       - name: Linda Sharp
+      - name: Mark Hull
+      - name: Farhat Din
+      - name: Kyle Montague
+      - name: Matt Rutter
+      - name: Siwan Thomas Gibson
+      - name: Matt Brookes
+      - name: Evelien Dekker
+      - name: Robert Arnott
+  - name: Scottish & Northern Irish Hub
+    collaborators:
+      - name: Malcolm Dunlop
+      - name: Peter Hall
+      - name: John Norrie
+      - name: Bob Steele
+      - name: Annie Anderson
+      - name: Owen Sansom
+      - name: Vicky Coyle
+  - name: North England Hub
+    collaborators:
+      - name: Eva Morris
+      - name: Tim Bishop
+      - name: Jonathan Sheffield (NIHR)
+      - name: Nick West
+      - name: Anne Mackie (BCSP and PHE) 
+  - name: North East Hub
+    collaborators:
+      - name: Sir John Burn
+      - name: Allyson Pollock
+      - name: Seamus Kelly
+      - name: Greg Rubin
+      - name: John Mathers
+      - name: Luke Vale
+      - name: Dawn Craig
+      - name: Michael Trenell
+      - name: Kyle Montague
+      - name: Falko Sniehotta
+      - name: James Wasson
+      - name: John Saxton
+  - name: London Hub
+    collaborators:
+      - name: Amanda Cross
+      - name: Kevin Monahan 
+      - name: Christian Von Wagner
+      - name: Ruth Langley
+      - name: Richard Houlston
+      - name: Clare Turnbull
+      - name: Celia Ingham Clark (NHS England)
+      - name: Richard Gardner (BSG)
+  - name: Central-South England & Wales Hub
+    collaborators:
+      - name: Willie Hamilton
+      - name: Sunil Dolwani
+      - name: Ian Tomlinson 
+      - name: Karen Brown 
+      - name: Simon Leedham
+      - name: Roger Blanks
+  - name: Netherlands Hub
+    collaborators:
+      - name: Paul Fockens
+      - name: Patrick Bossuyt
+      - name: Monique Van Leerdam
+      - name: Hans Clevers 
+      

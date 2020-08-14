@@ -108,10 +108,10 @@ permalink: /about/
         <div class="collaborators">
           {% for group in site.data.collaborators.groups %}
             <div class="collaborator-list-container">
-              <div class="title">{{ group.name }}</div>
+              <div class="group-title">{{ group.name }}</div>
               <ul class="collaborator-list">
                 {% for collaborator in group.collaborators %}
-                  <li class="collaborator">{{ collaborator }}</li>
+                  <li class="collaborator">{{ collaborator.name }}</li>
                 {% endfor %}
               </ul>
             </div>
