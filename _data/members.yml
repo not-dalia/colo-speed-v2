@@ -42,13 +42,13 @@ members:
     affiliation: Research Administrator, Newcastle University
     email: Nathania.Bestwick@newcastle.ac.uk
     image: /assets/images/uploads/nathania.jpg
-  - name: Dr Barry Sandywell
-    affiliation: Patient and Public Involvement Lead
-    image: /assets/images/uploads/barry.jpg
-  - name: John Whelpton
-    affiliation: Patient and Public Involvement Lead
-    image: /assets/images/uploads/john.jpg
   - name: Dalya Al-Shahrabi
     email: dalya.ali@newcastle.ac.uk
     affiliation: Research Software Engineer, Newcastle University
     image: /assets/images/uploads/dalya.jpg
+  - name: John Whelpton
+    affiliation: Patient and Public Involvement Lead
+    image: /assets/images/uploads/john.jpg
+  - name: Dr Barry Sandywell
+    affiliation: Patient and Public Involvement Lead
+    image: /assets/images/uploads/barry.jpg
