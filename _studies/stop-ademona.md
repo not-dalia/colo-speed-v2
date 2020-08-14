@@ -1,6 +1,6 @@
 ---
 layout: study
-title: STOP-ADEMONA
+title: STOP-ADENOMA
 subtitle: Study of Prevention by Aspirin and EPA; Knowledge of Mechanism of Action
 date: 2019-09-01T12:22:17.342Z
 featured: false
