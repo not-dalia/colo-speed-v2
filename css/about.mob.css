@@ -257,7 +257,7 @@
 @media only screen and (max-width: 1000px){
   #main-content .section-1 .decor{
     position: absolute;
-    height: 60px;
+    height: 50px;
     background: var(--primary-color);
     top: 88px !important;
     right: 0;
