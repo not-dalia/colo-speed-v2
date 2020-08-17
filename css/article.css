@@ -53,7 +53,7 @@
 }
 
 #main-content .section-1 .news-media .main-col a {
-  text-decoration: none;
+  text-decoration: underline;
   color: currentColor;
 }
 

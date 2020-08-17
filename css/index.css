@@ -275,7 +275,6 @@
   font-weight: 500;
   padding: 10px 20px;
   display: block;
-  width: 100%;
   text-align: center;
   text-decoration: none;
   border-radius: 20px;
@@ -384,7 +383,14 @@
   text-decoration: underline;
 }
 
-#main-content .section-4 .latest-studies .register-btn>a{
+#main-content .section-4 .latest-studies .register-btn {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#main-content .section-4 .latest-studies .register-btn a{
   background: #00BDF1;
   background: var(--lt-blue);
   color: white;
@@ -399,9 +405,10 @@
   transition: all ease-in 0.1s;
 }
 
-#main-content .section-4 .latest-studies .register-btn>a:hover{
+#main-content .section-4 .latest-studies .register-btn a:hover{
   background: #004379;
   background: var(--primary-color);
+  text-decoration: underline;
 }
 
 #main-content .section-5 {

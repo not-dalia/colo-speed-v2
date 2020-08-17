@@ -289,7 +289,7 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
-
+  
   #main-content .section-3 .featured-articles .register-btn>a {
     background: #00BDF1;
     background: var(--lt-blue);
@@ -373,6 +373,14 @@
     font-weight: 500;
   }
   
+
+  #main-content .section-4 .latest-studies .register-btn {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
   #main-content .section-4 .latest-studies .register-btn>a{
     background: #00BDF1;
     background: var(--lt-blue);

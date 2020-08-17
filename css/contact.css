@@ -10,6 +10,32 @@
   padding-top: 102px;
   /* padding-top: 30px; */
   box-sizing: border-box;
+  position: relative;
+}
+
+#main-content .section-1 .decor{
+  position: absolute;
+  height: 60px;
+  background: var(--primary-color);
+  top: 100px;
+  right: 0;
+  left: 0;
+  margin-bottom: 50px;
+  padding: 0px 10vw 0px 10vw;
+}
+
+#main-content .section-1 .main-title {
+  z-index: 1;
+  background-color: var(--lt-blue);
+  padding: 1rem 4vw 1rem 25vw;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white !important;
 }
 
 #main-content .section-1 .contact-us {
@@ -21,6 +47,7 @@
   box-sizing: border-box;
   flex-wrap: wrap;
   padding: 50px;
+  margin-top: 50px;
   justify-content: center;
 }
 
