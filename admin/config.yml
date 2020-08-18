@@ -271,5 +271,16 @@ collections:
             name: "instagram"
             widget: "string"
             default: "#"
-
+  - name: "privacy"
+    label: "Privacy Policy"
+    editor:
+      preview: true
+    files:
+      - label: "Privacy Policy"
+        name: "privacypolicy"
+        file: "_data/privacypolicy.yml"
+        fields:
+          - label: "privacypolicy"
+            name: "Privacy Policy"
+            widget: "markdown"
 
