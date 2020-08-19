@@ -280,8 +280,8 @@ collections:
         name: "privacypolicy"
         file: "_pages/privacy.md"
         fields:
-          - label: "body"
-            name: "Privacy Policy"
+          - label: "Privacy Policy"
+            name: body
             widget: "markdown"
           - label: Layout
             name: layout
