@@ -3,5 +3,3 @@ title: Privacy Policy
 permalink: /privacy/
 layout: privacy
 ---
- 
- {{ site.data.privacypolicy || markdownify }}

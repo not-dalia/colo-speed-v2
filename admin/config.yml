@@ -278,9 +278,21 @@ collections:
     files:
       - label: "Privacy Policy"
         name: "privacypolicy"
-        file: "_data/privacypolicy.yml"
+        file: "_pages/privacy.md"
         fields:
-          - label: "privacypolicy"
+          - label: "body"
             name: "Privacy Policy"
             widget: "markdown"
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: privacy
+          - label: Title
+            name: title
+            widget: hidden
+            default: "Privacy Policy"
+          - label: Permalink
+            name: permalink
+            widget: hidden
+            default: "/privacy/"
 
