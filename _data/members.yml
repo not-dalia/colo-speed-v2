@@ -18,6 +18,10 @@ members:
     bio: null
     email: Kyle.Montague@northumbria.ac.uk
     image: /assets/images/uploads/kyle.jpg
+  - name: Miss Farhat Din
+    bio: Senior Lecturer & CSO Senior Clinical Fellow, University of Edinburgh
+    email: Farhat.Din@ed.ac.uk
+    image: /assets/images/uploads/f.din_high_res_photo2.jpg
   - name: Dr Suparna Mitra
     affiliation: Academic Fellow, University of Leeds
     image: /assets/images/uploads/suparna.jpg
