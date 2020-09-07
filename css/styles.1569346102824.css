@@ -369,6 +369,37 @@ body {
   }
 }
 
+.partners-container {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.partners-container .partners { 
+  padding: 50px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.partners-container .partners .partner-logos{ 
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-container .partners .partner-logo{ 
+  cursor: pointer;
+}
+
+.partners-container .partners .partner-logo img{ 
+  width: 160px;
+  cursor: pointer;
+  margin: 10px 20px;
+}
+
 @media only screen and (max-width: 800px) {
   #footer .middle-section {
     flex: 0.2

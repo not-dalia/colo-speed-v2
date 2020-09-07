@@ -41,4 +41,35 @@
     font-size: 1rem;
     line-height: 2rem;
   }
+
+  .partners-container  {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .partners-container .partners {
+    padding: 50px 30px 30px 30px;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .partners-container .partners .partner-logos {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partners-container .partners .partner-logo {
+    display: inline-block;
+    margin: 10px 0px;
+  }
+
+  .partners-container .partners .partner-logo img {
+    width: 160px;
+    cursor: pointer;
+  }
 }
