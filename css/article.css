@@ -1,4 +1,3 @@
-
 /*************** ABOUT PAGE STYLE BEGINES HERE ***************/
 #main-content .section-1 {
   background: #E6E6E6;
@@ -86,7 +85,7 @@
 }
 
 #main-content .section-1 .news-media .main-col .share-buttons a {
-  margin: 0 1px;
+  margin: 0 2px;
   text-decoration: none;
 }
 
@@ -94,6 +93,36 @@
   color: var(--dk-blue) !important;
 }
 
+a#copy-button {
+  text-decoration: none;
+  color: white !important;
+  background: var(--primary-color);
+  border-radius: 0 3px 3px 0;
+  border: 1px var(--primary-color) solid;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  padding: 1px 2px;
+  height: 1.6rem;
+  width: 1.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content .section-1 .news-media .main-col .share-buttons a#copy-button:hover {
+  color: white !important;
+  background: var(--dk-blue) !important;
+  border-color: var(--dk-blue) !important;
+}
+
+#main-content .section-1 .news-media .main-col .share-buttons a#copy-button:active {
+  color: white !important;
+  background: var(--lt-blue) !important;
+  border-color: var(--lt-blue) !important;
+}
 
 #main-content .section-1 .news-media .main-col .info-row {
   display: flex;
@@ -120,12 +149,12 @@
   margin-left: 20px;
 }
 
-#main-content .section-1 .news-media .main-col .date a{
+#main-content .section-1 .news-media .main-col .date a {
   color: var(--lt-blue);
   /* color: #6d6d6d; */
 }
 
-#main-content .section-1 .news-media .main-col .date a:hover{
+#main-content .section-1 .news-media .main-col .date a:hover {
   color: var(--dk-blue);
   /* color: #6d6d6d; */
 }
@@ -151,7 +180,7 @@
   margin: 20px 0;
 }
 
-#main-content .section-1 .news-media .main-col .external-links ul{
+#main-content .section-1 .news-media .main-col .external-links ul {
   margin: 5px 0;
   text-decoration: underline;
 }
@@ -169,11 +198,11 @@
   word-break: break-word;
 }
 
-#main-content .section-1 .news-media .main-col .paragraph a{
+#main-content .section-1 .news-media .main-col .paragraph a {
   color: var(--lt-blue);
 }
 
-#main-content .section-1 .news-media .main-col .paragraph a:hover{
+#main-content .section-1 .news-media .main-col .paragraph a:hover {
   color: var(--dk-blue);
 }
 
@@ -189,7 +218,7 @@
   max-width: 505px;
 }
 
-#main-content .section-1 .news-media .main-col .paragraph table td{
+#main-content .section-1 .news-media .main-col .paragraph table td {
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -212,7 +241,8 @@
 
   width: 100%;
   /* padding-bottom: 56.25%; */
-  padding-bottom: 51.25%; /* 16:9 */
+  padding-bottom: 51.25%;
+  /* 16:9 */
   position: relative;
 }
 
@@ -238,26 +268,25 @@
   border: 1px solid #ddd;
   transition: 0.3s;
   background: var(--primary-color)
-
 }
 
 #main-content .section-1 .news-media .main-col .article .related-study:hover {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-#main-content .section-1 .news-media .main-col .article .related-study:hover .card-title a{
+#main-content .section-1 .news-media .main-col .article .related-study:hover .card-title a {
   text-decoration: underline;
   color: var(--lt-blue) !important;
 }
 
-#main-content .section-1 .news-media .main-col .article  .card-title a:hover {
+#main-content .section-1 .news-media .main-col .article .card-title a:hover {
   text-decoration: underline;
   color: var(--lt-blue) !important;
 }
 
 #main-content .article .related-study .feature-image {
-  width: 100%; 
+  width: 100%;
   padding-bottom: 56%;
   background-position: center;
   background-size: cover;
@@ -267,7 +296,8 @@
   padding: 10px 10px 20px 10px;
 }
 
-#main-content .article .related-study .card-title, #main-content .article .related-study .card-title a {
+#main-content .article .related-study .card-title,
+#main-content .article .related-study .card-title a {
   color: white;
   font-size: 1.8rem;
   text-align: center;

@@ -62,7 +62,6 @@
                 {{ article.subtitle }}
               </div>
               <div class="share-buttons">
-                  <div>
                     <!-- <div style="font-size: 1rem; font-weight: 500; margin: 0 5px;">
                       Share this: 
                     </div> -->
@@ -76,7 +75,8 @@
                     </a>
                     <a title="whatsapp" target="_blank" href="https://api.whatsapp.com/send?text=https://v2.colospeed.uk{{ article.url}}" style="color: #4FCE5D;"><i class="fab fa-whatsapp-square"></i>
                     </a>
-                  </div>
+                    <div style="display: flex; flex-direction: row; margin: 0 2px; align-items: center; position: relative;"><input ontouchstart="highlightText()" onclick="highlightText()" id="copy-link" name="copy-link" style="padding: 1px 1.6rem 1px 2px; height: 1.6rem; border-radius: 3px; border: 1px grey solid;" type="text" readonly value="https://v2.colospeed.uk{{ article.url}}"/><a ontouchstart="copyTextToClipboard()" onclick="copyTextToClipboard()" id="copy-button" title="copy link"><i class="fas fa-link" ></i>
+                    </a></div>
               </div>
               <div class="paragraph">
                 <p>
@@ -155,6 +155,25 @@
   </div>
   {% include footer.html %}
   <script src="/js/script.js" async defer></script>
+  <script>
+  function copyTextToClipboard() {
+    var textArea = document.getElementById("copy-link");
+    textArea.select();
+
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copying text command was ' + msg);
+    } catch (err) {
+      console.log('Oops, unable to copy');
+    }
+  }
+
+  function highlightText() {
+    var textArea = document.getElementById("copy-link");
+    textArea.select();
+  }
+  </script>
 </body>
 
 </html>
