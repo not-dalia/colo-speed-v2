@@ -73,7 +73,7 @@ layout: parent
         {% assign articles = site.articles | sort: 'date' | reverse %}
         {% for article in articles %}
           {% if article.featured == true %}
-            <div class="row" style="border-bottom: 20px solid var(--primary-color)" onclick="window.location='{{article.url}}'">
+            <div class="row" onclick="window.location='{{article.url}}'">
               <div class="col paragraph">
                 <div class="image-container">
                   <div class="video video-2 study-image" style="background-image: url('{{ article.image }}');">
