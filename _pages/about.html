@@ -109,16 +109,33 @@ permalink: /about/
     <div class="section section-2 gibson-book">
       <div class="main-col col">
         <div class="title">Collaborators</div>
+        {% for group in site.data.collaborators.groups %}
+        {% if forloop.first %}
+        <div class="collaborators">
+          <div class="collaborator-list-container"  
+            >
+            <div class="group-title">{{ group.name }}</div>
+            <ul class="collaborator-list">
+              {% for collaborator in group.collaborators %}
+              <li class="collaborator">{{ collaborator.name }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endif %}  
+        {% endfor %}
         <div class="collaborators">
           {% for group in site.data.collaborators.groups %}
+          {% unless forloop.first %}
             <div class="collaborator-list-container">
               <div class="group-title">{{ group.name }}</div>
               <ul class="collaborator-list">
                 {% for collaborator in group.collaborators %}
-                  <li class="collaborator">{{ collaborator.name }}</li>
+                <li class="collaborator">{{ collaborator.name }}</li>
                 {% endfor %}
               </ul>
             </div>
+          {% endunless %}
           {% endfor %}
         </div>
       </div>

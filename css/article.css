@@ -169,6 +169,14 @@
   word-break: break-word;
 }
 
+#main-content .section-1 .news-media .main-col .paragraph a{
+  color: var(--lt-blue);
+}
+
+#main-content .section-1 .news-media .main-col .paragraph a:hover{
+  color: var(--dk-blue);
+}
+
 #main-content .section-1 .news-media .main-col .paragraph img {
   max-width: 500px;
   display: block;
