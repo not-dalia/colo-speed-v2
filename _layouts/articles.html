@@ -41,11 +41,13 @@
 
           {% for article in articles %}
           <div class="article" onclick="window.location='{{article.url}}'">
-            <div class="left-col col" style="background-image: url('{{ article.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{article.url}}'">
+            <div class="image-container">
+              <div class="study-image left-col col" style="background-image: url('{{ article.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{article.url}}'">
+              </div>
             </div>
             <div class="right-col col">
               <div class="date">
-                {{ article.date | date: "%-d %B %Y" }}
+                {{ article.date | date: "%-d %b %Y" }}
               </div>
               <div class="type gibson-medium">
                 {{ article.type }}
@@ -59,7 +61,7 @@
               
               <div class="paragraph">
                 <p>
-                  {{ article.content | markdownify | truncate: 255 }}
+                  {{ article.content | markdownify | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 30 }}
                   <!-- <a href="{{article.url}}" class="read-more">Read more</a> -->
                 </p>
               </div>

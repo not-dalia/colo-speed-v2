@@ -12,6 +12,10 @@
   text-rendering: optimizeLegibility;
 }
 
+.lt-blue {
+  color: var(--lt-blue);
+}
+
 .gibson-book {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
@@ -170,6 +174,10 @@ body {
   flex: 1;
 }
 
+#footer .left-section>.title {
+  margin: 0 10px;
+}
+
 #footer .left-section .col {
   flex: 0.5;
   margin: 0 10px;
@@ -177,7 +185,7 @@ body {
 
 #footer .left-section .col .title {
   font-size: 0.9rem;
-  margin-bottom: 10px;
+  margin: 16px 0;
 }
 
 #footer .left-section .col .links {
@@ -310,7 +318,7 @@ body {
   position: relative;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1001px) {
   #header .nav-items li {
     display: inline !important;
   }
@@ -362,9 +370,19 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  #footer .middle-section {
+    flex: 0.2
+  }
+}
+
+@media only screen and (max-width: 600px) {
   #footer {
     flex-direction: column;
     align-items: center;
+  }
+
+  #footer .middle-section {
+    flex: 0.5
   }
 }
 

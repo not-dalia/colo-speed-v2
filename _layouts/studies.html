@@ -41,7 +41,9 @@
 
           {% for study in studies %}
           <div class="study" onclick="window.location='{{study.url}}'">
-            <div class="left-col col" style="background-image: url('{{ study.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{study.url}}'">
+            <div class="image-container">
+              <div class="study-image left-col col" style="background-image: url('{{ study.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{study.url}}'">
+              </div>
             </div>
             <div class="right-col col">
               <div class="newstitle">
@@ -52,7 +54,8 @@
               </div>
               <div class="contact-person">
                 {% if study.contactperson.email%}
-                  <a href="mailto:{{study.contactperson.email}}">{{ study.contactperson.name }} – {{ study.contactperson.institution }}</a>
+                  {{ study.contactperson.name }} – {{ study.contactperson.institution }}
+                  <!-- <a href="mailto:{{study.contactperson.email}}">(Email)</a> -->
                 {% else %}
                   {{ study.contactperson.name}} – {{ study.contactperson.institution }}
                 {% endif %}

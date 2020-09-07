@@ -2,8 +2,8 @@ backend:
   name: github
   repo: not-dalia/colo-speed-v2
   branch: master
-  site_domain: v2.colospeed.uk
-  # site_domain: cms.netlify.com
+  # site_domain: v2.colospeed.uk
+  site_domain: cms.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: assets/images/uploads
@@ -124,6 +124,14 @@ collections:
         widget: string
       - label: Subtitle
         name: subtitle
+        widget: string
+        required: false
+      - label: Author
+        name: author
+        widget: string
+        required: false
+      - label: Author Contact Link/Email
+        name: authorcontact
         widget: string
         required: false
       - label: Publish Date

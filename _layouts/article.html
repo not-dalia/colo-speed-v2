@@ -21,6 +21,7 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/cea568c08b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -45,16 +46,38 @@
                 </div>
                 <div class="date">
                   <!-- Written by <a class="author-link" href="mailto:{{article.author.email}}">{{ article.author.name }}</a> at <a href="{{article.url}}">{{ article.date | date_to_rfc822 }}</a> -->
-                  {{ article.date | date: "%-d %B %Y" }}
+                  {% if article.author and article.author != "" and article.author != nil %} 
+                  <a href="{{ article.authorcontact }}">{{ article.author }}</a> |
+                  {% endif %}
+                  <span class="lt-blue">
+                    {{ article.date | date: "%-d %B %Y" }}
+                  </span>
                 </div>
               </div>
               <div class="newstitle">
-                <a href="{{article.url}}">{{ article.title }}</a>
+                {{ article.title }}
+                <!-- <a href="{{article.url}}"></a> -->
               </div>
               <div class="subtitle">
                 {{ article.subtitle }}
               </div>
-              
+              <div class="share-buttons">
+                  <div>
+                    <!-- <div style="font-size: 1rem; font-weight: 500; margin: 0 5px;">
+                      Share this: 
+                    </div> -->
+                    <a title="email" href="mailto:?subject={{ article.title }}&body={{site.url}}{{ article.url}}" style="color: grey;"><i class="fas fa-envelope-square"></i>
+                    </a>
+                    <a title="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ article.url }}" style="color: #3b5998;"><i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a title="twitter" target="_blank" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ article.url }}&hashtags=colospeed" style="color: #00acee;"><i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a title="flipboard" target="_blank" href="https://share.flipboard.com/bookmarklet/popout?title={{ article.title }}&url={{ site.url }}{{ article.url}}&v=2" style="color: #e12828;"><i class="fab fa-flipboard"></i>
+                    </a>
+                    <a title="whatsapp" target="_blank" href="https://api.whatsapp.com/send?text={{ site.url }}{{ article.url}}" style="color: #4FCE5D;"><i class="fab fa-whatsapp-square"></i>
+                    </a>
+                  </div>
+              </div>
               <div class="paragraph">
                 <p>
                   {{ article.content | markdownify }} 

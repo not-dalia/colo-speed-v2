@@ -1,0 +1,44 @@
+@media only screen and (max-width: 570px) {
+  #footer .left-section {
+    align-self: flex-start;
+  }
+  
+  #footer .left-section .section-inner {
+    max-width: 320px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #footer .left-section>.title {
+    font-size: 1.4rem;
+  }
+  
+
+  #footer .left-section .col {
+    flex: 0.5;
+    margin: 0 10px;
+  }
+  
+  #footer .left-section .col .title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  #footer .left-section .col .links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #footer .left-section .col .links li {
+    display: block;
+  }
+  
+  #footer .left-section .col a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}

@@ -39,7 +39,8 @@
             </div>
             <div class="contact-person">
               {% if page.contactperson.email%}
-                <a href="mailto:{{page.contactperson.email}}">{{ page.contactperson.name }} – {{ page.contactperson.institution }}</a>
+                {{ page.contactperson.name }} – {{ page.contactperson.institution }}
+                <!-- <a href="mailto:{{page.contactperson.email}}"></a> -->
               {% else %}
                 {{ page.contactperson.name}} – {{ page.contactperson.institution }}
               {% endif %}

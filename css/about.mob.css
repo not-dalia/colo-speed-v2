@@ -21,13 +21,6 @@
     min-height: 40vh;
   }
 
-  #main-content .section-1 .right-col {
-    background-image: url("/assets/images/studies/p1.jpg");
-  }
-
-  #main-content .section-2 .right-col {
-    background-image: url("/assets/images/studies/study2.png");
-  }
 
   #main-content .section-1 .left-col,
   #main-content .section-2 .left-col {

@@ -82,13 +82,23 @@ We will only use your personal data when the law allows us to. Most commonly, we
 We have set out below, in a table format, a description of all the ways we plan to use your personal data, and which of the legal bases we rely on to do so. We have also identified what our legitimate interests are where appropriate. Note that we may process your personal data for more than one lawful ground depending on the specific purpose for which we are using your data. Please contact us at [colospeed@newcastle.ac.uk](mailto:colospeed@newcastle.ac.uk) if you need details about the specific legal ground we are relying on to process your personal data.
 
 
-| Purpose/Activity | Type of data | Lawful basis for processing including basis of legitimate interest |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------ |
-| To register you as a new member of COLO-SPEED. | (a) Identity | Consent |
-| To manage our relationship with you which will include notifying you about changes to our terms or privacy policy.  | (b) Contact | Consent  |
-| To administer and protect our business and the COLO-SPEED digital platform (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data). | (c) Technical | Legitimate interests |
-| To make suggestions and recommendations to you about opportunities and events that may be of interest to you, including relevant opportunities organised by third parties. | (d) Communications | Consent |
+ - **Activity:** To register you as a new member of COLO-SPEED
+    - **Type of data:** Identity
+    - **Lawful basis for processing:** Consent
 
+
+ - **Activity:** To manage our relationship with you which will include notifying you about changes to our terms or privacy policy
+    - **Type of data:** Contact
+    - **Lawful basis for processing:** Consent
+
+
+ - **Activity:** To administer and protect our business and the COLO-SPEED digital platform (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data)
+    - **Type of data:** Technical
+    - **Lawful basis for processing:** Legitimate interests 
+
+ - **Activity:** To make suggestions and recommendations to you about opportunities and events that may be of interest to you, including relevant opportunities organised by third parties
+    - **Type of data:** Communications
+    - **Lawful basis for processing:** Consent
 
 ### OPTING OUT
 

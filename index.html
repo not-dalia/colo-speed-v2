@@ -3,7 +3,7 @@ title: Home
 layout: parent
 ---
 
-  {% include header.html type="transparent" %}
+  {% include header.html %}
 
   <div id="main-content">
     <div class="section section-1">
@@ -12,27 +12,31 @@ layout: parent
         <!-- <a class="video-play-btn"></a> -->
       </div>
       <div class="overview-box">
-        <div class="title gibson-medium">Overview</div>
-        <p class="gibson-book">
-          Our aim is to stop people dying of bowel cancer. Bowel cancer, also called colorectal cancer (CRC), is the fourth most common cancer and the second most common cancer death in the UK. COLOSPEED (Colorectal Cancer Screening Prevention Endoscopy and Early Diagnosis) is building the world’s largest platform for research in prevention and early diagnosis of bowel cancer.
-        </p>
+        <div>
+          <div class="title gibson-medium">Overview</div>
+          <p class="gibson-book">
+            Our aim is to stop people dying of bowel cancer. Bowel cancer, also called colorectal cancer (CRC), is the fourth most common cancer and the second most common cancer death in the UK. COLOSPEED (Colorectal Cancer Screening Prevention Endoscopy and Early Diagnosis) is building the world’s largest platform for research in prevention and early diagnosis of bowel cancer.
+          </p>
+        </div>
       </div>
     </div>
     <div class="section section-2">
       <div class="section-inner">
         <div class="col col-left din-black">
-          <div class="sz350 cl-white condensed title">COLO-SPEED</div>
-          <div class="desc cl-blue sz50">Be part of the world's largest colorectal cancer research group</div>
-          <div class="become-partner cl-blue sz80">
-            Be one of the <span style="color:#ffffff;">100 UK units</span> to become a <br> COLO-SPEED partner site
-          </div>
-          <div class="colospeed cl-blue">
-            <span style="color:#ffffff;">COLO</span>RECTAL CANCER<br>
-            <span style="color:#ffffff;">S</span>CREENING<br>
-            <span style="color:#ffffff;">P</span>REVENTION<br>
-            <span style="color:#ffffff;">E</span>NDOSCOPY<br>
-            <span style="color:#ffffff;">E</span>ARLY<br>
-            <span style="color:#ffffff;">D</span>IAGNOSIS
+          <div>
+            <div class="sz350 cl-white condensed title">COLO-SPEED</div>
+            <div class="desc cl-blue sz50">Be part of the world's largest colorectal cancer research group</div>
+            <div class="become-partner cl-blue sz80">
+              Be one of the <span style="color:#ffffff;">100 UK units</span> to become a <br> COLO-SPEED partner site
+            </div>
+            <div class="colospeed cl-blue">
+              <span style="color:#ffffff;">COLO</span>RECTAL CANCER<br>
+              <span style="color:#ffffff;">S</span>CREENING<br>
+              <span style="color:#ffffff;">P</span>REVENTION<br>
+              <span style="color:#ffffff;">E</span>NDOSCOPY<br>
+              <span style="color:#ffffff;">E</span>ARLY<br>
+              <span style="color:#ffffff;">D</span>IAGNOSIS
+            </div>
           </div>
         </div>
         <div class="col col-right din-black">
@@ -71,14 +75,18 @@ layout: parent
           {% if article.featured == true %}
             <div class="row" style="border-bottom: 20px solid var(--primary-color)" onclick="window.location='{{article.url}}'">
               <div class="col paragraph">
-                <div class="video video-2" style="background-image: url('{{ article.image }}'); float: left; width: 50%; padding: 0; padding-bottom: 28%; height: 0; margin: 0 30px 30px 0">
+                <div class="image-container">
+                  <div class="video video-2 study-image" style="background-image: url('{{ article.image }}');">
+                  </div>
                 </div>
-                <div class="subtitle gibson-medium">Featured Article</div>
-                <h3 class="title gibson-medium">
-                  <a href="{{article.url}}">{{ article.title }}</a>
-                </h3>
-                <div class="content"  style="margin-bottom: 30px;" >
-                  {{ article.content | markdownify | truncate: 185 }}
+                <div class="study-container">
+                  <div class="subtitle gibson-medium">Featured Article</div>
+                  <h3 class="title gibson-medium">
+                    <a href="{{article.url}}">{{ article.title }}</a>
+                  </h3>
+                  <div class="content"  style="margin-bottom: 30px;" >
+                    {{ article.content | markdownify | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 30 }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -89,15 +97,19 @@ layout: parent
         {% for study in studies %}
           {% if study.featured == true %}
             <div class="row" onclick="window.location='{{study.url}}'">
-              <div class="col paragraph">
-                <div class="video video-2" style="background-image: url('{{ study.image }}'); float: right; width: 50%; padding: 0; padding-bottom: 28%; height: 0; margin: 0 0px 30px 30px;">
-                  <!-- <a class="video-play-btn"></a> -->
+              <div class="col paragraph" style="flex-direction: row-reverse;">
+                <div class="image-container">
+                  <div class="video video-2 study-image" style="background-image: url('{{ study.image }}');">
+                    <!-- <a class="video-play-btn"></a> -->
+                  </div>
                 </div>
-                <div class="subtitle gibson-medium">Featured Study</div>
-                <h3 class="title gibson-medium">
-                  <a href="{{study.url}}">{{ study.title }}</a>
-                </h3>
-                <div style="margin-bottom: 30px;" class="content">{{ study.shortoverview | markdownify | truncate: 300 }}</div>
+                <div class="study-container">
+                  <div class="subtitle gibson-medium">Featured Study</div>
+                  <h3 class="title gibson-medium">
+                    <a href="{{study.url}}">{{ study.title }}</a>
+                  </h3>
+                  <div style="margin-bottom: 30px;" class="content">{{ study.shortoverview | markdownify }}</div>
+                </div>
               </div>
             </div>
             {% break %}
@@ -112,7 +124,9 @@ layout: parent
         {% for study in studies limit:2 %}
           <div class="row latest-study" onclick="window.location='{{study.url}}'">
             <div class="col">
-              <div class="study-image" style="background-image: url('{{ study.image }}');"></div>
+              <div class="image-container">
+                <div class="study-image" style="background-image: url('{{ study.image }}');"></div>
+              </div>
               <div class="paragraph gibson-book">
                 <div class="study-title gibson-medium"><a href="{{study.url}}">{{ study.title }}</a></div>
                 <div class="study-subtitle gibson-medium">{{ study.subtitle }}</div>
