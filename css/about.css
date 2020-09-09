@@ -82,11 +82,19 @@
 
 #main-content .section-2 .main-col p,
 #main-content .section-1 .left-col p,
-#main-content .section-2 .left-col p {
+#main-content .section-2 .left-col p,
+#main-content .section-2 .left-col ul {
   color: #313131;
   color: var(--dk-grey);
   font-size: 1.2rem;
   line-height: 1.6rem;
+}
+
+#main-content .section-2 .left-col ul {
+  color: #313131;
+  color: var(--dk-grey);
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 #main-content .section-2 .main-col {

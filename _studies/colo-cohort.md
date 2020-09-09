@@ -46,9 +46,7 @@ patientinfo: This study will be rolled out to sites within the North East by
   study is open at your local hospital, please contact a member of your local
   research team.
 researcherinfo: If you are interested in participating as a study site, please
-  contact a member of the study team (information within EoI documents). If you
-  are a site from the North of England please [click here](#), if you are from a
-  site outside the North of England please [click here](#).
+  contact a member of the study team (information within EoI documents).
 ---
 
 We aim to recruit 10000 patients undergoing colonoscopy as part of BCSP or due to symptoms. Participants will be asked to fill in a health questionnaire and have their height, weight and waist circumference measured. They will also receive blood tests and stool tests, depending on the indication for their colonoscopy. The results of the colonoscopy and any samples taken will be collated. Patients will receive a patient experience questionnaire or food frequency questionnaire.   
