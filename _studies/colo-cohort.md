@@ -25,7 +25,7 @@ aim: Our main study aim is to develop a risk tool to help identify which
 ref: colo-cohort
 title: Colo-Cohort
 subtitle: Colorectal Cancer Cohort Study
-image: /assets/images/studies/study1.jpg
+image: /assets/images/overview/v1@2x.jpg
 sponsor: South Tyneside and Sunderland NHS Foundation Trust
 contactperson:
   name: Professor Colin Rees
