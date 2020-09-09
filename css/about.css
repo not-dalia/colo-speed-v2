@@ -71,8 +71,13 @@
   font-weight: 500;
 }
 
-#main-content .section-2 .main-col .title {
+#main-content .section-2 .main-col .title, #main-content .section-2 .main-col .subtitle {
   text-align: center;
+}
+
+#main-content .section-2 .main-col .subtitle {
+  margin: 10px 20px;
+  font-size: 1.2rem;
 }
 
 #main-content .section-2 .main-col p,
@@ -277,6 +282,24 @@
   font-size: 1.1rem;
 }
 
+#main-content .main-col .collaborator-list-container ul.steering-group {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.steering-group li {
+  flex: 0.3;
+  min-width: 30%;
+  min-width: 280px;
+}
 
 
 /****************** END OF ABOUT PAGE STYLEE *****************/

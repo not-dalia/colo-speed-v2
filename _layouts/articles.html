@@ -47,7 +47,14 @@
             </div>
             <div class="right-col col">
               <div class="date">
-                {{ article.date | date: "%-d %b %Y" }}
+                <span class="lt-blue">
+                  {{ article.date | date: "%-d %b %Y" }}
+                </span> |
+                <span class="lt-blue">
+                  {% assign wordCount = article.content | number_of_words %}
+                  {% assign readingTime = wordCount | divided_by: 200.0 | ceil %}
+                  {{ readingTime }} min read
+                </span>
               </div>
               <div class="type gibson-medium">
                 {{ article.type }}

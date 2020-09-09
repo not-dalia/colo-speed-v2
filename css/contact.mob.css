@@ -35,7 +35,9 @@
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   #main-content .section-1 .contact-us .right-col {

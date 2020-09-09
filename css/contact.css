@@ -55,6 +55,7 @@
   min-width: 240px;
   flex: 0.5;
   background: #F4F4F4;
+  min-height: 400px;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -102,10 +103,22 @@
   text-align: left;
 }
 
+.subtitle:before {
+  content: ' ';
+  display: table;
+  width: 8rem;
+}
+
+.paragraph:before {
+  content: ' ';
+  display: table;
+  width: 8rem;
+}
+
 #main-content .section-1 .contact-us .main-col .subtitle {
   font-size: 1.6rem;
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 0rem;
   color: var(--lt-blue);
 }
 
@@ -242,7 +255,7 @@
   background: var(--lt-grey);
   padding: 10px;
   box-sizing: border-box;
-  margin: 70px 30px 30px 30px;
+  margin: 0px 30px 30px 30px;
 }
 
 .contents-table li {
