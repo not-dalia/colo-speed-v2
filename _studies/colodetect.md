@@ -26,6 +26,10 @@ shortoverview: "COLODETECT is a randomised control trial that will evaluate
   whether colonoscopy assisted with the GI Genius™ Intelligent Endoscopy Module
   improves the detection of abnormalities such as polyps and cancer compared to
   standard colonoscopy. "
+aim: "COLODETECT is a randomised control trial that will evaluate whether
+  colonoscopy assisted with the GI Genius™ Intelligent Endoscopy Module improves
+  the detection of abnormalities such as polyps and cancer compared to standard
+  colonoscopy. "
 ---
 COLODETECT is a randomised control trial that will evaluate whether colonoscopy assisted with the GI Genius™ Intelligent Endoscopy Module improves the detection of abnormalities such as polyps and cancer compared to standard colonoscopy. 
 
