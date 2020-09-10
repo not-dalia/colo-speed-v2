@@ -6,6 +6,7 @@ subtitle: A Randomised Controlled Trial of Lesion Detection at Colonoscopy Using
 date: 2020-09-10T08:49:47.461Z
 featured: false
 image: /assets/images/uploads/colodetect-gi-genius.png
+status: In set up
 sponsor: South Tyneside and Sunderland NHS Foundation Trust
 contactperson:
   name: Professor Colin Rees
