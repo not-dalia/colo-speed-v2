@@ -44,14 +44,14 @@ members:
     image: /assets/images/uploads/ingrid-emmerson.jpg
     email: Ingrid.Emmerson@stft.nhs.uk
   - name: Dalya Al-Shahrabi
-    email: dalya.ali@newcastle.ac.uk
+    email: Dalya.Ali@newcastle.ac.uk
     affiliation: Research Software Engineer, Newcastle University
     image: /assets/images/uploads/dalya.jpg
   - name: Amy Burns
     affiliation: Research Trials Co-ordinator, South Tyneside and Sunderland
       Foundation Trust
     image: /assets/images/uploads/amy.jpg
-    email: amy.burns@stft.nhs.uk
+    email: Amy.Burns@stft.nhs.uk
   - name: Nathania Bestwick
     affiliation: Research Administrator, Newcastle University
     email: Nathania.Bestwick@newcastle.ac.uk
