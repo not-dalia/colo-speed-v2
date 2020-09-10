@@ -6,7 +6,7 @@ date: 2020-09-10T17:03:48.128Z
 tags:
   - ""
 image: /assets/images/uploads/image.jpg
-featured: false
+featured: true
 type: news
 audience: everyone
 externallinks: []
