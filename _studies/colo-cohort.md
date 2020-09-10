@@ -1,8 +1,16 @@
 ---
 layout: study
+title: Colo-Cohort
+subtitle: Colorectal Cancer Cohort Study
 date: 2020-06-01T11:04:16.980Z
 featured: true
+image: /assets/images/overview/v1@2x.jpg
 status: Recruitment commenced December 2019
+sponsor: South Tyneside and Sunderland NHS Foundation Trust
+contactperson:
+  name: Professor Colin Rees
+  institution: Newcastle University & South Tyneside and Sunderland NHS Trust
+  email: Colin.rees@newcastle.ac.uk
 researchers:
   - name: Professor Colin Rees
   - name: Professor Linda Sharp
@@ -23,14 +31,6 @@ aim: Our main study aim is to develop a risk tool to help identify which
   develop a large platform of patients who consent to be contacted for future
   research.
 ref: colo-cohort
-title: Colo-Cohort
-subtitle: Colorectal Cancer Cohort Study
-image: /assets/images/overview/v1@2x.jpg
-sponsor: South Tyneside and Sunderland NHS Foundation Trust
-contactperson:
-  name: Professor Colin Rees
-  institution: Newcastle University & South Tyneside and Sunderland NHS Trust
-  email: Colin.rees@ncl.ac.uk
 openingsites:
   - name: Newcastle University Hospital NHS Foundation Trust
   - name: Northumbria Healthcare NHS Foundation Trust
