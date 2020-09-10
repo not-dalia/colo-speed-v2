@@ -1,7 +1,7 @@
 ---
 layout: study
 title: ENDOPREM
-subtitle: The Newcastle ENDOPREM &trade
+subtitle: The Newcastle ENDOPREM
 date: 2020-09-10T16:41:24.598Z
 featured: false
 image: /assets/images/uploads/endoprem.jpg
