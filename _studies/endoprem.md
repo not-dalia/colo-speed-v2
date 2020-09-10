@@ -1,6 +1,6 @@
 ---
 layout: study
-title: ENDOPREM
+title: The Newcastle ENDOPREM<sup>TM</sup>
 subtitle: The Newcastle ENDOPREMTM
 date: 2020-09-10T16:41:24.598Z
 featured: false
