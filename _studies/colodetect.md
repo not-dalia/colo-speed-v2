@@ -8,9 +8,18 @@ featured: false
 image: /assets/images/uploads/colodetect-gi-genius.png
 sponsor: South Tyneside and Sunderland NHS Foundation Trust
 contactperson:
-  name: James Hampton
-  institution: South Tyneside and Sunderland Foundation NHS Trust
-researchers: []
+  name: Professor Colin Rees
+  institution: Newcastle University and South Tyneside and Sunderland NHS Foundation Trust
+  email: colin.rees@newcastle.ac.uk
+researchers:
+  - Professor Colin Rees
+  - Professor Linda Sharp
+  - Dr Laura Neilson
+  - Dr Tom Lee
+  - Miss Rachel Evans
+  - Dr Andrew Brand
+  - Mr Alexander Seager
+  - Dr James Hampton
 openingsitestitle: Sites to be opened
 shortoverview: "COLODETECT is a randomised control trial that will evaluate
   whether colonoscopy assisted with the GI Genius™ Intelligent Endoscopy Module
