@@ -5,7 +5,7 @@ subtitle: Colorectal Cancer Cohort Study
 date: 2020-06-01T11:04:16.980Z
 featured: true
 image: /assets/images/overview/v1@2x.jpg
-status: Recruitment commenced December 2019
+status: Recruitment active
 sponsor: South Tyneside and Sunderland NHS Foundation Trust
 contactperson:
   name: Professor Colin Rees
