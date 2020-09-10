@@ -47,6 +47,10 @@ members:
     email: dalya.ali@newcastle.ac.uk
     affiliation: Research Software Engineer, Newcastle University
     image: /assets/images/uploads/dalya.jpg
+  - name: Amy Burns
+    affiliation: Research Trials Co-ordinator, South Tyneside and Sunderland
+      Foundation Trust
+    image: /assets/images/uploads/amy.jpg
   - name: Nathania Bestwick
     affiliation: Research Administrator, Newcastle University
     email: Nathania.Bestwick@newcastle.ac.uk
@@ -57,7 +61,3 @@ members:
   - name: Dr Barry Sandywell
     affiliation: Patient and Public Involvement Lead
     image: /assets/images/uploads/barry.jpg
-  - name: Amy Burns
-    affiliation: Research Trials Co-ordinator, South Tyneside and Sunderland
-      Foundation Trust
-    image: /assets/images/uploads/amy.jpg
