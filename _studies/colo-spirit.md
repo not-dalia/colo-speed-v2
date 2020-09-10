@@ -1,7 +1,7 @@
 ---
 layout: study
 title: COLO-SPIRIT
-subtitle: COLO-SPIRIT
+subtitle: COLOrectal Symptoms after PelvIc RadIoTherapy
 date: 2020-09-10T15:51:57.969Z
 featured: false
 image: /assets/images/uploads/colo-spirit.jpg
