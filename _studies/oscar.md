@@ -28,7 +28,9 @@ openingsitestitle: Sites to be opened
 shortoverview: The OSCAR study is a prospective multi-centre cross sectional
   study looking at the association between obesity, Non-alcoholic Fatty Liver
   Disease (NAFLD) and colorectal adenomas.
-aim: ""
+aim: The OSCAR study is a prospective multi-centre cross sectional study looking
+  at the association between obesity, Non-alcoholic Fatty Liver Disease (NAFLD)
+  and colorectal adenomas.
 patientinfo: ""
 researcherinfo: ""
 ---
