@@ -13,14 +13,15 @@ contactperson:
   email: m.a.hull@leeds.ac.uk
 researchers:
   - Dr Louise Brown
-  - Prof Eva Morris
-  - Prof Paul Loadman
+  - Professor Eva Morris
+  - Professor Paul Loadman
   - Dr Liz Williams
-  - Prof Colin Rees
+  - Professor Colin Rees
 openingsitestitle: Sites to be opened
 shortoverview: The STOP-ADENOMA study follows on from a completed clinical trial
   called seAFOod, in which we tested whether aspirin and the omega-3 EPA, alone
   or together, prevent bowel polyps (which are known to progress to cancer if
   left unchecked).
+aim: ""
 ---
 The STOP-ADENOMA study follows on from a completed clinical trial called [seAFOod](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)31775-6/fulltext), in which we tested whether aspirin and the omega-3 EPA, alone or together, prevent bowel polyps (which are known to progress to cancer if left unchecked). Both aspirin and EPA prevented polyps but only in certain circumstances depending on where in the bowel the polyps were and which type of polyp. In STOP-ADENOMA, we are analysing patient blood, urine and bowel samples in order to understand more about why aspirin and EPA work selectively. We are also working with [Bowel Cancer Intelligence](https://bci.leeds.ac.uk/) in order to analyse data about what was found at future colonoscopies that seAFOod patients received.
