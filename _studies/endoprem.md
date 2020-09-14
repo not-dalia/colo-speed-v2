@@ -1,8 +1,7 @@
 ---
 layout: study
 title: The Newcastle ENDOPREM<sup>TM</sup>
-subtitle: "The Newcastle ENDOPREM<sup>TM</sup>: A validated Patient Reported
-  Experience Measure for Gastrointestinal Endoscopy"
+subtitle: A validated Patient Reported Experience Measure for Gastrointestinal Endoscopy
 date: 2020-09-03T16:41:24.598Z
 featured: false
 image: /assets/images/uploads/endoprem.jpg
