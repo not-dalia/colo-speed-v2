@@ -6,7 +6,8 @@ date: 2020-05-01T12:50:00.000Z
 featured: false
 image: /assets/images/uploads/image.jpg
 status: Data analysis/reporting
-sponsor: Norgine
+sponsor: South Tyneside and Sunderland NHS Foundation Trust
+funder: Norgine
 contactperson:
   name: Professor Colin Rees
   institution: South Tyneside and Sunderland NHS Foundation Trust
