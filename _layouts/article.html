@@ -47,7 +47,8 @@
                 <div class="date">
                   <!-- Written by <a class="author-link" href="mailto:{{article.author.email}}">{{ article.author.name }}</a> at <a href="{{article.url}}">{{ article.date | date_to_rfc822 }}</a> -->
                   {% if article.author and article.author != "" and article.author != nil %} 
-                  <a href="{{ article.authorcontact }}">{{ article.author }}</a> |
+                  {% if article.authorcontact and article.authorcontact != "" and article.authorcontact != nil %} <a href="{{ article.authorcontact }}">{{ article.author }}</a> | {% else %} <span class="lt-blue">{{ article.author }}</span> | {% endif %}
+                  
                   {% endif %}
                   <span class="lt-blue">
                     {{ article.date | date: "%-d %B %Y" }}

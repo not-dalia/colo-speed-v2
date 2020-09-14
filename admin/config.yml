@@ -48,7 +48,7 @@ collections:
         required: false
       - label: Funded By
         name: funder
-        widget: string
+        widget: text
         required: false
       - label: Contact person
         name: contactperson
