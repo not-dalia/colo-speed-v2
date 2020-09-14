@@ -46,6 +46,10 @@ collections:
         name: sponsor
         widget: string
         required: false
+      - label: Funded By
+        name: funder
+        widget: string
+        required: false
       - label: Contact person
         name: contactperson
         widget: object

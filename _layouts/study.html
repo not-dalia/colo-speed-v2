@@ -52,7 +52,7 @@
               <span class="strong">Status:</span> {{ page.status }}  
             </div>
             <a href="#register" class="read-more">
-              Register now
+              Register Your Interest
             </a>
           </div>
         </div>
@@ -145,6 +145,12 @@
                 <li> {{ page.sponsor }} </li>
               </ul>
             {% endif %}
+            {% if page.funder != "" and page.funder != nil  %}
+              <div class="subtitle">Funded By:</div>
+              <ul>
+                <li> {{ page.funder }} </li>
+              </ul>
+            {% endif %}
           </div>
         </div>
         <div class="study-registration" id="register">
@@ -180,7 +186,7 @@
                 </div>
               </div>
               <div class="form-row">
-                <input type="submit" value="Register Now" aria-label="Register Now">
+                <input type="submit" value="Register Your Interest" aria-label="Register Your Interest">
               </div>
             </form>
             <div class="loader-container">
