@@ -6,7 +6,8 @@ date: 2019-09-01T12:22:17.342Z
 featured: false
 image: /assets/images/uploads/facultymedicinehealth_29jul16_0181.jpg
 status: Active (Biobank and Big Data study)
-sponsor: NIHR - National Institute for Health Research
+sponsor: Leeds University
+funder: NIHR - National Institute for Health Research
 contactperson:
   name: Professor Mark Hull
   institution: University of Leeds
