@@ -8,6 +8,7 @@ featured: false
 image: /assets/images/uploads/colodetect-gi-genius.png
 status: In set up
 sponsor: South Tyneside and Sunderland NHS Foundation Trust
+funder: Medtronic
 contactperson:
   name: Professor Colin Rees
   institution: Newcastle University and South Tyneside and Sunderland NHS Foundation Trust
