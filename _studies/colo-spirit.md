@@ -7,6 +7,7 @@ featured: false
 image: /assets/images/uploads/colo-spirit.jpg
 status: In set up
 sponsor: "South Tyneside and Sunderland NHS Foundation Trust "
+funder: 3D Matric Solutions
 contactperson:
   name: Professor Linda Sharp
   institution: Newcastle University
