@@ -9,7 +9,7 @@ $("document").ready(function () {
   });
 });
 
-function registerUser(form) {
+function registerUser(form, goalCode) {
   var values = [];
   $.each($(form).serializeArray(), function(i, field) {
     values[field.name] = field.value;
@@ -21,12 +21,14 @@ function registerUser(form) {
   $(form).removeClass('fail');
   $(form).removeClass('submitted');
 
+  if (goalCode) window.fathom.trackGoal(goalCode, 0);
+
   api.register({
     name: values.name,
     email: values.email,
     birthdate: values.birthdate,
     postcode: values.postcode,
-    consent: values['consent-1'] == 'on',
+    consent: values['consent-1'] == 'on' && values['consent-2'] == 'on',
     interest: values.interest
   }, function(success, data) {
     setTimeout(function () {

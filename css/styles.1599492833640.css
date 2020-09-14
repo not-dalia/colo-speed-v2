@@ -281,7 +281,7 @@ body {
   margin: 10px 0;
 }
 
-#footer .right-section .newsletter input {
+#footer .right-section .newsletter input[type=text], #footer .right-section .newsletter input[type=email] {
   width: 100%;
   height: 2rem;
   box-sizing: border-box;
