@@ -2,15 +2,15 @@
 layout: study
 title: OSCAR
 subtitle: Obesity Related Colorectal Adenoma Risk Study
-date: 2020-07-01T12:50:07.229Z
+date: 2020-05-01T12:50:00.000Z
 featured: false
 image: /assets/images/uploads/image.jpg
-status: Data Analysis / Reporting
+status: Data analysis/reporting
 sponsor: Norgine
 contactperson:
   name: Professor Colin Rees
   institution: South Tyneside and Sunderland NHS Foundation Trust
-  email: colin.rees@ncl.ac.uk
+  email: colin.rees@newcastle.ac.uk
 openedsites:
   - South Tyneside District Hospital
   - Sunderland Royal Hospital
@@ -28,7 +28,9 @@ openingsitestitle: Sites to be opened
 shortoverview: The OSCAR study is a prospective multi-centre cross sectional
   study looking at the association between obesity, Non-alcoholic Fatty Liver
   Disease (NAFLD) and colorectal adenomas.
-aim: ""
+aim: The OSCAR study is a prospective multi-centre cross sectional study looking
+  at the association between obesity, Non-alcoholic Fatty Liver Disease (NAFLD)
+  and colorectal adenomas.
 patientinfo: ""
 researcherinfo: ""
 ---
