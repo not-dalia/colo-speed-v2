@@ -8,9 +8,9 @@ image: /assets/images/uploads/colo-spirit.jpg
 status: In set up
 sponsor: "South Tyneside and Sunderland NHS Foundation Trust "
 contactperson:
-  name: Professor Colin Rees
-  institution: Newcastle University and South Tyneside and Sunderland NHS Foundation Trust
-  email: colin.rees@newcastle.ac.uk
+  name: Professor Linda Sharp
+  institution: Newcastle University
+  email: linda.sharp@newcastle.ac.uk
 researchers:
   - Professor Colin Rees
   - Professor Linda Sharp
