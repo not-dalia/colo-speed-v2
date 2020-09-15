@@ -153,8 +153,11 @@ body {
   background-color: var(--dk-blue);
   color: white;
   display: flex;
-  flex-direction: row;
-  padding: 15px 10% 50px 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 15px 10% 50px 10%; */
+  padding: 15px 0 15px 0;
   border-top: 1px solid #707070;
   flex-wrap: wrap;
 }
@@ -166,6 +169,14 @@ body {
   padding: 20px 20px;
 }
 
+
+#footer .wide-section .section-inner {
+  min-width: 150px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
 #footer .left-section .section-inner {
   max-width: 320px;
   min-width: 150px;
@@ -174,37 +185,73 @@ body {
   flex: 1;
 }
 
-#footer .left-section>.title {
+#footer .left-section>.title,
+#footer .wide-section>.title {
   margin: 0 10px;
 }
 
 #footer .left-section .col {
-  flex: 0.5;
+  flex: 1;
   margin: 0 10px;
 }
 
-#footer .left-section .col .title {
+#footer .wide-section {
+  width: 100%;
+  margin: 0 0px;
+  padding: 5px 0;
+}
+
+#footer .middle-section {
+  padding: 5px 0;
+}
+
+#footer .wide-section .section-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .wide-section .col {
+  flex: 1;
+  padding: 0 10%;
+  max-width: 1000px;
+}
+
+#footer .left-section .col .title,
+#footer .wide-section .col .title {
   font-size: 0.9rem;
   margin: 16px 0;
 }
 
-#footer .left-section .col .links {
+#footer .left-section .col .links,
+#footer .wide-section .col .links {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-#footer .left-section .col .links li {
+#footer .left-section .col .links li,
+#footer .wide-section .col .links li {
   display: block;
 }
 
-#footer .left-section .col a {
+#footer .wide-section .col .links li {
+  margin: 5px 10px;
+}
+
+#footer .left-section .col a,
+#footer .wide-section .col a {
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
 
-#footer .left-section .col a:hover {
+#footer .left-section .col a:hover,
+#footer .wide-section .col a:hover {
   text-decoration: underline
 }
 

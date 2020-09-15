@@ -11,8 +11,28 @@
     flex: 1;
   }
 
+  #footer .wide-section {
+    padding: 0;
+  }
+ 
+  #footer .wide-section .col .links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  #footer .wide-section .col .links li{
+    margin: 5px 0; 
+  }
+  
+
   #footer .left-section>.title {
     font-size: 1.4rem;
+    margin-bottom: 20px;
   }
   
 
@@ -29,6 +49,7 @@
   #footer .left-section .col .links {
     list-style-type: none;
     padding: 0;
+    margin: 0;
   }
   
   #footer .left-section .col .links li {
