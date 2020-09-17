@@ -31,6 +31,7 @@ openingsites:
   - Northumbria Healthcare NHS Foundation Trust
   - Pennine Acute Hospitals NHS Trust
   - West Hertfordshire Hospitals NHS Trust
+  - Newcastle upon Tyne Hospitals NHS Foundation Trust
 openingsitestitle: Sites to be opened by Autumn 2020
 shortoverview: COLO-COHORT aims to develop a “risk stratification tool” to help
   determine which patients are at highest risk of having polyps or cancer; this
