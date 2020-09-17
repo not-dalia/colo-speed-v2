@@ -18,6 +18,13 @@ externallinks:
   - title: "Impact of the COVID-19 pandemic on UK endoscopic activity and cancer
       detection: a National Endoscopy Database Analysis"
     link: https://gut.bmj.com/content/early/2020/07/19/gutjnl-2020-322179
+  - title: "Restarting gastrointestinal endoscopy in the deceleration and early
+      recovery phases of COVID-19 pandemic: Guidance from the British Society of
+      Gastroenterology"
+    link: https://www.rcpjournals.org/content/clinmedicine/20/4/352
+  - title: "COVID-19 as a barrier to attending for gastrointestinal endoscopy:
+      weighing up the risks"
+    link: https://www.thelancet.com/journals/langas/article/PIIS2468-1253(20)30268-5/fulltext
 study: colo-cohort
 ---
 The COVID-19 pandemic has had a major impact upon society as a whole and this has affected medical research. COLO-SPEED, COLO-COHORT and associated studies had to pause recruitment of patients during the peak of the pandemic. Many members of research teams were redeployed to both COVID-19 patient care and to COVID-19 based research. Teams were involved in studies which improved COVID-19 health outcomes for hospitalised patients (RECOVERY and REMAPCAP) and understanding demographics/complications on the new virus (ISARIC) amongst many other COVID-19 specific studies. The COLO-SPEED team also made major contributions to endoscopy based COVID-19 research (links to papers). Some colorectal cancer laboratory and non-clinical research were able to move forward during this time.
