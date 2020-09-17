@@ -16,7 +16,7 @@ openedsites:
   - name: South Tyneside District Hospital
   - name: North Tees and Hartlepool NHS Foundation Trust
   - name: South Tees Hospitals NHS Foundation Trust
-openingsitestitle: Sites to be opened by Spring 2020
+openingsitestitle: Sites to be opened by Autumn 2020
 aim: COLO-COHORT aims to develop a “risk stratification tool” to help identify
   which patients are at highest risk of having adenomas or bowel cancer. We will
   also explore the significance of the gut bacteria composition in patients with
