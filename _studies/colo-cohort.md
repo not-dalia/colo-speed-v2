@@ -1,9 +1,17 @@
 ---
 layout: study
+title: COLO-COHORT
+subtitle: Colorectal Cancer Cohort Study
 date: 2020-09-14T11:04:16.980Z
 featured: true
+image: /assets/images/overview/v1@2x.jpg
 status: Recruitment active
+sponsor: South Tyneside and Sunderland NHS Foundation Trust
 funder: "Guts UK Parabola Foundation grant "
+contactperson:
+  name: Professor Colin Rees
+  institution: Newcastle University & South Tyneside and Sunderland NHS Trust
+  email: colin.rees@newcastle.ac.uk
 researchers:
   - name: Professor Colin Rees
   - name: Professor Linda Sharp
@@ -13,10 +21,21 @@ researchers:
   - name: Dr Kyle Montague
   - name: Mr John Whelpton
 openedsites:
-  - name: South Tyneside District Hospital
-  - name: North Tees and Hartlepool NHS Foundation Trust
-  - name: South Tees Hospitals NHS Foundation Trust
+  - South Tyneside and Sunderland NHS Foundation Trust
+  - North Tees and Hartlepool NHS Foundation Trust
+  - Kettering General Hospital NHS Foundation Trustn Trust
+  - Bolton NHS Foundation Trust
+openingsites:
+  - South Tees Hospitals NHS Foundation Trust
+  - County Durham and Darlington NHS Foundation Trust
+  - Northumbria Healthcare NHS Foundation Trust
+  - Pennine Acute Hospitals NHS Trust
+  - West Hertfordshire Hospitals NHS Trust
 openingsitestitle: Sites to be opened by Autumn 2020
+shortoverview: COLO-COHORT aims to develop a “risk stratification tool” to help
+  determine which patients are at highest risk of having polyps or cancer; this
+  tool will be able to be used in the future to work out which patients need to
+  be referred to endoscopy for investigation.
 aim: COLO-COHORT aims to develop a “risk stratification tool” to help identify
   which patients are at highest risk of having adenomas or bowel cancer. We will
   also explore the significance of the gut bacteria composition in patients with
@@ -24,26 +43,8 @@ aim: COLO-COHORT aims to develop a “risk stratification tool” to help identi
   develop a large platform of patients who consent to be contacted for future
   research.
 ref: colo-cohort
-title: COLO-COHORT
-subtitle: Colorectal Cancer Cohort Study
-image: /assets/images/overview/v1@2x.jpg
-sponsor: South Tyneside and Sunderland NHS Foundation Trust
-contactperson:
-  name: Professor Colin Rees
-  institution: Newcastle University & South Tyneside and Sunderland NHS Trust
-  email: colin.rees@newcastle.ac.uk
-openingsites:
-  - name: Newcastle University Hospital NHS Foundation Trust
-  - name: Northumbria Healthcare NHS Foundation Trust
-  - name: City Hospitals Sunderland
-  - name: County Durham and Darlington NHS Foundation Trust
-  - name: Kettering General Hospital
-shortoverview: COLO-COHORT aims to develop a “risk stratification tool” to help
-  determine which patients are at highest risk of having polyps or cancer; this
-  tool will be able to be used in the future to work out which patients need to
-  be referred to endoscopy for investigation.
 patientinfo: This study will be rolled out to sites within the North East by
-  Spring 2020.  If you are interested in participating in this study, and if the
+  Autumn 2020.  If you are interested in participating in this study, and if the
   study is open at your local hospital, please contact a member of your local
   research team.
 researcherinfo: ""
