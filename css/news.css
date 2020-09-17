@@ -186,6 +186,7 @@
   border: 1px solid #fff;
   transition: all 0.2s ease-out;
   box-sizing: border-box;
+  width: 100%;
 }
 
 #main-content .section-1 .news-media .main-col .article:hover {

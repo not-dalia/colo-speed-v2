@@ -201,6 +201,7 @@
   /* flex-wrap: wrap; */
   transition: all 0.2s ease-out;
   border: 1px solid #fff;
+  width: 100%;
 }
 
 #main-content .section-1 .studies .main-col .study:hover {

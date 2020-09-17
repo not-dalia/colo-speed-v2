@@ -172,6 +172,7 @@ body {
 
 #footer .wide-section .section-inner {
   min-width: 150px;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -212,10 +213,19 @@ body {
 }
 
 #footer .wide-section .col {
-  flex: 1;
+  /* flex: 1; */
   padding: 0 10%;
   max-width: 1000px;
+  width: 100%;
 }
+
+
+/* @media all and (-ms-high-contrast: none), (-ms-high-contrast) {
+  #footer .wide-section .col {
+    flex: 1 0 auto !important;
+  }
+} */
+
 
 #footer .left-section .col .title,
 #footer .wide-section .col .title {

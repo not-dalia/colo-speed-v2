@@ -23,6 +23,12 @@
   min-height: 300px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast) {
+  #main-content .section-1 .study .col.left-col {
+    flex: 1 0 auto !important;
+  }
+}
+
 .study:nth-child(even) {
   flex-direction: row-reverse;
 }

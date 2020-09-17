@@ -220,6 +220,7 @@
   color: #313131;
   color: var(--dk-grey);
   box-sizing: border-box;
+  line-height: 1.4rem;
 }
 
 #main-content .section-3 .featured-articles .study-container {
@@ -387,6 +388,7 @@
 #main-content .section-4 .latest-studies .latest-study {
   transition: all 0.2s ease-out;
   border: 1px solid #fff;
+  max-width: 100%;
 
 }
 

@@ -229,6 +229,7 @@ a#copy-button {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
+  /* width: 100%; */
 }
 
 #main-content .section-1 .news-media .main-col .article .left-col {
@@ -251,6 +252,14 @@ a#copy-button {
   flex: 1;
   padding: 50px;
 }
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast) {
+  #main-content .section-1 .news-media .main-col .article .right-col {
+    flex: 1 0 auto !important;
+  }
+}
+
 
 #main-content .section-1 .news-media .main-col .article .related-studies {
   width: 100%;
