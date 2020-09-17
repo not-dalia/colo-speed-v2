@@ -2,7 +2,7 @@
 #main-content .section-1 {
   background: #E6E6E6;
   background: var(--lt-grey);
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   justify-content: center;
   padding: 102px 10vw 70px 10vw;
@@ -23,6 +23,7 @@
   padding: 50px;
   justify-content: center;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 #main-content .section-1 .news-media .main-col {
