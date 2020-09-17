@@ -23,7 +23,7 @@ researchers:
 openedsites:
   - South Tyneside and Sunderland NHS Foundation Trust
   - North Tees and Hartlepool NHS Foundation Trust
-  - Kettering General Hospital NHS Foundation Trustn Trust
+  - Kettering General Hospital NHS Foundation Trust
   - Bolton NHS Foundation Trust
 openingsites:
   - South Tees Hospitals NHS Foundation Trust
