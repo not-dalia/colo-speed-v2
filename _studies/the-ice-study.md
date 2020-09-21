@@ -28,6 +28,10 @@ shortoverview: "The ICE study is a qualitative study that looks to understand
   the reasons why people were/are not comfortable attending endoscopy during
   this time, as well as exploring the decision-making and experiences of those
   who did choose to undergo their procedure. "
+aim: "The ICE study is a qualitative study that looks to understand the reasons
+  why people were/are not comfortable attending endoscopy during this time, as
+  well as exploring the decision-making and experiences of those who did choose
+  to undergo their procedure. "
 ---
 Endoscopy is central to the diagnosis and treatment of a range of different gastrointestinal diseases, including cancer. At the peak of the COVID-19 pandemic endoscopy services were temporarily suspended, but from the 1st May 2020 procedures resumed, with additional protective measures in place. It quickly became evident that many patients were not willing to undergo an endoscopic procedure and the levels of endoscopy being performed still remain significantly lower than pre-COVID-19 levels.
 
