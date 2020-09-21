@@ -93,6 +93,7 @@
           {% if page.openingsites or page.openingsites %}
             <div class="paragraph">
               <div class="title">Where</div>
+              {% if page.openedsites %}
               <div class="subtitle">Opened sites:</div>
               <ul>
                 {% for site in page.openedsites %}
@@ -103,6 +104,8 @@
                   {% endif %}
                 {% endfor %}
               </ul>
+              {% endif %}
+
               {% if page.openingsites %}
                 <div class="subtitle">
                   {% if page.openingsitestitle %}
