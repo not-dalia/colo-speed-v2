@@ -13,9 +13,9 @@ contactperson:
   institution: Newcastle University
   email: linda.sharp@newcastle.ac.uk
 researchers:
-  - Professor Colin Rees
   - Professor Linda Sharp
   - Dr Christina Dobson
+  - Professor Colin Rees
 openingsites:
   - South Tyneside & Sunderland NHS Foundation Trust
   - The Newcastle-upon-Tyne NHS Foundation Trust
