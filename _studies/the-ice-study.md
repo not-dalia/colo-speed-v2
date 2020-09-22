@@ -9,12 +9,12 @@ status: In set up
 sponsor: South Tyneside and Sunderland NHS Foundation Trust
 funder: Guts UK Parabola Foundation grant
 contactperson:
-  name: Professor Linda Sharp
+  name: Dr Christina Dobson
   institution: Newcastle University
-  email: linda.sharp@newcastle.ac.uk
+  email: christina.dobson@newcastle.ac.uk
 researchers:
-  - Professor Linda Sharp
   - Dr Christina Dobson
+  - "Professor Linda Sharp "
   - Professor Colin Rees
 openingsites:
   - South Tyneside & Sunderland NHS Foundation Trust
