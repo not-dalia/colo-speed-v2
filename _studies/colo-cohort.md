@@ -25,12 +25,11 @@ openedsites:
   - North Tees and Hartlepool NHS Foundation Trust
   - Kettering General Hospital NHS Foundation Trust
   - Bolton NHS Foundation Trust
-openingsites:
   - South Tees Hospitals NHS Foundation Trust
-  - County Durham and Darlington NHS Foundation Trust
-  - Northumbria Healthcare NHS Foundation Trust
-  - Pennine Acute Hospitals NHS Trust
-  - Newcastle upon Tyne Hospitals NHS Foundation Trust
+openingsites:
+  - " Northumbria Healthcare NHS Foundation Trust"
+  - Hull University Teaching Hospitals NHS Foundation Trust
+  - " Gloucestershire Hospitals NHS Foundation Trust"
   - West Hertfordshire Hospitals NHS Trust
 openingsitestitle: Sites to be opened by Autumn 2020
 shortoverview: COLO-COHORT aims to develop a “risk stratification tool” to help
