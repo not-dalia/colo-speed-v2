@@ -1,25 +1,25 @@
 ---
 layout: study
+title: VODECA Study
+subtitle: Volatile Organic compounds for DEtection of Colorectal cAncer
 date: 2020-05-01T11:05:16.980Z
+image: /assets/images/uploads/img_3165.jpg
 status: Recruitment active
+sponsor: University of Liverpool
 funder: Cancer Research UK
+contactperson:
+  name: Professor Chris Probert
+  institution: University of Liverpool
 researchers:
   - name: Professor Chris Probert
 openedsites:
-  - name: Liverpool Hospitals
+  - " Liverpool University Hospitals NHS Foundation Trust"
   - South Tyneside and Sunderland NHS Foundation Trust
   - name: North Tees and Hartlepool NHS Foundation Trust 
 aim: This study aims to investigate Volatile Organic Compounds (VOCs) which are
   associated with adenomas (pre-cancerous polyps) and early bowel cancer to
   improve detection of adenomas and bowel cancer.
 ref: vodeca
-title: VODECA Study
-subtitle: Volatile Organic compounds for DEtection of Colorectal cAncer
-image: /assets/images/uploads/img_3165.jpg
-sponsor: University of Liverpool
-contactperson:
-  name: Professor Chris Probert
-  institution: University of Liverpool
 shortoverview: The VODECA study aims to investigate Volatile Organic Compounds
   (VOCs) which are associated with adenomas (pre-cancerous polyps) and early
   bowel cancer to improve detection of adenomas and bowel.
