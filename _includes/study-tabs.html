@@ -1,0 +1,268 @@
+<div class="section section-2 gibson-book">
+  <div class="study-details">
+    <div class="study-tabs">
+      <ul class="cs-tabs tabs">
+        <!-- <li class="cs-tab-arrow" id="cs-tab-arrow-left">
+          <i class="fas fa-angle-left"></i>
+        </li> -->
+        {% if content %}
+          <li class="cs-tab cs-tab__selected" data-tab-content="about" id="cs-tab-about">
+            <a>About</a>
+          </li>
+        {% endif %}
+        
+        {% if page.patientinfo or page.researcherinfo %}
+        {% if page.patientinfo != "" or page.researcherinfo != "" %}
+          <!-- <li class="cs-tab" data-tab-content="how" id="cs-tab-how">
+            <a>How</a>
+          </li> -->
+        {% endif %}
+        {% endif %}
+
+        {% if page.openedsites or page.openingsites %}
+          <li class="cs-tab" data-tab-content="where" id="cs-tab-where">
+            <a>Sites</a>
+          </li>
+        {% endif %}
+        
+        {% if page.researchers.size > 0 or page.sponsor != nil %}
+        <li class="cs-tab" data-tab-content="who" id="cs-tab-who">
+          <a>People</a>
+        </li>
+        {% endif %}
+
+        <li class="cs-tab" data-tab-content="faq" id="cs-tab-faq">
+          <a>FAQ</a>
+        </li>
+
+        <li class="cs-tab" data-tab-content="register" id="cs-tab-register">
+          <a>Register</a>
+        </li>
+        <!-- <li class="cs-tab-arrow" id="cs-tab-arrow-right">
+          <i class="fas fa-angle-right"></i>
+        </li> -->
+      </ul>
+    </div>
+    <div class="study-info">
+      <div class="paragraph cs-tab-content  cs-tab-content__selected" id="tab-about">
+        <p>
+          {{ content}}
+        </p>
+        {% if page.patientinfo != "" and page.patientinfo != nil %}
+        <div class="subtitle">Information for Patients:</div>
+        <p>
+          {{ page.patientinfo | markdownify | remove: '<p>' | remove: '</p>' }}
+        </p>
+        {% endif %}
+
+        {% if page.researcherinfo != "" and page.researcherinfo != nil %}
+        <div class="subtitle">Information for Researchers:</div>
+        <p>
+          {{ page.researcherinfo | markdownify | remove: '<p>' | remove: '</p>' }}
+        </p>
+        {% endif %}
+      </div>
+
+
+      {% if page.openedsites or page.openingsites %}
+      <div class="paragraph cs-tab-content" id="tab-where">
+        {% if page.openedsites %}
+        <div class="subtitle">Opened sites:</div>
+        <ul>
+          {% for site in page.openedsites %}
+          {% if site.name == "" or site.name == nil %}
+          <li>{{site}}</li>
+          {% else %}
+          <li>{{site.name}}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if page.openingsites %}
+        <div class="subtitle">
+          {% if page.openingsitestitle %}
+          {{ page.openingsitestitle }}:
+          {% else %}
+          Opening sites:
+          {% endif %}
+        </div>
+        {% endif %}
+        <ul>
+          {% for site in page.openingsites %}
+          {% if site.name == "" or site.name == nil %}
+          <li>{{site}}</li>
+          {% else %}
+          <li>{{site.name}}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <div class="paragraph cs-tab-content" id="tab-who">
+        {% if page.researchers and page.researchers.size > 0 %}
+        <div class="subtitle">Researchers:</div>
+        <ul>
+          {% for researcher in page.researchers %}
+          {% if researcher.name == "" or researcher.name == nil %}
+          <li>{{researcher}}</li>
+          {% else %}
+          <li>{{researcher.name}}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if page.sponsor != "" and page.sponsor != nil  %}
+        <div class="subtitle">Study Sponsor:</div>
+        <ul>
+          <li> {{ page.sponsor }} </li>
+        </ul>
+        {% endif %}
+        {% if page.funder != "" and page.funder != nil  %}
+        <div class="subtitle">Funded By:</div>
+        <ul>
+          <li> {{ page.funder }} </li>
+        </ul>
+        {% endif %}
+      </div>
+      <div class="paragraph cs-tab-content" id="tab-faq">
+        
+        
+      </div>
+    </div>
+    <div class="cs-tab-content" id="tab-register">
+      <div class="study-registration">
+        <div class="left-col" style="background-image: url('/assets/images/overview/r_and_d_manager_lead_crn.jpg')">
+  
+        </div>
+        <div class="right-col">
+          <div class="title">Join COLO-SPEED</div>
+          <form onsubmit="return registerUser(this, 'MI7HRI1F');" id="registration-form">
+            <input name="interest" type="hidden" value="{{ page.slug }}">
+            <input name="name" type="text" placeholder="Name*" aria-label="Name" aria-required="true" required>
+            <!-- <input name="lastname" type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" required> -->
+            <!-- <input name="birthdate" type="date" placeholder="Date of birth*" aria-label="Date of birth (DD/MM/YYYY)"
+                  aria-required="true" required> -->
+            <input name="email" type="email" placeholder="Email*" aria-label="Email" aria-required="true" required>
+            <!-- <input name="postcode" type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required> -->
+            <div class="subtitle">
+              Consent
+            </div>
+            <div class="form-row">
+              <input type="checkbox" name="consent-1" id="consent-1" aria-required="true" required
+                oninvalid="setCustomValidity('We are only able to register your for the COLO-SPEED network if you agree to our Privacy Policy.')"
+                oninput="setCustomValidity('')">
+              <label for="consent-1">I hereby consent to the COLO-SPEED <a href="/privacy" target=”_blank”>Privacy
+                  Policy</a>.</label>
+            </div>
+            <div class="form-row">
+              <input type="checkbox" name="consent-2" id="consent-2" aria-required="true" required
+                oninvalid="setCustomValidity('We need to be able to contact our members via email to notify them of new studies and opportunities within the network. We are unable to register you for COLO-SPEED without your consent to contact via email.')"
+                oninput="setCustomValidity('')">
+              <label for="consent-2"> By ticking this box you are agreeing to receive COLO-SPEED emails. You can withdraw
+                your consent at any time.
+                Please refer to our <a href="/privacy" target=”_blank”>Privacy Policy</a> or <a href="/contact-us"
+                  target=”_blank”>Contact Us</a> for more details.</label>
+            </div>
+            <!-- <div class="form-row">
+                  <input type="checkbox" name="consent-2" id="consent-2" aria-required="true" value="on" required>
+                  <label for="consent-2">I hereby consent to morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                    Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.
+                    Etiam porta sem malesuada magna mollis euismod.</label>
+                </div> -->
+            <div class="form-row info-message">
+              <div class="message">
+                Thank you for contacting us.
+              </div>
+            </div>
+            <div class="form-row">
+              <input type="submit" value="Register Your Interest" aria-label="Register Your Interest">
+            </div>
+          </form>
+          <div class="loader-container">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  HTMLElement.prototype.csRemoveClass = function(classToRemove) {
+    var className = "";
+    var classes = this.className.split(" ");
+    for(var i = 0; i < classes.length; i++) {
+        if(classes[i] !== classToRemove) {
+          className += classes[i] + " ";
+        }
+    }
+    this.className = className.trim();
+  }
+
+  HTMLElement.prototype.csAddClass = function(classToAdd) {
+    this.csRemoveClass(classToAdd);
+    this.className += (' '  + classToAdd);
+  }
+
+  var tabs = document.getElementsByClassName("cs-tab");
+  for(var i = 0; i < tabs.length; i++) {
+    tabs[i].onclick = function () {
+      toggleSelectedTab(this.getAttribute("data-tab-content"));
+    }
+  }
+  // handleResize();
+
+  // window.onresize  =  function () {
+  //   handleResize();
+  // }
+
+  function handleResize() {
+    var tabBar = document.querySelector('.cs-tabs');
+    var tabArrowLeft = document.getElementById('cs-tab-arrow-left');
+    var tabArrowRight = document.getElementById('cs-tab-arrow-right');
+    if (tabBar.scrollWidth > tabBar.offsetWidth) {
+      toggleArrows();
+    } else {
+      tabArrowRight.csRemoveClass('cs-arrow-show');
+      tabArrowLeft.csRemoveClass('cs-arrow-show');
+    }
+  }
+
+  function toggleArrows() {
+    var tabBar = document.querySelector('.cs-tabs');
+    var tabArrowLeft = document.getElementById('cs-tab-arrow-left');
+    var tabArrowRight = document.getElementById('cs-tab-arrow-right');
+
+    if (tabBar.scrollWidth - tabBar.offsetWidth > tabBar.scrollLeft) {
+      tabArrowRight.csAddClass('cs-arrow-show');
+    } else {
+      tabArrowRight.csRemoveClass('cs-arrow-show');
+    }
+
+    if (tabBar.scrollLeft > 0) {
+      tabArrowLeft.csAddClass('cs-arrow-show');
+    } else {
+      tabArrowLeft.csRemoveClass('cs-arrow-show');
+    }
+  }
+
+  function toggleSelectedTab(id) {
+    var tabTitle = document.getElementById('cs-tab-' + id);
+    var tabContent = document.getElementById('tab-' + id);
+
+    var currentlySelectedTabs = document.getElementsByClassName('cs-tab__selected');
+    var currentlySelectedContent = document.getElementsByClassName('cs-tab-content__selected');
+
+    for (var i = 0; i < currentlySelectedTabs.length; i++) {
+      currentlySelectedTabs[i].csRemoveClass('cs-tab__selected');
+    }
+
+    for (var j = 0; j < currentlySelectedContent.length; j++) {
+      currentlySelectedContent[j].csRemoveClass('cs-tab-content__selected');
+    }
+
+    tabTitle.csAddClass('cs-tab__selected');
+    tabContent.csAddClass('cs-tab-content__selected');
+  }
+</script>

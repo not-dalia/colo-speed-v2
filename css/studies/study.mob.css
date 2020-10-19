@@ -139,11 +139,12 @@
   }
 
   #main-content .section-2 .study-details .study-info {
-    padding: 30px 10vw;
+
   }
 
   #main-content .section-2 .study-details .study-info .paragraph {
-    margin: 40px 0;
+    /* margin: 40px 0; */
+    padding: 30px 10vw;
   }
 
   #main-content .section-2 .study-details .study-info .paragraph .title {
