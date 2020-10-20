@@ -7,4 +7,4 @@ services:
     ports:
       - 80
     volumes:
-      - /srv/jekyll/_site:/var/www/html
+      - /var/www/html:/_site
