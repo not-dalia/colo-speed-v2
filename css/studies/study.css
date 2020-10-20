@@ -200,6 +200,7 @@
   background-size: cover;
   min-height: 300px;
   width: 50%;
+  display: block;
 }
 
 #main-content .section-2 .study-details .study-registration .right-col {
@@ -287,14 +288,15 @@
 
 
 .study-tabs {
-  position: relative;
+  /* position: sticky; */
+  /* top: 90px; */
 }
 
 
 .study-tabs .tabs {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   overflow-x: auto;
   width: 100%;
   /* justify-content: space-between; */
@@ -307,7 +309,7 @@
 }
 
 .study-tabs .tabs .cs-tab {
-  padding: 14px 20px;
+  padding: 12px 11px;
   color: white;
   font-weight: 500;
   font-size: 1.1rem;
@@ -316,6 +318,22 @@
   border-bottom: 1px solid #fff;
   flex: 1;
   text-align: center;
+  min-width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* flex-direction: column-reverse; */
+}
+
+.study-tabs .tabs .cs-tab .icon {
+  font-size: 1.8rem;
+}
+
+.study-tabs .tabs .cs-tab .tab-title {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .study-tabs .tabs .cs-tab-arrow {

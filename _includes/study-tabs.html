@@ -7,7 +7,10 @@
         </li> -->
         {% if content %}
           <li class="cs-tab cs-tab__selected" data-tab-content="about" id="cs-tab-about">
-            <a>About</a>
+            <div class="icon"><i class="fas fa-info-circle"></i></div>
+            <div class="tab-title">
+              <a>About</a>
+            </div>
           </li>
         {% endif %}
         
@@ -21,22 +24,34 @@
 
         {% if page.openedsites or page.openingsites %}
           <li class="cs-tab" data-tab-content="where" id="cs-tab-where">
-            <a>Sites</a>
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="tab-title">
+              <a>Sites</a>
+            </div>
           </li>
         {% endif %}
         
         {% if page.researchers.size > 0 or page.sponsor != nil %}
         <li class="cs-tab" data-tab-content="who" id="cs-tab-who">
-          <a>People</a>
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <div class="tab-title">
+            <a>People</a>
+          </div>
         </li>
         {% endif %}
 
         <li class="cs-tab" data-tab-content="faq" id="cs-tab-faq">
-          <a>FAQ</a>
+          <div class="icon"><i class="fas fa-question-circle"></i></div>
+          <div class="tab-title">
+            <a>FAQ</a>
+          </div>
         </li>
 
         <li class="cs-tab" data-tab-content="register" id="cs-tab-register">
-          <a>Register</a>
+          <div class="icon"><i class="fas fa-user-plus"></i></div>
+          <div class="tab-title">
+            <a>Register</a>
+          </div>
         </li>
         <!-- <li class="cs-tab-arrow" id="cs-tab-arrow-right">
           <i class="fas fa-angle-right"></i>

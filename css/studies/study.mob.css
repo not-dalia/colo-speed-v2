@@ -181,6 +181,7 @@
     min-height: 300px;
     width: 100vw;
     box-sizing: border-box;
+    display: none;
   }
 
   #main-content .section-2 .study-details .study-registration .right-col {
@@ -265,5 +266,30 @@
     content: "";
   }
 
+
+  .study-tabs .tabs .cs-tab {
+    padding: 12px 11px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    flex: 1;
+    text-align: center;
+    min-width: 40px;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+  }
+  
+  .study-tabs .tabs .cs-tab .icon {
+    font-size: 1.6rem;
+  }
+  
+  .study-tabs .tabs .cs-tab .tab-title {
+    margin-top: 4px;
+    font-size: 0.85rem;
+  }
   /****************** END OF STUDIES PAGE STYLEE *****************/
 }
