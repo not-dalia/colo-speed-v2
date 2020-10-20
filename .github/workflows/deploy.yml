@@ -17,6 +17,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
+            cd /home/colospeed/colospeed
             git checkout feature-tabs
             git pull
             docker-compose up -d
