@@ -7,4 +7,4 @@ services:
     ports:
       - 80
     volumes:
-      - $PWD/_site:/var/www/html
+      - /srv/jekyll/_site:/var/www/html
