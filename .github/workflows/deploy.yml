@@ -17,4 +17,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
+            git checkout feature-tabs
+            git pull
             docker-compose up -d
