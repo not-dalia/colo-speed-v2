@@ -2,8 +2,8 @@ version: '3'
 services:
   jekyll:
     image: jekyll/jekyll:latest
-    command: jekyll build
-    # command: jekyll serve --watch --livereload
+    # command: jekyll build
+    command: jekyll serve --watch
     ports:
       - 80
     volumes:
