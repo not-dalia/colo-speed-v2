@@ -7,4 +7,24 @@ services:
     ports:
       - 80
     volumes:
-      - /var/www/html:/srv/jekyll/_site
+      - ./jekyll:/srv/jekyll
+  caddy:
+    build: ./caddy
+    container_name: caddy
+    restart: unless-stopped
+    env_file:
+      - caddy.env
+    depends_on:
+      - jekyll
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $PWD/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./jekyll/_site:/srv
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
