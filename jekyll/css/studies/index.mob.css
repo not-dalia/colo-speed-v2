@@ -1,0 +1,129 @@
+@media only screen and (max-width: 570px) {
+
+  /*************** STUDIES PAGE STYLE BEGINES HERE ***************/
+
+  #main-content .section-1 {
+    background-color: #004379;
+    background-color: var(--primary-color);
+    padding-top: 90px;
+  }
+
+  #main-content .section-1 .study {
+    display: flex;
+    justify-content: center;
+  }
+
+  #main-content .section-1 .study .col {
+    flex: 1;
+    color: white;
+    padding: 70px 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 45vh;
+  }
+
+  .study:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .study:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .study:nth-child(even) .col {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .study:nth-child(odd) .col {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .study:nth-child(even) .study-info {
+    text-align: center;
+  }
+
+  .study:nth-child(odd) .study-info {
+    text-align: center;
+  }
+
+  #main-content .section-1 .study .right-col {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  #main-content .section-1 .study .title {
+    font-size: 2.4rem;
+  }
+
+  #main-content .section-1 .study .subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+  #main-content .section-1 .study .contact-person {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--lt-blue);
+    text-align: left;
+  }
+  
+  #main-content .section-1 .study .contact-person a{
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--lt-blue);
+    text-align: left;
+  }
+  
+  #main-content .section-1 .study .paragraph {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: left;
+  }
+  
+  #main-content .section-1 .study .location, #main-content .section-1 .study .status  {
+    margin: 5px 0;
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  #main-content .section-1 .study .location .strong, #main-content .section-1 .study .status .strong {
+    font-weight: 500;
+    color: var(--lt-blue);
+    font-size: 1rem;
+  }  
+
+  #main-content .section-1 .study .read-more {
+    font-size: 1rem;
+    font-weight: 500;
+    background: white;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    color: #004379;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all ease-in 0.1s;
+  }
+
+  #main-content .section-1 .study .read-more:hover {
+    background: #00BDF1;
+    background: var(--lt-blue);
+    color: white;
+  }
+
+
+
+  /****************** END OF STUDIES PAGE STYLEE *****************/
+
+}

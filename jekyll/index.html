@@ -1,0 +1,147 @@
+---
+title: Home
+layout: parent
+---
+
+  {% include header.html %}
+
+  <div id="main-content">
+    <div class="section section-1">
+      <div class="video video-1">
+        <div class="video-image" alt="Video"></div>
+        <!-- <a class="video-play-btn"></a> -->
+      </div>
+      <div class="overview-box">
+        <div>
+          <div class="title gibson-medium">Overview</div>
+          <p class="gibson-book">
+            Our aim is to stop people dying of bowel cancer. Bowel cancer, also called colorectal cancer (CRC), is the fourth most common cancer and the second most common cancer death in the UK. COLO-SPEED (Colorectal Cancer Screening Prevention Endoscopy and Early Diagnosis), funded by the Sir Bobby Robson Foundation and the Parabola Foundation, is building the world’s largest platform for research in prevention and early diagnosis of bowel cancer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section section-2">
+      <div class="section-inner">
+        <div class="col col-left din-black">
+          <div>
+            <div class="sz350 cl-white condensed title">COLO-SPEED</div>
+            <div class="desc cl-blue sz50">Be part of the world's largest colorectal cancer research group</div>
+            <div class="become-partner cl-blue sz80">
+              Be one of the <span style="color:#ffffff;">100 UK units</span> to become a <br> COLO-SPEED partner site
+            </div>
+            <div class="colospeed cl-blue">
+              <span style="color:#ffffff;">COLO</span>RECTAL CANCER<br>
+              <span style="color:#ffffff;">S</span>CREENING<br>
+              <span style="color:#ffffff;">P</span>REVENTION<br>
+              <span style="color:#ffffff;">E</span>NDOSCOPY<br>
+              <span style="color:#ffffff;">E</span>ARLY<br>
+              <span style="color:#ffffff;">D</span>IAGNOSIS
+            </div>
+          </div>
+        </div>
+        <div class="col col-right din-black">
+          <div>
+            <div class="sz500 cl-white">
+              44
+            </div>
+            <div class="sz350 cl-blue uppercase">
+              People
+            </div>
+          </div>
+          <div>
+            <div class="sz200 cl-blue uppercase">
+              Die in the UK
+            </div>
+            <div class="sz130 cl-white uppercase">
+              everyday from
+            </div>
+          </div>
+          <div>
+            <div class="sz350 cl-blue uppercase">
+              bowel
+            </div>
+            <div class="sz350 cl-blue uppercase">
+              cancer
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-3">
+      <!-- <div class="blue-decor"></div> -->
+      <div class="featured-articles gibson-book">
+        {% assign articles = site.articles | sort: 'date' | reverse %}
+        {% for article in articles %}
+          {% if article.featured == true %}
+            <div class="row" onclick="window.location='{{article.url}}'">
+              <div class="col paragraph">
+                <div class="image-container">
+                  <div class="video video-2 study-image" style="background-image: url('{{ article.image }}');">
+                  </div>
+                </div>
+                <div class="study-container">
+                  <div class="subtitle gibson-medium">Featured Article</div>
+                  <h3 class="title gibson-medium">
+                    <a href="{{article.url}}">{{ article.title }}</a>
+                  </h3>
+                  <div class="content"  style="margin-bottom: 30px;" >
+                    {{ article.content | markdownify | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 30 }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% assign studies = site.studies | sort: 'date' | reverse %}
+        {% for study in studies %}
+          {% if study.featured == true %}
+            <div class="row" onclick="window.location='{{study.url}}'">
+              <div class="col paragraph" style="flex-direction: row-reverse;">
+                <div class="image-container">
+                  <div class="video video-2 study-image" style="background-image: url('{{ study.image }}');">
+                    <!-- <a class="video-play-btn"></a> -->
+                  </div>
+                </div>
+                <div class="study-container">
+                  <div class="subtitle gibson-medium">Featured Study</div>
+                  <h3 class="title gibson-medium">
+                    <a href="{{study.url}}">{{ study.title }}</a>
+                  </h3>
+                  <div style="margin-bottom: 30px;" class="content">{{ study.shortoverview | markdownify }}</div>
+                </div>
+              </div>
+            </div>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="section section-4">
+      <div class="title gibson-medium">Latest Studies</div>
+      <div class="latest-studies">
+        {% assign studies = site.studies | sort: 'date' | reverse %}
+        {% for study in studies limit:2 %}
+          <div class="row latest-study" onclick="window.location='{{study.url}}'">
+            <div class="col">
+              <div class="image-container">
+                <div class="study-image" style="background-image: url('{{ study.image }}');"></div>
+              </div>
+              <div class="paragraph gibson-book">
+                <div class="study-title gibson-medium"><a href="{{study.url}}">{{ study.title }}</a></div>
+                <div class="study-subtitle gibson-medium">{{ study.subtitle }}</div>
+                <p>
+                  {{ study.shortoverview | markdownify }}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        <div class="register-btn gibson-medium"><div class="btn-container">
+          <a href="/studies/" style="margin-top: 20px; font-size: 1.2rem; border-radius: 0px;">More Studies</a>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}

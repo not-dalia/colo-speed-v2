@@ -1,0 +1,50 @@
+---
+title: Contact Us
+permalink: /contact-us/
+layout: page
+---
+
+<div class="left-col">
+  <div class="title">Our Address</div>
+  {{ site.data.contactdetails.address | markdownify | newline_to_br }}
+  <p>
+    Email: <a href="mailto:{{site.data.contactdetails.email}}" target="_blank">{{site.data.contactdetails.email}}</a>
+  </p>
+  <iframe width="300" height="450"
+    src="{{site.data.contactdetails.maplocation}}"
+    allowfullscreen></iframe>
+</div>
+<div class="right-col">
+  <div class="title">Get in Touch</div>
+  <div class="paragraph">
+    <p>
+      Many thanks on your interest in COLO-SPEED. We are still developing this website and will update this section in due course. If you are interested in this participating in COLO-SPEED studies, please contact your local research team. Thank you.  
+    </p>
+  </div>
+  <form onsubmit="return contact(this);" id="getintouch">
+    <input name="name" type="text" placeholder="Name*" aria-label="Name" aria-required="true" required>
+    <!-- <input name="lastname" type="text" placeholder="Last Name*" aria-label="Last Name" aria-required="true" required> -->
+    <input name="email" type="email" placeholder="Email*" aria-label="Email" aria-required="true" required>
+    <!-- <input name="postcode" type="text" placeholder="Postcode*" aria-label="Postcode" aria-required="true" required> -->
+    <textarea name="message" placeholder="Message*" id="message" rows="10" aria-label="Message"
+      aria-required="true" required></textarea>
+    <input type="checkbox" name="consent-1" id="consent-1" aria-required="true" required oninvalid="setCustomValidity('We are only able to register your for the COLO-SPEED network if you agree to our Privacy Policy.')" oninput="setCustomValidity('')">
+    <label for="consent-1">I hereby consent to the COLO-SPEED <a href="/privacy" target=”_blank”>Privacy Policy</a>.</label>
+    <div class="form-row">
+      <input type="checkbox" name="consent-2" id="consent-2" aria-required="true" required oninvalid="setCustomValidity('We need to be able to contact our members via email to notify them of new studies and opportunities within the network. We are unable to register you for COLO-SPEED without your consent to contact via email.')" oninput="setCustomValidity('')">
+      <label for="consent-2"> By ticking this box you are agreeing to receive COLO-SPEED emails. You can withdraw your consent at any time.
+      Please refer to our <a href="/privacy" target=”_blank”>Privacy Policy</a> or <a href="/contact-us" target=”_blank”>Contact Us</a> for more details.</label>
+    </div>
+     <div class="form-row info-message">
+      <div class="message">
+        Thank you for contacting us.
+      </div>
+    </div>
+    <div class="form-row">
+      <input type="submit" value="Send" aria-label="Send">
+    </div>
+  </form>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+</div>

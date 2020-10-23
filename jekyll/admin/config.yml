@@ -1,0 +1,310 @@
+backend:
+  name: github
+  repo: not-dalia/colo-speed-v2
+  branch: master
+  site_domain: colospeed.uk
+  # site_domain: cms.netlify.com
+
+publish_mode: editorial_workflow
+media_folder: assets/images/uploads
+collections:
+  - name: studies
+    label: Studies
+    label_singular: Study
+    preview_path: 'studies/{{slug}}'
+    folder: _studies/
+    create: true
+    slug: '{{slug}}'
+    identifier_field: slug
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: study
+      - label: Title
+        name: title
+        widget: string
+      - label: Subtitle
+        name: subtitle
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Feature this study
+        name: featured
+        widget: boolean
+        required: false
+        default: false
+      - label: Featured Image
+        name: image
+        widget: image
+      - label: Status
+        name: status
+        widget: string
+        required: false
+      - label: Sponsor
+        name: sponsor
+        widget: string
+        required: false
+      - label: Funded By
+        name: funder
+        widget: text
+        required: false
+      - label: Contact person
+        name: contactperson
+        widget: object
+        fields:
+          - label: Name
+            name: name
+            widget: string
+          - label: Institution
+            name: institution
+            widget: string
+          - label: Email
+            name: email
+            widget: string
+            required: false
+      - label: Researchers
+        name: researchers
+        widget: list
+        field:
+          label: Name
+          name: name
+          widget: string
+        collapsed: false
+      - label: Opened sites
+        name: openedsites
+        widget: list
+        field:
+          label: Name
+          name: name
+          widget: string
+        collapsed: false
+      - label: Opening sites
+        name: openingsites
+        widget: list
+        field:
+          label: Name
+          name: name
+          widget: string
+        collapsed: false
+      - label: Opening sites title
+        name: openingsitestitle
+        widget: hidden
+        default: Sites to be opened
+      - label: Short overview
+        name: shortoverview
+        widget: text
+      - label: Study aim
+        name: aim
+        widget: text
+        required: false
+      - label: Patient info
+        name: patientinfo
+        widget: markdown
+        required: false
+      - label: Researcher info
+        name: researcherinfo
+        widget: markdown
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+  - name: articles
+    label: Articles
+    label_singular: Article
+    preview_path: 'articles/{{slug}}'
+    folder: _articles/
+    create: true
+    slug: '{{slug}}'
+    identifier_field: slug
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: article
+      - label: Title
+        name: title
+        widget: string
+      - label: Subtitle
+        name: subtitle
+        widget: string
+        required: false
+      - label: Author
+        name: author
+        widget: string
+        required: false
+      - label: Author Contact Link/Email
+        name: authorcontact
+        widget: string
+        required: false
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: Featured Image
+        name: image
+        widget: image
+      - label: Feature this article
+        name: featured
+        widget: boolean
+        default: false
+      - label: Article type
+        name: type
+        widget: select
+        options: ["article", "event", "news", "publication"]
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Target audience
+        name: audience
+        widget: select
+        options: ["everyone", "participants", "researchers"]
+      - label: External links
+        name: externallinks
+        widget: list
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Link
+            name: link
+            widget: string
+      - label: Related Study
+        name: study
+        widget: "relation"
+        collection: "studies"
+        searchFields: ['title']
+        valueField: "{{slug}}"
+        displayFields: ["title"]
+        required: false
+  - name: "people"
+    label: "People"
+    editor:
+      preview: false
+    files:
+      - label: "People"
+        name: "members"
+        file: "_data/members.yml"
+        fields:
+          - label: "People"
+            name: "members"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Affiliation, name: affiliation, widget: string, required: false}
+              - {label: Bio, name: bio, widget: text, required: false}
+              - {label: Email, name: email, widget: string, required: false}
+              - {label: Image, name: image, widget: image}
+              # - {label: Image, name: image, widget: image_dimensions, min_width: 300, min_height: 300, validation: "Image must be 300x300px"}
+  - name: "collaborator"
+    label: "Collaborators"
+    editor:
+      preview: false
+    files:
+      - label: "Collaborators"
+        name: "collaboratos"
+        file: "_data/collaborators.yml"
+        fields:
+          - label: "Collaborator Groups"
+            name: "groups"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - label: Collaborators
+                name: collaborators
+                widget: list
+                fields: 
+                  - { label: Name, name: name, widget: string}
+  - name: "faq"
+    label: "FAQs"
+    editor:
+      preview: false
+    files:
+      - label: "Participant FAQs"
+        name: "participantfaq"
+        file: "_data/participantfaq.yml"
+        fields:
+          - label: "Participant FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - {label: Question, name: question, widget: text}
+              - {label: Answer, name: answer, widget: markdown}
+      - label: "Researcher FAQs"
+        name: "researcherfaq"
+        file: "_data/researcherfaq.yml"
+        fields:
+          - label: "Researcher FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - {label: Question, name: question, widget: text}
+              - {label: Answer, name: answer, widget: markdown}
+  - name: "contact"
+    label: "Contact Details"
+    editor:
+      preview: false
+    files:
+      - label: "Contact Us"
+        name: "contactus"
+        file: "_data/contactdetails.yml"
+        fields:
+          - label: "Address"
+            name: "address"
+            widget: "markdown"
+          - label: "Email"
+            name: "email"
+            widget: "string"
+          - label: "Map Location"
+            hint: "Should be a link from Google maps"
+            name: "maplocation"
+            widget: "string"
+      - label: "Social Media Links"
+        name: "socialmedia"
+        file: "_data/socialmedia.yml"
+        fields:
+          - label: "Twitter"
+            name: "twitter"
+            widget: "string"
+            default: "#"
+          - label: "Facebook"
+            name: "facebook"
+            widget: "string"
+            default: "#"
+          - label: "LinkedIn"
+            name: "linkedin"
+            widget: "string"
+            default: "#"
+          - label: "Instragram"
+            name: "instagram"
+            widget: "string"
+            default: "#"
+  - name: "privacy"
+    label: "Privacy Policy"
+    editor:
+      preview: true
+    files:
+      - label: "Privacy Policy"
+        name: "privacypolicy"
+        file: "_pages/privacy.md"
+        fields:
+          - label: "Privacy Policy"
+            name: body
+            widget: "markdown"
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: privacy
+          - label: Title
+            name: title
+            widget: hidden
+            default: "Privacy Policy"
+          - label: Permalink
+            name: permalink
+            widget: hidden
+            default: "/privacy/"
+

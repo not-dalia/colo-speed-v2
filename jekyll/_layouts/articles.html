@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>COLO-SPEED - {{ page.title }}</title>
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"> 
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#004379">
+  <link rel="stylesheet" href="/css/styles.1599492833640.css?t=10">
+  <link rel="stylesheet" href="/css/styles.1599492833640.mob.css?t=10">
+  <link rel="stylesheet" href="/css/news.css?t=10">
+  <link rel="stylesheet" href="/css/news.mob.css?t=10">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {% include header.html %}
+
+  <div id="main-content">
+    <div class="section section-1 gibson-book">
+      <div class="news-media">
+        <div class="main-col">
+          <div class="decor">
+            <div class="main-title">
+              {{ page.title }}
+            </div>
+          </div>
+          
+
+          {% assign articles = site.articles | sort: 'date' | reverse %}
+
+          {% for article in articles %}
+          <div class="article" onclick="window.location='{{article.url}}'">
+            <div class="image-container">
+              <div class="study-image left-col col" style="background-image: url('{{ article.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{article.url}}'">
+              </div>
+            </div>
+            <div class="right-col col">
+              <div class="date">
+                <span class="lt-blue">
+                  {{ article.date | date: "%-d %b %Y" }}
+                </span> |
+                <span class="lt-blue">
+                  {% assign wordCount = article.content | number_of_words %}
+                  {% assign readingTime = wordCount | divided_by: 200.0 | ceil %}
+                  {{ readingTime }} min read
+                </span>
+              </div>
+              <div class="type gibson-medium">
+                {{ article.type }}
+              </div>
+              <div class="newstitle">
+                <a href="{{article.url}}">{{ article.title }}</a>
+              </div>
+              <div class="subtitle">
+                {{ article.subtitle }}
+              </div>
+              
+              <div class="paragraph">
+                <p>
+                  {{ article.content | markdownify | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 30 }}
+                  <!-- <a href="{{article.url}}" class="read-more">Read more</a> -->
+                </p>
+              </div>
+
+              {% if article.tags and article.tags.size > 0 %}
+                <div class="tags">
+                  {% for tag in article.tags limit:3 %}
+                    {% if tag != "" and tag != blank and tag != nil %}
+                      <a class="tag">
+                        {{ tag }}
+                      </a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+  <script src="/js/script.js" async defer></script>
+</body>
+
+</html>
