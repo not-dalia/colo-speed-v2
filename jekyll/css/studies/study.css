@@ -382,7 +382,7 @@
 
 .study-tabs .tabs .cs-tab:last-of-type {
   border-right: none;
-  background-color: var(--sea-green);
+  background-color: var(--yellow);
 }
 
 .study-tabs .tabs .cs-tab:last-of-type:hover {
