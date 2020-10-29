@@ -31,13 +31,20 @@
           </li>
         {% endif %}
         
-        {% if page.researchers.size > 0 or page.sponsor != nil %}
-        <li class="cs-tab" data-tab-content="who" id="cs-tab-who">
-          <div class="icon"><i class="fas fa-users"></i></div>
-          <div class="tab-title">
-            <a>People</a>
-          </div>
-        </li>
+        {% assign haspublications = false %}
+        {% for article in site.articles %}
+          {% if page.slug == article.study %}
+            {% assign haspublications = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if haspublications %}
+          <li class="cs-tab" data-tab-content="publications" id="cs-tab-publications">
+            <div class="icon"><i class="far fa-newspaper"></i></div>
+            <div class="tab-title">
+              <a>Articles</a>
+            </div>
+          </li>
         {% endif %}
 
         <li class="cs-tab" data-tab-content="faq" id="cs-tab-faq">
@@ -76,6 +83,32 @@
           {{ page.researcherinfo | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
         {% endif %}
+
+        {% if page.researchers and page.researchers.size > 0 %}
+        <div class="subtitle">Researchers:</div>
+        <ul>
+          {% for researcher in page.researchers %}
+          {% if researcher.name == "" or researcher.name == nil %}
+          <li>{{researcher}}</li>
+          {% else %}
+          <li>{{researcher.name}}</li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if page.sponsor != "" and page.sponsor != nil  %}
+        <div class="subtitle">Study Sponsor:</div>
+        <ul>
+          <li> {{ page.sponsor }} </li>
+        </ul>
+        {% endif %}
+        {% if page.funder != "" and page.funder != nil  %}
+        <div class="subtitle">Funded By:</div>
+        <ul>
+          <li> {{ page.funder }} </li>
+        </ul>
+        {% endif %}
+
       </div>
 
 
@@ -115,32 +148,46 @@
       </div>
       {% endif %}
 
-      <div class="paragraph cs-tab-content" id="tab-who">
-        {% if page.researchers and page.researchers.size > 0 %}
-        <div class="subtitle">Researchers:</div>
-        <ul>
-          {% for researcher in page.researchers %}
-          {% if researcher.name == "" or researcher.name == nil %}
-          <li>{{researcher}}</li>
-          {% else %}
-          <li>{{researcher.name}}</li>
-          {% endif %}
+      <div class="cs-tab-content" id="tab-publications">
+        <div class="related-articles">
+          {% for article in site.articles %}
+            {% if page.slug == article.study %}
+            <div class="related-article" onclick="window.location='{{article.url}}'">
+              <div class="image-container">
+                <div class="study-image left-col col" style="background-image: url('{{ article.image }}'); cursor: pointer; /*padding: 0; min-width: 340px*/" onclick="window.location='{{article.url}}'">
+                </div>
+              </div>
+              <div class="right-col col">
+                <div class="date">
+                  <span class="lt-blue">
+                    {{ article.date | date: "%-d %b %Y" }}
+                  </span> |
+                  <span class="lt-blue">
+                    {% assign wordCount = article.content | number_of_words %}
+                    {% assign readingTime = wordCount | divided_by: 200.0 | ceil %}
+                    {{ readingTime }} min read
+                  </span>
+                </div>
+                <div class="type gibson-medium">
+                  {{ article.type }}
+                </div>
+                <div class="newstitle">
+                  <a href="{{article.url}}" alt="{{article.title}}" title="{{article.title}}">{{ article.title | truncatewords: 8 }}</a>
+                </div>
+                
+                <div class="paragraph">
+                  <p>
+                    {{ article.content | markdownify | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 20 }}
+                    <!-- <a href="{{article.url}}" class="read-more">Read more</a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            {% endif %}
           {% endfor %}
-        </ul>
-        {% endif %}
-        {% if page.sponsor != "" and page.sponsor != nil  %}
-        <div class="subtitle">Study Sponsor:</div>
-        <ul>
-          <li> {{ page.sponsor }} </li>
-        </ul>
-        {% endif %}
-        {% if page.funder != "" and page.funder != nil  %}
-        <div class="subtitle">Funded By:</div>
-        <ul>
-          <li> {{ page.funder }} </li>
-        </ul>
-        {% endif %}
+        </div>
       </div>
+
       <div class="paragraph cs-tab-content" id="tab-faq">
         
         
