@@ -172,12 +172,12 @@
                   {{ article.type }}
                 </div>
                 <div class="newstitle">
-                  <a href="{{article.url}}" alt="{{article.title}}" title="{{article.title}}">{{ article.title | truncatewords: 8 }}</a>
+                  <a href="{{article.url}}" alt="{{article.title}}" title="{{article.title}}">{{ article.title | truncatewords: 20 }}</a>
                 </div>
                 
                 <div class="paragraph">
                   <p>
-                    {{ article.content | markdownify | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 20 }}
+                    {{ article.content | markdownify | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | truncatewords: 25 }}
                     <!-- <a href="{{article.url}}" class="read-more">Read more</a> -->
                   </p>
                 </div>

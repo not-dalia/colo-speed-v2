@@ -139,7 +139,7 @@
   background-color: #E6E6E6;
   background-color: var(--lt-grey);
   box-sizing: border-box;
-  padding: 0 10vw;
+  padding: 30px 10vw;
 }
 
 #main-content .section-2 .study-details {
@@ -305,7 +305,7 @@
   padding: 0;
   margin: 0;
   /* background: #f2f2f2; */
-  background: var(--lt-blue);
+  background: var(--primary-color);
 }
 
 .study-tabs .tabs .cs-tab {
@@ -377,17 +377,19 @@
   text-decoration: underline;
   cursor: pointer;
   /* background: #fff; */
-  color: var(--dk-blue);
+  background: var(--lt-blue);
 }
 
 .study-tabs .tabs .cs-tab:last-of-type {
   border-right: none;
   background-color: var(--yellow);
+  /* background-color: var(--gold); */
+  color: var(--dk-blue);
 }
 
 .study-tabs .tabs .cs-tab:last-of-type:hover {
-  /* color: var(--dk-grey); */
-  color: white;
+  background: var(--lt-blue);
+  /* color: white; */
 }
 
 .study-tabs .tabs .cs-tab a{
@@ -436,9 +438,9 @@
 }
 
 .related-article .newstitle {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  color: white;
+  color: var(--primary-color);
   margin-top: 10px;
 }
 
@@ -447,7 +449,7 @@
 }
 
 .related-article .newstitle a {
-  color: white;
+  color: var(--primary-color);
   text-decoration: underline ;
 }
 
@@ -462,9 +464,9 @@
 }
 
 .related-article:hover {
-  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.4);
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
   cursor: pointer;
-  box-sizing: border-box;
+  border: 1px solid #cccccc;
 }
 
 .related-article .subtitle {
@@ -480,6 +482,10 @@
   top: 30px;
   right: 30px;
   text-align: center;
+}
+
+.related-article .date a{
+  display: block;
 }
 
 .related-article .tag {
@@ -503,30 +509,34 @@
   font-size: 1rem !important;
   line-height: 1.8rem;
   word-break: break-word;
-  color: white;
+  color: black;
 }
 
 .related-article .paragraph p {
   font-size: 1rem !important;
   line-height: 1.8rem;
   word-break: break-word;
-  color: white;
+  color: black;
 }
 
 .related-article {
-  background: var(--primary-color);
-  margin: 10px 10px;
+  background: white;
+  margin: 10px 0;
   display: flex;
-  flex-direction: column;
-  max-width: 350px;
-  position: relative;
-  height: 500px;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  border: 1px solid #fff;
+  transition: all 0.2s ease-out;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0px 2px 6px rgba(38, 38, 38, 0.2);
+
 }
 
 .related-article .type {
   font-size: 1rem;
-  color: var(--primary-color);
-  background: white;
+  color: white;
+  background: var(--primary-color);
   display: inline-block;
   padding: 5px 10px;
   width: fit-content;
@@ -534,30 +544,27 @@
 }
 
 .related-article .image-container {
-  /* height: 30vh; */
   height: auto;
-  width: 100%;
-  /* padding-bottom: 55.56%; */
-  margin: 0;
+  width: auto;
+  min-width: 40%;
+  margin: 40px;
+  margin-right: 0;
 }
 
 .related-article .study-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0;
-  margin-bottom: 0;
   width: 100%;
-  padding-bottom: 55.56%;
+  padding-bottom: 55.56%; /* 16:9 */
   position: relative;
 }
 
 .related-article .right-col {
   flex: 1;
+  padding: 40px;
+  padding-right: 30px;
   position: relative;
-  padding: 30px;
-  height: 245px;
-  max-height: 245px;
   overflow-y: hidden;
   box-sizing: border-box;
 }

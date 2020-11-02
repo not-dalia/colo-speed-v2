@@ -127,9 +127,10 @@
 
 
   #main-content .section-2 {
-    background-color: #ffffff;
+    background-color: var(--lt-grey);
     box-sizing: border-box;
-    padding: 0;
+    padding: 30px 0;
+
   }
 
   #main-content .section-2 .study-details {
@@ -290,6 +291,161 @@
   .study-tabs .tabs .cs-tab .tab-title {
     margin-top: 4px;
     font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .related-articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .related-article .paragraph {
+    word-break: break-word;
+    padding: 0 !important;
+  }
+  
+  .related-article a {
+    text-decoration: none;
+    color: currentColor;
+  }
+  
+  .related-article a:hover {
+    color: var(--lt-blue);
+    text-decoration: underline;
+  }
+  
+  .related-article .newstitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .related-article .article:hover {
+    cursor: pointer;
+  }
+  
+  .related-article .newstitle a {
+    text-decoration: underline ;
+  }
+  
+  .related-article .newstitle a:hover {
+    text-decoration: underline ;
+  }
+  
+  .related-article:hover .newstitle a {
+    text-decoration: underline ;
+  }
+  
+  .related-article:hover {
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.4);
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .related-article .subtitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .related-article .date {
+    color: #777;
+    font-weight: 500;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: center;
+  }
+  
+  .related-article .tag {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background: var(--lt-blue);
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .related-article .tag:hover {
+    background: var(--lt-grey);
+  }
+  
+  .related-article .paragraph {
+    margin-top: 15px;
+    font-size: 1rem !important;
+    line-height: 1.8rem;
+    word-break: break-word;
+    color: black;
+  }
+  
+  .related-article .paragraph p {
+    font-size: 1rem !important;
+    line-height: 1.8rem;
+    word-break: break-word;
+    color: black;
+  }
+  
+  .related-article {
+    background: white;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 350px; */
+    position: relative;
+    box-shadow: 0px 2px 6px rgba(38, 38, 38, 0.2);
+    cursor: pointer;
+    box-sizing: border-box;
+    /* height: 500px; */
+  }
+  
+  .related-article .type {
+    font-size: 1rem;
+    color: white;
+    background: var(--primary-color);
+    display: inline-block;
+    padding: 5px 10px;
+    width: fit-content;
+    text-transform: capitalize;
+  }
+  
+  .related-article .image-container {
+    /* height: 30vh; */
+    height: auto;
+    width: 100%;
+    /* padding-bottom: 55.56%; */
+    margin: 0;
+  }
+  
+  .related-article .study-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding-bottom: 55.56%;
+    position: relative;
+  }
+  
+  .related-article .right-col {
+    flex: 1;
+    position: relative;
+    padding: 30px;
+    height: 245px;
+    /* max-height: 245px; */
+    overflow-y: hidden;
+    box-sizing: border-box;
   }
   /****************** END OF STUDIES PAGE STYLEE *****************/
 }
