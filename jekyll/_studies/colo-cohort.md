@@ -27,9 +27,9 @@ openedsites:
   - Bolton NHS Foundation Trust
   - South Tees Hospitals NHS Foundation Trust
 openingsites:
-  - " Northumbria Healthcare NHS Foundation Trust"
+  - Northumbria Healthcare NHS Foundation Trust
   - Hull University Teaching Hospitals NHS Foundation Trust
-  - " Gloucestershire Hospitals NHS Foundation Trust"
+  - Gloucestershire Hospitals NHS Foundation Trust
   - West Hertfordshire Hospitals NHS Trust
 openingsitestitle: Opening sites
 shortoverview: COLO-COHORT aims to develop a “risk stratification tool” to help
