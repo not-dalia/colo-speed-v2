@@ -15,7 +15,7 @@ researchers:
 openedsites:
   - Liverpool University Hospitals NHS Foundation Trust
   - South Tyneside and Sunderland NHS Foundation Trust
-  - North Tees and Hartlepool NHS Foundation Trust 
+  - North Tees and Hartlepool NHS Foundation Trust
 aim: This study aims to investigate Volatile Organic Compounds (VOCs) which are
   associated with adenomas (pre-cancerous polyps) and early bowel cancer to
   improve detection of adenomas and bowel cancer.
