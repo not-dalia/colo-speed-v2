@@ -16,8 +16,9 @@ researchers:
   - Dr Christina Dobson
   - "Professor Linda Sharp "
   - Professor Colin Rees
+openedsites: []
 openingsites:
-  - South Tyneside & Sunderland NHS Foundation Trust
+  - South Tyneside and Sunderland NHS Foundation Trust
   - The Newcastle-upon-Tyne NHS Foundation Trust
   - The Royal Wolverhampton NHS Trust
   - King’s College Hospital NHS Foundation Trust
