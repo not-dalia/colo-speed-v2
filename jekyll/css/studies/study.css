@@ -569,4 +569,25 @@
   box-sizing: border-box;
 }
 
+.faq-section .faq-paragraph{
+  padding-left: 1rem;
+}
+
+.faq-section .faq-row {
+  padding-bottom: 5px;
+}
+
+.faq-section .faq-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  color: var(--lt-blue);
+}
+
+.faq-section .faq-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  word-break: break-word;
+}
+
 /****************** END OF STUDIES PAGE STYLEE *****************/

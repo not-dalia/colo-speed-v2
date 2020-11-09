@@ -50,7 +50,7 @@
         <li class="cs-tab" data-tab-content="faq" id="cs-tab-faq">
           <div class="icon"><i class="fas fa-question-circle"></i></div>
           <div class="tab-title">
-            <a>FAQ</a>
+            <a>Ask</a>
           </div>
         </li>
 
@@ -189,8 +189,24 @@
       </div>
 
       <div class="paragraph cs-tab-content" id="tab-faq">
-        
-        
+        {% if site.data.studyfaq.faq.size > 0 %}
+          {% include faq.html faq=site.data.studyfaq.faq %}
+        {% endif %}
+        {% if page.faq.size > 0 %}
+          {% include faq.html faq=page.faq %}
+        {% endif %}
+        {% if page.contactperson.email != "" and page.contactperson.email != nil%}
+          <div class="faq-section">
+            <div class="faq-subtitle">
+              I can't find the answer to my question. What do I do?
+            </div>
+            <div class="faq-paragraph">
+              <p>
+                For any other queries about {{ page.title }} please contact <a href="mailtop:{{page.contactperson.email}}">{{page.contactperson.email}}</a>
+              </p>
+            </div>
+          </div>
+        {% endif %}
       </div>
     </div>
     <div class="cs-tab-content" id="tab-register">

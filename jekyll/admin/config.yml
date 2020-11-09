@@ -1,18 +1,18 @@
 backend:
   name: github
   repo: not-dalia/colo-speed-v2
-  branch: master
-  site_domain: colospeed.uk
-  # site_domain: cms.netlify.com
+  branch: feature-tabs
+  # site_domain: colospeed.uk
+  site_domain: cms.netlify.com
 
 publish_mode: editorial_workflow
-media_folder: assets/images/uploads
+media_folder: jekyll/assets/images/uploads
 collections:
   - name: studies
     label: Studies
     label_singular: Study
     preview_path: 'studies/{{slug}}'
-    folder: _studies/
+    folder: jekyll/_studies/
     create: true
     slug: '{{slug}}'
     identifier_field: slug
@@ -74,20 +74,26 @@ collections:
         collapsed: false
       - label: Opened sites
         name: openedsites
-        widget: list
-        field:
-          label: Name
-          name: name
-          widget: string
-        collapsed: false
+        widget: "relation"
+        collection: "sites"
+        searchFields: ['sites.*.name']
+        valueField: "sites.*.name"
+        file: "sites"
+        displayFields: ["sites.*.name"]
+        required: false
+        multiple: true
+        options_length: 10
       - label: Opening sites
         name: openingsites
-        widget: list
-        field:
-          label: Name
-          name: name
-          widget: string
-        collapsed: false
+        widget: "relation"
+        collection: "sites"
+        searchFields: ['sites.*.name']
+        valueField: "sites.*.name"
+        file: "sites"
+        displayFields: ["sites.*.name"]
+        required: false
+        multiple: true
+        options_length: 10
       - label: Opening sites title
         name: openingsitestitle
         widget: hidden
@@ -110,11 +116,17 @@ collections:
       - label: Body
         name: body
         widget: markdown
+      - label: "Study FAQs"
+        name: "faq"
+        widget: "list"
+        fields:
+          - {label: Question, name: question, widget: text}
+          - {label: Answer, name: answer, widget: markdown}
   - name: articles
     label: Articles
     label_singular: Article
     preview_path: 'articles/{{slug}}'
-    folder: _articles/
+    folder: jekyll/_articles/
     create: true
     slug: '{{slug}}'
     identifier_field: slug
@@ -188,7 +200,7 @@ collections:
     files:
       - label: "People"
         name: "members"
-        file: "_data/members.yml"
+        file: "jekyll/_data/members.yml"
         fields:
           - label: "People"
             name: "members"
@@ -207,7 +219,7 @@ collections:
     files:
       - label: "Collaborators"
         name: "collaboratos"
-        file: "_data/collaborators.yml"
+        file: "jekyll/_data/collaborators.yml"
         fields:
           - label: "Collaborator Groups"
             name: "groups"
@@ -219,14 +231,39 @@ collections:
                 widget: list
                 fields: 
                   - { label: Name, name: name, widget: string}
+  - name: "sites"
+    label: "Sites"
+    editor:
+      preview: false
+    files:
+      - label: "Sites"
+        name: "sites"
+        file: "jekyll/_data/sites.yml"
+        fields:
+          - label: "Sites"
+            name: "sites"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+
   - name: "faq"
     label: "FAQs"
     editor:
       preview: false
     files:
+      - label: "General Study FAQs"
+        name: "studyfaq"
+        file: "jekyll/_data/studyfaq.yml"
+        fields:
+          - label: "Study FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - {label: Question, name: question, widget: text}
+              - {label: Answer, name: answer, widget: markdown}
       - label: "Participant FAQs"
         name: "participantfaq"
-        file: "_data/participantfaq.yml"
+        file: "jekyll/_data/participantfaq.yml"
         fields:
           - label: "Participant FAQ"
             name: "faq"
@@ -236,7 +273,7 @@ collections:
               - {label: Answer, name: answer, widget: markdown}
       - label: "Researcher FAQs"
         name: "researcherfaq"
-        file: "_data/researcherfaq.yml"
+        file: "jekyll/_data/researcherfaq.yml"
         fields:
           - label: "Researcher FAQ"
             name: "faq"
@@ -251,7 +288,7 @@ collections:
     files:
       - label: "Contact Us"
         name: "contactus"
-        file: "_data/contactdetails.yml"
+        file: "jekyll/_data/contactdetails.yml"
         fields:
           - label: "Address"
             name: "address"
@@ -265,7 +302,7 @@ collections:
             widget: "string"
       - label: "Social Media Links"
         name: "socialmedia"
-        file: "_data/socialmedia.yml"
+        file: "jekyll/_data/socialmedia.yml"
         fields:
           - label: "Twitter"
             name: "twitter"
@@ -290,7 +327,7 @@ collections:
     files:
       - label: "Privacy Policy"
         name: "privacypolicy"
-        file: "_pages/privacy.md"
+        file: "jekyll/_pages/privacy.md"
         fields:
           - label: "Privacy Policy"
             name: body

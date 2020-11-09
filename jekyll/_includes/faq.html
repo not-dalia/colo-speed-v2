@@ -1,13 +1,15 @@
 
 <div class="faq-section">
   {% for question in include.faq %}
+  <div class="faq-row">
     <div class="faq-subtitle">
       {{ question.question }}
     </div>
-    <div class="paragraph">
+    <div class="faq-paragraph">
       <p>
         {{ question.answer | markdownify }}
       </p>
     </div>  
+  </div>
   {% endfor %}
 </div>
